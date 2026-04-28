@@ -2,6 +2,29 @@
  * Données des modales - Animation, Encadrement Jeunes et Certifications (Français)
  */
 Object.assign(window.siteData.modalData.fr, {
+    'bafa-detail': {
+        title: 'BAFA - Brevet d\'Aptitude aux Fonctions d\'Animateur',
+        summary: 'Diplôme complet obtenu en trois étapes, permettant l\'encadrement d\'enfants et d\'adolescents en accueils collectifs de mineurs.',
+        brandLogo: [
+            'assets/projects/ligue-enseignement/icone lde orange.png',
+            'assets/projects/com-com/icone com com orange.png',
+            'assets/projects/ufcv/icone UFCV orange.png'
+        ],
+        missionsTitle: 'Parcours de Formation',
+        missions: [
+            'Étape 1 : Ma session de formation générale s\'est déroulée avec la Ligue de l\'Enseignement, du 24/02/2024 au 02/03/2024, en internat, au sein du site Ethic Étapes sur l\'Île d\'Or à Amboise. Cette première approche théorique de l\'animation a été pour moi une réelle source d\'apprentissage et a développé mon envie et mon appétit pour l\'encadrement des jeunes.',
+            'Étape 2 : Mon stage pratique s\'est déroulé à l\'ALSH de Nouzilly, géré par la Communauté de Communes du Castelrenaudais, du 08/07/2024 au 02/08/2024. Ces quatre semaines ont été pour moi une réelle source de bonheur. Découvrir le monde de l\'animation de manière concrète, du côté animateur et non plus du côté enfant, a été une véritable révélation.',
+            'Étape 3 : Ma session d\'approfondissement s\'est déroulée à Blois, avec l\'UFCV, du 27/10/2025 au 01/11/2025. Cette phase finale d\'apprentissage du BAFA a été pour moi une session de formalités et de rappels de notions globalement vues et pratiquées au cours de mes différentes expériences dans l\'animation.'
+        ],
+        tags: ['BAFA', 'Animation', 'Encadrement', 'Jeunesse', 'Diplôme'],
+        gallery: [
+            { src: 'assets/projects/bafa/Effectif approffondissement_accueil de loisir.JPG', caption: "Groupe lors de l'approfondissement BAFA - Thématique Accueil de Loisirs." },
+            { src: 'assets/projects/bafa/Encadrement d\'enfant en milieur naturel(stage).JPG', caption: "Stage pratique : Encadrement et animation en milieu naturel." },
+            { src: 'assets/projects/bafa/Equipe animation juillet 2024(stage).JPG', caption: "Équipe d'animation de juillet 2024." },
+            { src: 'assets/projects/bafa/Olympiades intercentre(stage).JPG', caption: "Gestion de projet : Organisation des olympiades intercentres." },
+            { src: 'assets/projects/bafa/Photo collective de l\'ALSH de Nouzilly en 08_2024(stage).JPG', caption: "Équipe pédagogique de l'ALSH de Nouzilly - Août 2024." }
+        ]
+    },
     'psc1-detail': { 
         title: 'PSC1 - Prévention et Secours Civiques de niveau 1', 
         period: '06/2024', 
