@@ -1,0 +1,7 @@
+# Ignorer les fichiers système
+Thumbs.db
+.DS_Store
+
+# Ignorer les dossiers de travail si jamais ils sont copiés par erreur
+/node_modules/
+.env

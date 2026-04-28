@@ -1,0 +1,165 @@
+/* Dark Mode Theme */
+[data-theme="dark"] {
+    /* Base Colors */
+    --bg-dark: #121212;
+    --bg-card: #1e1e1e;
+    --bg-card-hover: #252525;
+    --bg-header: rgba(18, 18, 18, 0.95);
+    
+    /* Text Colors */
+    --text-main: #f0f0f0;
+    --text-muted: #b0b0b0;
+    --border: rgba(255, 255, 255, 0.15);
+    
+    /* Primary Colors remain the same for brand identity, but glow might be adjusted */
+    --primary: #FF7600;
+    --primary-glow: rgba(255, 118, 0, 0.3);
+    
+    /* Specific overrides for dark mode */
+}
+
+[data-theme="dark"] body {
+    background-color: var(--bg-dark);
+    color: var(--text-main);
+}
+
+[data-theme="dark"] .header {
+    background: var(--bg-header);
+    border-bottom: var(--border-width) solid var(--border);
+}
+
+[data-theme="dark"] .nav-link {
+    color: var(--text-muted);
+}
+
+[data-theme="dark"] .nav-link:hover,
+[data-theme="dark"] .nav-link.active {
+    color: var(--text-main);
+}
+
+[data-theme="dark"] .section-subtitle {
+    color: var(--text-muted);
+}
+
+[data-theme="dark"] .category-title i {
+    color: #ffffff !important;
+}
+
+/* Cards in Dark Mode */
+[data-theme="dark"] .profile-card,
+[data-theme="dark"] .nav-tile {
+    background: rgba(30, 30, 30, 0.6);
+    border-color: var(--border);
+}
+
+[data-theme="dark"] .profile-card:hover,
+[data-theme="dark"] .nav-tile:hover {
+    background: rgba(40, 40, 40, 0.8);
+    border-color: #ffffff; /* White border on hover for contrast */
+}
+
+/* Specific Card Backgrounds */
+[data-theme="dark"] .parcours-category,
+[data-theme="dark"] .parcours-card,
+[data-theme="dark"] .project-card,
+[data-theme="dark"] .expertise-card.main-card,
+[data-theme="dark"] .volley-card,
+[data-theme="dark"] .com-card,
+[data-theme="dark"] .com-box,
+[data-theme="dark"] .com-skill,
+[data-theme="dark"] .com-exp,
+[data-theme="dark"] .animation-card,
+[data-theme="dark"] .formation-item[data-modal],
+[data-theme="dark"] .experience-item,
+[data-theme="dark"] .contact-wrapper,
+[data-theme="dark"] .contact-link,
+[data-theme="dark"] .doc-item {
+    background: var(--bg-card);
+    border-color: var(--border);
+}
+
+[data-theme="dark"] .parcours-card:hover,
+[data-theme="dark"] .project-card:hover,
+[data-theme="dark"] .expertise-card.main-card:hover,
+[data-theme="dark"] .volley-card:hover,
+[data-theme="dark"] .com-card:hover,
+[data-theme="dark"] .com-box:hover,
+[data-theme="dark"] .com-skill:hover,
+[data-theme="dark"] .com-exp:hover,
+[data-theme="dark"] .animation-card:hover,
+[data-theme="dark"] .formation-item[data-modal]:hover,
+[data-theme="dark"] .experience-item:hover,
+[data-theme="dark"] .contact-wrapper:hover,
+[data-theme="dark"] .contact-link:hover,
+[data-theme="dark"] .doc-item:hover {
+    background: var(--bg-card-hover);
+    border-color: #ffffff; /* White border on hover for better visibility in dark mode */
+}
+
+/* Modal Dark Mode */
+[data-theme="dark"] .modal-overlay {
+    background: rgba(0, 0, 0, 0.92); /* Fond plus sombre pour isoler la fenêtre */
+}
+
+[data-theme="dark"] .modal-container {
+    background: #1a1a1a;
+    border: 2px solid var(--primary); /* Bordure orange pour délimiter */
+    box-shadow: 0 0 60px rgba(255, 118, 0, 0.45); /* Lueur orange beaucoup plus intense */
+}
+
+[data-theme="dark"] .modal-header {
+    border-bottom-color: rgba(255, 255, 255, 0.1);
+}
+
+[data-theme="dark"] .modal-close {
+    color: var(--text-muted);
+}
+
+[data-theme="dark"] .modal-close:hover {
+    color: var(--text-main);
+    background: rgba(255, 255, 255, 0.1);
+}
+
+/* Toolbox Dark Mode */
+[data-theme="dark"] .toolbox-btn {
+    background: var(--bg-card);
+    border-color: var(--border);
+}
+
+[data-theme="dark"] .toolbox-menu {
+    background: var(--bg-card);
+    border-color: var(--border);
+}
+
+[data-theme="dark"] .toolbox-item {
+    color: var(--text-main);
+}
+
+[data-theme="dark"] .toolbox-item:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+[data-theme="dark"] .lang-option {
+    color: var(--text-muted);
+}
+
+[data-theme="dark"] .lang-option:hover {
+    background: rgba(255, 255, 255, 0.05);
+    color: var(--text-main);
+}
+
+/* Footer Dark Mode */
+[data-theme="dark"] .footer {
+    background: var(--bg-card);
+    border-top-color: var(--border);
+}
+
+[data-theme="dark"] .social-links a {
+    background: rgba(255, 255, 255, 0.1);
+    color: var(--text-main);
+}
+
+[data-theme="dark"] .social-links a:hover {
+    background: var(--primary);
+    color: white;
+}

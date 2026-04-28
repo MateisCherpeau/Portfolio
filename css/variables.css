@@ -1,0 +1,65 @@
+:root {
+    /* Colors - Warm Energetic Palette */
+    --bg-dark: #ffffff;
+    --bg-card: #ffffff;
+    --bg-card-hover: #ffffff;
+    --primary: #FF7600;
+    --primary-glow: rgba(255, 118, 0, 0.4);
+    --secondary: #FF7600;
+    --accent: #FF7600;
+    --complementary: #2E5A47;
+    --text-main: #1a1a2e;
+    --text-muted: #4a4a6a;
+    --border: rgba(0, 0, 0, 0.12);
+    --border-width: 3px;
+    --bg-header: rgba(255, 255, 255, 0.95);
+
+    /* Gradients */
+    --gradient-primary: var(--primary); /* Passage au orange basique */
+    --gradient-text: var(--primary); /* Suppression du dégradé rouge pour du orange basique */
+
+    /* Typography */
+    --font-heading: 'Outfit', sans-serif;
+    --font-body: 'Plus Jakarta Sans', sans-serif;
+
+    /* Spacing */
+    --container-width: 1200px;
+    --header-height: 80px;
+    --radius-sm: 8px;
+    --radius-md: 16px;
+    --radius-lg: 24px;
+
+    /* Transitions */
+    --transition-fast: 0.2s ease;
+    --transition-normal: 0.3s ease;
+
+    /* Dynamic states (default light) */
+    --border-hover: #000000;
+    --shadow-hover: rgba(255, 118, 0, 0.2);
+}
+
+/* Explicit Light Theme */
+[data-theme="light"] {
+    --bg-dark: #ffffff;
+    --bg-card: #ffffff;
+    --bg-card-hover: #fcfcfc;
+    --text-main: #1a1a2e;
+    --text-muted: #4a4a6a;
+    --border: rgba(0, 0, 0, 0.12);
+    --border-hover: #000000;
+    --bg-header: rgba(255, 255, 255, 0.95);
+    --shadow-hover: rgba(255, 118, 0, 0.2);
+}
+
+/* Dark Theme Overrides */
+[data-theme="dark"] {
+    --bg-dark: #121212;
+    --bg-card: #1e1e1e;
+    --bg-card-hover: #252525;
+    --text-main: #f0f0f0;
+    --text-muted: #b0b0b0;
+    --border: rgba(255, 255, 255, 0.15);
+    --border-hover: #ffffff;
+    --bg-header: rgba(18, 18, 18, 0.95);
+    --shadow-hover: rgba(255, 118, 0, 0.3);
+}

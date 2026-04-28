@@ -1,0 +1,226 @@
+/* Hero Section Redesign */
+.hero-section {
+    min-height: 100vh;
+    /* display is controlled by layout.css with .active class */
+    align-items: center;
+    justify-content: center;
+    padding: 80px 20px 30px;
+    /* Account for fixed header */
+    background: var(--bg-dark);
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-section.active {
+    display: flex;
+}
+
+.hero-container {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 25px;
+    max-width: 1200px;
+    width: 100%;
+    z-index: 1;
+}
+
+/* Profile Section */
+.profile-card-link {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+
+.profile-card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(0, 0, 0, 0.15);
+    border-radius: 18px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+    justify-content: center;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.profile-card:hover {
+    box-shadow: 0 12px 30px var(--shadow-hover);
+    border-color: var(--border-hover);
+    transform: translateY(-5px) scale(1.01);
+}
+
+.profile-img-container {
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-bottom: 15px;
+    border: 4px solid var(--primary-color);
+    box-shadow: 0 0 20px rgba(var(--primary-rgb), 0.3);
+    position: relative;
+}
+
+.profile-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.profile-card:hover .profile-img {
+    transform: scale(1.1);
+}
+
+.profile-name {
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin-bottom: 5px;
+    color: var(--primary); /* Passage au orange basique */
+}
+
+.profile-role {
+    font-family: var(--font-heading);
+    font-size: 1.2rem; 
+    color: var(--text-main); 
+    font-weight: 700; 
+    margin-bottom: 5px;
+    text-transform: uppercase;
+    letter-spacing: 0; 
+    display: block;
+}
+
+.profile-bio {
+    font-size: 0.95rem;
+    color: var(--text-muted);
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.social-mini-links {
+    display: flex;
+    gap: 15px;
+}
+
+.social-mini-btn {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-color);
+    transition: all 0.3s ease;
+    font-size: 1.1rem;
+}
+
+.social-mini-btn:hover {
+    background: var(--primary-color);
+    color: white;
+    transform: translateY(-3px);
+}
+
+/* Navigation Grid (Bento Box) */
+.nav-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 15px;
+    height: 100%;
+}
+
+.nav-tile {
+    background: rgba(255, 255, 255, 0.05);
+    border: 2px solid rgba(0, 0, 0, 0.15);
+    border-radius: 18px;
+    padding: 15px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-decoration: none;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.nav-tile:hover {
+    background: rgba(255, 255, 255, 0.12);
+    border-color: var(--border-hover);
+    box-shadow: 0 12px 30px var(--shadow-hover);
+    transform: translateY(-5px) scale(1.02);
+}
+
+.tile-icon {
+    font-size: 1.5rem;
+    color: var(--primary);
+    margin-bottom: 10px;
+    transition: transform 0.3s ease;
+}
+
+.nav-tile:hover .tile-icon {
+    transform: scale(1.05);
+}
+
+.tile-content h3 {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: var(--text-color);
+    margin-bottom: 5px;
+}
+
+.tile-content p {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+}
+
+.tile-arrow {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    font-size: 1.2rem;
+    color: var(--primary-color);
+    opacity: 0;
+    transform: translateX(-10px);
+    transition: all 0.3s ease;
+}
+
+.nav-tile:hover .tile-arrow {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* Specific Tile Styles (Optional: make some span rows/cols if needed) */
+/* For a 2x3 grid, 6 items fit perfectly. */
+
+/* Responsive Design */
+@media (max-width: 992px) {
+    .hero-container {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .profile-card {
+        padding: 30px;
+    }
+
+    .nav-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 576px) {
+    .nav-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-section {
+        padding-top: 100px;
+    }
+}

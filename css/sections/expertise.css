@@ -1,0 +1,240 @@
+/* Expertise Section */
+.expertise-section.active {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    /* padding-top géré dans layout.css */
+    padding-bottom: 40px;
+}
+
+/* Section de formation (BUT, École d'Ingénieur, etc.) */
+.formation-section {
+    margin-bottom: 3rem;
+    padding-bottom: 2rem;
+    border-bottom: var(--border-width) solid var(--border);
+    max-width: 1400px; /* Alignement avec le reste */
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+.formation-section:last-of-type {
+    border-bottom: none;
+    margin-bottom: 0;
+}
+
+.formation-section-title {
+    font-size: 1.5rem; /* Réduit de 1.8rem */
+    font-weight: 700;
+    color: var(--text-main);
+    margin-bottom: 0.25rem;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.formation-section-title i {
+    color: var(--primary);
+    font-size: 1.3rem; /* Réduit de 1.5rem */
+}
+
+.formation-section-subtitle {
+    font-size: 1rem; /* Réduit de 1.1rem */
+    color: var(--text-muted);
+    margin-bottom: 2rem;
+    padding-left: 0; /* Supprimé le décalage de 2.5rem */
+    margin-left: 2.05rem; /* Alignement sous le texte du titre (icon width + gap) */
+}
+
+/* Carte du haut (Descriptif BUT) */
+.expertise-top-card {
+    margin-bottom: 3rem;
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+.project-card--full {
+    width: 100%;
+    margin-bottom: 0;
+    background: var(--bg-card);
+    border: 2px solid var(--border); /* Même bordure que les autres */
+}
+
+.project-icon-img--but {
+    max-width: 90%;
+    max-height: 90%;
+}
+
+/* Grille principale - 2 colonnes pour cartes plus grandes */
+.expertise-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+/* Carte principale Vision - Prend toute la largeur */
+.expertise-card.main-card {
+    grid-column: 1 / -1;
+    /* Span both columns */
+    background: var(--bg-card);
+    padding: 3rem;
+    border-radius: var(--radius-lg);
+    border: 2px solid var(--border);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: var(--transition-normal);
+}
+
+.expertise-card.main-card:hover {
+    border-color: var(--border-hover);
+    transform: translateY(-5px) scale(1.01);
+    box-shadow: 0 12px 30px var(--shadow-hover);
+}
+
+.expertise-card.main-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.expertise-card.main-card p {
+    max-width: 600px;
+    color: var(--text-muted);
+    line-height: 1.6;
+}
+
+.card-icon {
+    font-size: 2.5rem;
+    color: var(--primary);
+    margin-bottom: 1.5rem;
+    background: rgba(255, 118, 0, 0.1);
+    border: 2px solid var(--primary);
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+/* Colonnes de projets */
+.expertise-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.column-title {
+    font-size: 1.3rem;
+    margin-bottom: 1.5rem;
+    color: var(--text-main);
+    border-left: 4px solid var(--primary);
+    padding-left: 1rem;
+    font-weight: 600;
+}
+
+/* Cartes de projet - BEAUCOUP plus grandes et aérées */
+.project-card {
+    background: var(--bg-card);
+    padding: 2rem 2.5rem;
+    border-radius: var(--radius-lg);
+    border: 2px solid var(--border);
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    transition: var(--transition-normal);
+    cursor: pointer;
+    min-height: 120px;
+}
+
+.project-card:last-child {
+    margin-bottom: 0;
+}
+
+.project-card:hover {
+    transform: translateY(-5px) scale(1.02);
+    border-color: var(--border-hover);
+    background: var(--bg-card-hover);
+    box-shadow: 0 12px 30px var(--shadow-hover);
+}
+
+.project-icon {
+    font-size: 2rem;
+    color: var(--primary);
+    width: 80px; /* Changé de min-width pour forcer le format carré */
+    height: 80px;
+    background: var(--bg-card);
+    border: 2px solid var(--primary);
+    border-radius: var(--radius-md);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.project-icon-img {
+    max-width: 95%;
+    max-height: 95%;
+    object-fit: contain;
+}
+
+.project-icon-img--radiall {
+    max-width: 75%;
+    max-height: 75%;
+}
+
+.project-icon-img--pastille {
+    max-width: 85%;
+    max-height: 85%;
+}
+
+.project-icon-img--apprentissage {
+    max-width: 85%;
+    max-height: 85%;
+}
+
+.project-info h4 {
+    font-size: 1.35rem;
+    margin-bottom: 0.75rem;
+    color: var(--text-main);
+    font-weight: 600;
+}
+
+.project-info p {
+    font-size: 1.05rem;
+    color: var(--text-muted);
+    line-height: 1.6;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .expertise-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .expertise-card.main-card {
+        grid-column: 1;
+    }
+}
+
+@media (max-width: 600px) {
+    .expertise-section .section-intro-banner {
+        max-width: 100%;
+    }
+
+    .project-card {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .project-icon {
+        margin: 0 auto;
+    }
+}

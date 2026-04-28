@@ -1,0 +1,201 @@
+/* Volleyball Section */
+.volleyball-section.active {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    /* padding-top géré dans layout.css */
+    padding-bottom: 40px;
+}
+
+/* Grille Volleyball - 2 colonnes comme expertise */
+.volleyball-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+/* Centre la dernière carte (Palmarès) sur desktop car il y en a 3 */
+@media (min-width: 901px) {
+    .volley-card:last-child {
+        grid-column: 1 / span 2;
+        max-width: calc(50% - 1rem);
+        margin: 0 auto;
+        width: 100%;
+    }
+}
+
+/* Cartes Volleyball - Alignées sur le style "Ingénierie & Mesures" */
+.volley-card {
+    background: var(--bg-card);
+    padding: 2rem 2.5rem;
+    border-radius: var(--radius-lg);
+    border: 2px solid var(--border);
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    transition: var(--transition-normal);
+    cursor: pointer;
+    min-height: 140px;
+    text-align: left;
+}
+
+.volley-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--border-hover);
+    background: var(--bg-card-hover);
+    box-shadow: 0 12px 30px var(--shadow-hover);
+}
+
+.volley-card .card-header {
+    display: flex;
+    flex-direction: row; /* Horizontal */
+    align-items: center;
+    gap: 2rem;
+    width: 100%;
+}
+
+/* Design de l'icône - Style Projet */
+.volley-card .card-header i,
+.volley-card .card-header .card-header-img-container {
+    font-size: 2.2rem;
+    color: var(--primary);
+    min-width: 70px;
+    width: 70px;
+    height: 70px;
+    background: var(--bg-card);
+    border: 2px solid var(--primary);
+    border-radius: var(--radius-md);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    position: relative;
+    transition: var(--transition-normal);
+    overflow: hidden; /* Pour garder les images dans le cadre */
+}
+
+/* Style spécifique pour l'icône FontAwesome seule */
+.volley-card .card-header i {
+    padding: 0;
+}
+
+/* Gestion des images dans le conteneur */
+.volley-card .card-header .card-header-img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%; /* Ajuste la taille du logo dans la case */
+    height: 80%;
+    object-fit: contain;
+    transition: opacity var(--transition-normal);
+}
+
+.volley-card .card-header .img-hover {
+    opacity: 0;
+}
+
+/* Animation au survol */
+.volley-card:hover .card-header i,
+.volley-card:hover .card-header .card-header-img-container {
+    background: var(--primary);
+    color: white;
+    transform: scale(1.05);
+}
+
+.volley-card:hover .card-header .img-default {
+    opacity: 0;
+}
+
+.volley-card:hover .card-header .img-hover {
+    opacity: 1;
+}
+
+.volley-card .card-info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.volley-card .card-header h3 {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--text-main);
+    margin: 0;
+}
+
+.volley-card .card-description {
+    font-size: 1.05rem;
+    color: var(--text-muted);
+    line-height: 1.4;
+    margin: 0;
+}
+
+@media (max-width: 900px) {
+    .volleyball-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+    .volley-card {
+        flex-direction: column;
+        text-align: center;
+        padding: 2rem;
+    }
+    
+    .volley-card .card-header {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .volley-card .card-header i {
+        margin: 0 auto;
+    }
+}
+
+/* Subsections dans les cartes (si présentes, masquées par défaut pour épuré ou stylisées) */
+.card-subsection {
+    margin-top: 1.5rem;
+    width: 100%;
+    opacity: 0.8;
+}
+
+.card-subsection h4 {
+    display: none; /* On cache les sous-titres pour garder le design "carte d'accès" épuré */
+}
+
+.volley-list li {
+    margin-bottom: 0.75rem;
+    color: var(--text-muted);
+    position: relative;
+    padding-left: 1.25rem;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.volley-list li::before {
+    content: '•';
+    color: var(--primary);
+    position: absolute;
+    left: 0;
+}
+
+.volley-list li.highlight {
+    color: var(--text-main);
+    font-weight: 600;
+}
+
+@media (max-width: 767px) {
+    .volleyball-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .volley-card {
+        min-height: auto;
+        padding: 1.5rem;
+    }
+}

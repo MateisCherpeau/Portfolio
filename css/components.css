@@ -1,0 +1,74 @@
+/* Buttons */
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 24px;
+    border-radius: 50px;
+    font-weight: 600;
+    font-family: var(--font-heading);
+    cursor: pointer;
+    transition: var(--transition-normal);
+}
+
+.btn-primary {
+    background: var(--gradient-primary);
+    color: white;
+    box-shadow: 0 4px 15px var(--primary-glow);
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px var(--primary-glow);
+}
+
+.btn-outline {
+    background: transparent;
+    border: 2px solid var(--border);
+    color: var(--text-main);
+}
+
+.btn-outline:hover {
+    border-color: var(--primary);
+    background: rgba(59, 130, 246, 0.1);
+}
+
+/* Section Intro Banner */
+.section-intro-banner {
+    background: transparent;
+    border-left: 4px solid var(--primary);
+    padding: 2rem 2.5rem;
+    border-radius: 0 var(--radius-lg) var(--radius-lg) 0;
+    margin-bottom: 3rem;
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.section-intro-banner p {
+    font-size: 1.1rem;
+    color: var(--text-muted);
+    line-height: 1.8;
+    margin: 0;
+}
+
+.section-intro-banner strong {
+    color: var(--text-main);
+    font-weight: 600;
+}
+
+.section-intro-banner.placeholder {
+    background: linear-gradient(135deg, rgba(100, 100, 100, 0.08) 0%, rgba(100, 100, 100, 0.02) 100%);
+    border-left-color: var(--text-muted);
+}
+
+.section-intro-banner.placeholder p {
+    font-style: italic;
+    opacity: 0.7;
+}
+
+@media (max-width: 767px) {
+    .section-intro-banner {
+        padding: 1.5rem;
+    }
+}

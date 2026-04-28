@@ -1,0 +1,1735 @@
+/* =========================================
+   MODAL/OVERLAY COMPONENT
+   ========================================= */
+
+/* Overlay Background */
+.modal-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.65); /* Plus transparent et moins noir */
+    backdrop-filter: blur(6px); /* Flou réduit pour mieux voir le fond */
+    -webkit-backdrop-filter: blur(6px);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem;
+    overflow-y: auto;
+}
+
+.modal-overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Prevent body scroll when modal is open */
+body.modal-open {
+    overflow: hidden;
+}
+
+/* Modal Container */
+.modal-container {
+    background: var(--bg-card);
+    border-radius: var(--radius-lg);
+    max-width: 1100px;
+    max-height: 92vh;
+    width: 100%;
+    transform: scale(0.9) translateY(30px);
+    opacity: 0;
+    transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1), opacity 0.3s ease;
+    border: 1px solid var(--border);
+    box-shadow: 0 25px 80px rgba(0, 0, 0, 0.5);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+/* Scroll Content Wrapper */
+.modal-scroll-content {
+    overflow-y: auto;
+    overflow-x: hidden;
+    height: 100%;
+    width: 100%;
+    scrollbar-width: thin;
+    scrollbar-color: rgba(255, 118, 0, 0.3) transparent;
+}
+
+/* Webkit scrollbar styling */
+.modal-scroll-content::-webkit-scrollbar {
+    width: 8px;
+}
+
+.modal-scroll-content::-webkit-scrollbar-track {
+    background: transparent;
+    border-radius: 0;
+    margin: 0;
+}
+
+.modal-scroll-content::-webkit-scrollbar-thumb {
+    background: rgba(255, 118, 0, 0.25);
+    border-radius: 10px;
+    border: 2px solid transparent;
+    background-clip: padding-box;
+}
+
+.modal-scroll-content::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 118, 0, 0.45);
+    background-clip: padding-box;
+}
+
+.modal-overlay.active .modal-container {
+    transform: scale(1) translateY(0);
+    opacity: 1;
+}
+
+/* Close Button */
+.modal-close {
+    position: absolute;
+    top: 1.25rem;
+    right: 1.25rem;
+    width: 44px;
+    height: 44px;
+    border: none;
+    background: var(--bg-card-hover);
+    border-radius: 50%;
+    font-size: 1.5rem;
+    color: var(--text-muted);
+    cursor: pointer;
+    transition: all var(--transition-fast);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+}
+
+.modal-close:hover {
+    background: var(--primary);
+    color: white;
+    transform: rotate(90deg);
+}
+
+/* Modal Header */
+.modal-header {
+    padding: 1.5rem 5rem 1.25rem 2.5rem;
+    border-bottom: 1px solid var(--border);
+    background: var(--bg-card);
+    display: flex;
+    justify-content: space-between; /* Aligne le contenu à gauche et les logos à droite */
+    align-items: center;
+    gap: 1rem; /* Réduit l'espace général dans le header */
+}
+
+.modal-left-logo {
+    height: 50px; /* Taille légèrement augmentée pour les icônes IUT, MP, Univ */
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-shrink: 0;
+    gap: 0.8rem;
+}
+
+.modal-left-logo img {
+    height: 100%;
+    width: auto;
+    object-fit: contain;
+    mix-blend-mode: multiply;
+}
+
+.modal-header-content {
+    flex: 1 1 auto; /* Permet au contenu de prendre l'espace disponible */
+}
+
+/* Modal Brand Logo */
+.modal-brand-logo {
+    min-height: 60px;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; /* Aligne les logos de marque à droite */
+    flex-shrink: 0;
+    gap: 1rem;
+    margin-left: 1rem;
+}
+
+.modal-left-logo img,
+.modal-brand-logo img {
+    height: 60px; /* Taille de base pour les images */
+    width: auto;
+    object-fit: contain;
+    mix-blend-mode: multiply;
+}
+
+/* Zoom spécifique sur le logo LDC car l'image a beaucoup de vide autour */
+.modal-logo--ldc {
+    transform: scale(3.2);
+    margin: 0 3.5rem;
+}
+
+.modal-logo--unss {
+    transform: scale(1.8);
+    margin: 0 1rem;
+}
+
+.modal-logo--rssc {
+    transform: scale(1.8);
+    margin: 0 1rem;
+}
+
+.modal-logo--aajb {
+    height: 140px !important;
+    transform: scale(1) !important;
+    margin: 0 0.5rem;
+}
+
+.modal-logo--ffvb {
+    transform: scale(1.8);
+    margin: 0 1rem;
+}
+
+.modal-logo--ffvb {
+    transform: scale(1.8);
+    margin: 0 1rem;
+}
+
+.modal-logo--eso {
+    transform: scale(1.4);
+    margin: 0 1.25rem; /* Espace augmenté */
+}
+
+.modal-logo--pc {
+    height: 85px !important; /* Taille ajustée pour un meilleur équilibre */
+    transform: scale(1) !important;
+}
+
+.modal-logo--com-com {
+    height: 150px !important;
+    transform: scale(1) !important;
+    margin: 0 0.5rem;
+}
+
+.modal-logo--ufcv {
+    margin-left: -0.75rem;
+}
+
+.modal-logo--snc {
+    height: 120px !important;
+    transform: scale(1) !important;
+    margin: 0 0.1rem;
+}
+
+.modal-logo--canva {
+    height: 90px !important;
+    transform: scale(1) !important;
+    margin: 0 1.25rem;
+}
+
+.modal-logo--capcut {
+    height: 70px !important;
+    transform: scale(1) !important;
+    margin: 0 1.25rem;
+}
+
+.modal-logo--photoshop {
+    height: 65px !important;
+    transform: scale(1) !important;
+    margin: 0 1.25rem;
+}
+
+.modal-logo--vgf {
+    height: 135px !important;
+    transform: scale(1) !important;
+    margin: 0 0.5rem;
+}
+
+.modal-logo--oleron {
+    height: 100px !important;
+    transform: scale(1) !important;
+    margin: 0 0.5rem;
+}
+
+.modal-logo--lvf {
+    height: 80px !important;
+    transform: scale(1) !important;
+    margin: 0 0.5rem;
+}
+
+.modal-logo--mbv {
+    height: 105px !important;
+    transform: scale(1) !important;
+    margin: 0 0.5rem;
+}
+
+.modal-logo--comite41 {
+    height: 130px !important;
+    transform: scale(1) !important;
+    margin: 0 0.1rem;
+}
+
+.modal-logo--iut,
+.modal-logo--suaps,
+.modal-logo--univ {
+    height: 85px !important;
+    transform: scale(1) !important;
+    margin: 0 0.5rem;
+}
+
+.modal-logo--aajb {
+    height: 115px !important;
+    transform: scale(1) !important;
+    margin: 0 0.5rem;
+}
+
+/* 2 columns for SNC skills */
+.modal-social-context #modalSkillsRow {
+    /* Rule moved below default modalSkillsRow */
+}
+
+@media (max-width: 768px) {
+    .modal-social-context #modalSkillsRow {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+}
+
+/* Specific gallery styling for Comité 41 */
+[data-active-modal="sc-developpement-comite41"] .modal-gallery-item img {
+    aspect-ratio: 3/4 !important;
+}
+
+.modal-social-icon {
+    font-size: 3.5rem;
+    color: var(--primary) !important; /* Force orange */
+    margin: 0 0.75rem;
+    display: flex;
+    align-items: center;
+}
+
+/* On utilise une astuce pour le thème sombre : on inverse les couleurs pour rendre le blanc noir (transparent via screen) et on remet la teinte originale */
+[data-theme="dark"] .modal-brand-logo img {
+    mix-blend-mode: screen; /* Supprime le fond noir (anciennement blanc) */
+    filter: invert(1) hue-rotate(180deg) brightness(1.1);
+}
+
+.modal-title {
+    font-family: var(--font-heading);
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: var(--primary); /* Passage au orange basique */
+    margin: 0 0 0.5rem;
+}
+
+.modal-period {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-family: var(--font-body);
+    font-size: 0.95rem;
+    color: var(--primary);
+    font-weight: 600;
+    padding: 0.35rem 0.85rem;
+    background: var(--bg-card);
+    border-radius: 20px;
+    border: 1px solid var(--primary);
+}
+
+.modal-period::before {
+    content: '\f073';
+    font-family: 'Font Awesome 6 Free';
+    font-weight: 900;
+    font-size: 0.8rem;
+}
+
+/* Modal Body */
+.modal-body {
+    padding: 1.5rem 2.5rem 2.5rem;
+}
+
+/* Section Styling */
+.modal-section {
+    margin-bottom: 2rem;
+}
+
+.modal-section:last-child {
+    margin-bottom: 0;
+}
+
+.modal-philosophy {
+    border-top: var(--border-width) solid var(--border);
+    padding-top: 2rem;
+    margin-top: 1rem;
+}
+
+.modal-philosophy .modal-list-grid li {
+    padding-left: 1.5rem; /* Espace pour la puce à l'intérieur */
+}
+
+.modal-philosophy .modal-list-grid li::before {
+    left: 0; /* Aligne la puce avec le début du titre */
+}
+
+.modal-philosophy ul.two-columns {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.5rem 2.5rem; /* Espace entre lignes et colonnes */
+}
+
+@media (max-width: 600px) {
+    .modal-philosophy ul.two-columns {
+        grid-template-columns: 1fr;
+    }
+}
+
+.modal-section-title {
+    font-family: var(--font-heading);
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--text-main);
+    margin: 0 0 1rem;
+    display: flex;
+    align-items: center !important;
+    gap: 1.1rem !important; /* Espace équilibré entre icône et texte */
+}
+
+/* Specific spacing for major headers (with border top) */
+.modal-section-title.major-header {
+    margin-top: 3rem;
+    padding-top: 2.5rem;
+    border-top: var(--border-width) solid var(--border);
+}
+
+/* On force une largeur fixe à l'icône pour que le texte commence toujours au même endroit */
+.modal-section-title i, 
+.modal-section-title img.major-header-img,
+.modal-section-title img.modal-section-icon-img {
+    color: var(--primary) !important; /* Force orange color */
+    font-size: 1.35rem;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    width: 2.4rem !important; /* Largeur augmentée */
+    height: 2.4rem !important;
+    text-align: center !important;
+    flex-shrink: 0 !important;
+    margin: 0 !important;
+    object-fit: contain;
+}
+
+.modal-section-title.split-left-title {
+    /* Suppression de la classe spécifique pour utiliser le style standardisé */
+}
+
+/* Decrease space above the first major header in SNC to avoid excessive gap */
+[data-active-modal="service-civique"] .modal-missions .major-header:first-of-type {
+    margin-top: 0.5rem !important;
+    padding-top: 0 !important;
+    border-top: none !important;
+}
+
+/* Transparence des barres oranges spécifique à la page Palmarès */
+.modal-palmares-context .mission-group-header {
+    border-bottom-color: rgba(255, 118, 0, 0.3) !important;
+}
+
+.modal-section p {
+    font-family: var(--font-body);
+    color: var(--text-main);
+    line-height: 1.8;
+    margin: 0;
+    margin-bottom: 1rem; /* Augmentation de l'espace entre les paragraphes */
+}
+
+/* Roster specific styling */
+.modal-team p {
+    margin-bottom: 0.5rem;
+}
+
+/* Bullet for general roster info (e.g., "Effectif jeune") */
+.roster-bullet {
+    color: var(--primary); /* Orange */
+    margin-right: 0.5rem;
+    font-weight: bold;
+}
+
+/* Specific overrides for Social Media Management page */
+[data-active-modal="sc-reseaux-sociaux"] .modal-social-icon {
+    font-size: 80px !important;
+}
+
+[data-active-modal="sc-reseaux-sociaux"] .modal-logo--snc {
+    height: 120px !important; /* Back to standard size */
+}
+
+/* Force hide only the DEFAULT Missions title for specific SNC pages to avoid redundancy, while keeping major headers */
+[data-active-modal="service-civique"] .modal-missions > .modal-section-title {
+    margin-top: 1.5rem !important;
+}
+
+[data-active-modal="sc-reseaux-sociaux"] .modal-missions > .modal-section-title:not(.major-header) {
+    display: none !important;
+}
+
+/* Modal Skills Section spacing */
+.modal-skills {
+    margin-bottom: 0 !important; /* Presque aucun espace sous la dernière ligne de compétence */
+}
+
+#modalRelated {
+    margin-top: 0.5rem !important; /* Colle la barre de séparation plus près des compétences */
+    padding-top: 2.25rem !important; /* Ajoute de l'espace entre la barre et le texte "Voir aussi" */
+}
+
+/* Barre de séparation et spacement entre Contexte et Communication & Image dans SNC */
+[data-active-modal="service-civique"] #modalContext p {
+    margin-bottom: 0 !important;
+}
+
+[data-active-modal="service-civique"] #modalMissions {
+    margin-top: 0.2rem !important;
+    padding-top: 0 !important;
+    border-top: var(--border-width) solid var(--border) !important;
+}
+
+[data-active-modal="service-civique"] .modal-missions .major-header:first-of-type {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+    border-top: none !important;
+}
+
+/* List for specific players / sub-items */
+.modal-inner-list {
+    list-style: none;
+    padding-left: 1.5rem; /* Réduit un peu pour gagner de la place */
+    margin-top: 1rem !important; /* Réduction légère de l'espace sous le titre gras (était 1.5rem) */
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+
+/* Specific rule for strong followed by list in missions */
+.modal-missions li strong + ul.modal-inner-list {
+    margin-top: 1rem !important; /* Réduction légère */
+}
+
+.modal-inner-list li {
+    position: relative;
+    margin-bottom: 0.2rem;
+    font-size: 0.9rem;
+    color: var(--text-main);
+    padding-left: 1rem;
+}
+
+/* Bullet for players (orange dot) */
+.modal-inner-list li::before {
+    content: "•"; /* Simple dot */
+    font-family: var(--font-body);
+    font-weight: bold;
+    font-size: 1.2rem;
+    position: absolute;
+    left: -1.2rem;
+    top: -4px; /* Adjust vertical alignment */
+    color: var(--primary) !important;
+}
+
+.modal-list-title {
+    font-size: 1rem; /* Réduction de la taille de police si nécessaire, par défaut 1rem */
+}
+
+/* Formation Layout (Special for BUT MP) */
+.modal-formation-layout {
+    display: flex;
+    flex-direction: column;
+}
+
+.formation-paragraph {
+    font-family: var(--font-body);
+    color: var(--text-main);
+    line-height: 1.8;
+    margin: 0;
+    font-size: 1rem;
+}
+
+.modal-link {
+    color: var(--primary);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    font-weight: 600;
+    transition: all var(--transition-fast);
+}
+
+.modal-link:hover {
+    color: var(--secondary);
+    text-decoration-thickness: 2px;
+}
+
+/* Specific Spacing for Major Sections */
+#modalSkillsRow, #modalMissions, #modalGallery, #modalMaterial, #modalTeam, #modalObjective, #modalContext, #modalCompetences, #modalRelated, #modalResults, #modalTrainingStructure {
+    margin-top: 2rem;
+    padding-top: 1.5rem;
+    border-top: var(--border-width) solid var(--border);
+}
+
+/* Sport specific grid row (Positions and Teams Rep) */
+.modal-grid-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    margin-top: 2rem;
+    padding-top: 2rem;
+    border-top: var(--border-width) solid var(--border);
+}
+
+#modalSkillsRow {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-top: 2rem;
+    padding-top: 2rem;
+    border-top: var(--border-width) solid var(--border);
+}
+
+.modal-social-context #modalSkillsRow,
+.modal-engineering-context #modalSkillsRow,
+[data-active-modal="encadrement-sc-volley"] #modalSkillsRow {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+}
+
+@media (max-width: 768px) {
+    .modal-social-context #modalSkillsRow,
+    .modal-engineering-context #modalSkillsRow,
+    [data-active-modal="encadrement-sc-volley"] #modalSkillsRow {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+}
+
+.modal-grid-row .modal-section {
+    margin-top: 0;
+    padding-top: 0;
+    border-top: none;
+}
+
+@media (max-width: 768px) {
+    .modal-grid-row {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+}
+
+/* Programme & Matières Grid */
+.modal-competences-categories {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 colonnes parallèles sur desktop */
+    gap: 1.5rem; /* Réduit un peu le gap pour que les 4 tiennent bien */
+    margin-top: 1rem;
+    padding-left: 1.2rem;
+}
+
+@media (max-width: 1200px) {
+    .modal-competences-categories {
+        grid-template-columns: repeat(2, 1fr); /* 2 colonnes sur tablettes */
+    }
+}
+
+@media (max-width: 600px) {
+    .modal-competences-categories {
+        grid-template-columns: 1fr; /* 1 colonne sur mobile */
+        padding-left: 1.2rem;
+    }
+}
+
+.competence-category-column {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.competence-category-title {
+    font-family: var(--font-heading);
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--secondary);
+    margin: 0;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid rgba(255, 118, 0, 0.3);
+    /* Alignement des barres de soulignement */
+    min-height: 3.5rem; /* Espace pour 2 lignes de texte */
+    display: flex;
+    align-items: flex-end; /* Texte collé à la barre en bas */
+}
+
+.modal-list-grid {
+    display: grid;
+    grid-template-columns: 1fr; /* Single column inside category */
+    gap: 0.5rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.modal-list-grid li {
+    font-family: var(--font-body);
+    color: var(--text-main);
+    line-height: 1.5;
+    padding-left: 0; /* Alignement du texte avec le titre */
+    position: relative;
+    font-size: 0.9rem;
+}
+
+.modal-list-grid li::before {
+    content: "\f00c"; /* Check icon */
+    font-family: 'Font Awesome 6 Free';
+    font-weight: 900;
+    color: var(--primary);
+    position: absolute;
+    left: -1.2rem; /* Puce décalée à gauche de l'alignement principal */
+    font-size: 0.75rem;
+    top: 5px;
+}
+
+.modal-list {
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0;
+}
+
+.modal-list li {
+    font-family: var(--font-body);
+    color: var(--text-main);
+    line-height: 1.6;
+    margin-bottom: 1rem;
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+.modal-list li::before {
+    content: "•";
+    color: var(--primary);
+    font-weight: bold;
+    font-size: 1.2rem;
+    position: absolute;
+    left: 0;
+    top: -2px;
+}
+
+.modal-volley-context .modal-list li::before {
+    content: "\f111"; /* Circle icon to match volleyball style */
+    font-family: 'Font Awesome 6 Free';
+    font-size: 0.5rem;
+    top: 6px;
+}
+
+.modal-list-title {
+    color: var(--secondary);
+    font-weight: 700;
+    display: inline-block;
+    min-width: 180px; /* Align titles */
+    margin-right: 0.5rem;
+}
+
+/* Bullets for sport-related lists */
+.modal-positions li,
+.modal-teams-rep li,
+.modal-results li {
+    padding-left: 0;
+    position: relative;
+}
+
+.modal-positions li::before,
+.modal-teams-rep li::before,
+.modal-results li::before {
+    content: "\f111"; /* Dot icon (Circle) */
+    font-family: 'Font Awesome 6 Free';
+    font-weight: 900;
+    color: var(--primary);
+    position: absolute;
+    left: -1.5rem;
+    font-size: 0.5rem; /* Point plus petit */
+    top: 8px;
+}
+
+/* Philosophie uses dots too */
+.modal-philosophy .modal-list-grid li::before {
+    content: "\f111";
+    font-family: 'Font Awesome 6 Free';
+    font-weight: 900;
+    color: var(--primary);
+    font-size: 0.5rem;
+    top: 8px;
+}
+
+/* Hard skills in volley context use dots */
+.modal-volley-context .modal-hard-skills li::before {
+    content: "\f111";
+    font-family: 'Font Awesome 6 Free';
+    font-weight: 900;
+    color: var(--primary);
+    font-size: 0.5rem;
+    top: 8px;
+}
+
+/* On décale seulement les listes pour laisser de la place aux puces, pas les titres */
+.modal-positions ul, .modal-teams-rep ul, .modal-results ul {
+    margin-left: 2.5rem;
+}
+
+#modalSkillsSection {
+    margin-top: 2.5rem;
+}
+
+#modalSummary {
+    margin-bottom: 2rem;
+}
+
+#modalSummary p {
+    font-size: 1.05rem; /* Taille légèrement réduite pour le résumé */
+    line-height: 1.7;
+    margin-bottom: 1rem;
+}
+
+/* Summary Section */
+.modal-summary {
+    background: var(--bg-card);
+    padding: 1.5rem;
+    border-radius: var(--radius-md);
+    border-left: 4px solid var(--secondary);
+    border: 1px solid var(--border);
+    margin-bottom: 2rem;
+}
+
+.modal-summary p {
+    color: var(--text-main);
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+.modal-missions {
+    border-top: var(--border-width) solid var(--border);
+    padding-top: 2rem;
+    margin-top: 1rem;
+}
+
+.modal-body > .modal-missions:first-child,
+#modalSummary + .modal-missions {
+    border-top: none;
+    padding-top: 0;
+}
+
+/* Missions List */
+.modal-missions ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    gap: 0.8rem;
+}
+
+.modal-missions li {
+    font-family: var(--font-body);
+    color: var(--text-main);
+    line-height: 1.7;
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+.modal-missions li::before {
+    content: "\f00c"; /* Check icon */
+    font-family: 'Font Awesome 6 Free';
+    font-weight: 900;
+    color: var(--primary);
+    position: absolute;
+    left: 0;
+    font-size: 0.8rem;
+    top: 6px;
+}
+
+/* New Lists styling (Hard/Soft Skills) */
+.modal-hard-skills ul, .modal-soft-skills ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    gap: 0.5rem;
+}
+
+.modal-hard-skills li, .modal-soft-skills li {
+    font-family: var(--font-body);
+    color: var(--text-main);
+    line-height: 1.6;
+    padding-left: 1.2rem;
+    position: relative;
+}
+
+.modal-hard-skills li::before {
+    content: "\f0ad"; /* Wrench icon */
+    font-family: 'Font Awesome 6 Free';
+    font-weight: 900;
+    color: var(--primary);
+    position: absolute;
+    left: 0;
+    font-size: 0.8rem;
+    top: 4px;
+}
+
+.modal-social-context .modal-missions li::before {
+    content: "";
+    width: 6px;
+    height: 6px;
+    background-color: #FF7600 !important;
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+    top: 0.65rem;
+}
+
+.modal-social-context .modal-hard-skills li,
+.modal-social-context .modal-soft-skills li {
+    padding-left: 2rem; /* Retrait augmenté */
+}
+
+.modal-social-context .modal-hard-skills li::before,
+.modal-social-context .modal-soft-skills li::before {
+    content: "";
+    width: 6px;
+    height: 6px;
+    background-color: #FF7600 !important;
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+    top: 0.65rem;
+}
+
+.modal-hard-skills ul.two-columns {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.5rem 2rem;
+}
+
+@media (max-width: 600px) {
+    .modal-hard-skills ul.two-columns {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Icône spécifique pour le volley */
+.modal-volley-context .modal-hard-skills li::before {
+    content: "\f111"; /* Dot icon (Circle) */
+    font-size: 0.5rem; /* Réduire la taille du point pour qu'il soit discret */
+    top: 8px; /* Ajuster l'alignement vertical */
+}
+
+.modal-soft-skills li::before {
+    content: "\f00c"; /* Check icon */
+    font-family: 'Font Awesome 6 Free';
+    font-weight: 900;
+    color: var(--secondary);
+    position: absolute;
+    left: 0;
+    font-size: 0.8rem;
+    top: 4px;
+}
+
+/* =========================================
+   LIGHTBOX COMPONENT
+   ========================================= */
+.lightbox {
+    display: none;
+    position: fixed;
+    z-index: 2000;
+    padding-top: 50px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.95);
+    backdrop-filter: blur(5px);
+    justify-content: center;
+    align-items: center;
+}
+
+.lightbox.active {
+    display: flex;
+    animation: fadeIn 0.3s;
+}
+
+.lightbox-content {
+    margin: auto;
+    display: block;
+    max-width: 90%;
+    max-height: 90vh;
+    border-radius: 4px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+    animation: zoomIn 0.3s;
+}
+
+.lightbox-close {
+    position: absolute;
+    top: 20px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+    cursor: pointer;
+    z-index: 2001;
+}
+
+.lightbox-close:hover,
+.lightbox-close:focus {
+    color: var(--primary);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.lightbox-caption {
+    position: absolute;
+    bottom: 20px;
+    left: 35px;
+    color: #fff;
+    font-family: var(--font-body);
+    font-size: 1.1rem;
+    font-weight: 500;
+    text-align: left;
+    max-width: 80%;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    z-index: 2001;
+    animation: fadeIn 0.5s;
+}
+
+/* Gallery Caption (Visible without opening) */
+.gallery-caption {
+    display: block;
+    font-family: var(--font-body);
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    margin-top: 0.5rem;
+    line-height: 1.4;
+    padding: 0 0.25rem;
+}
+
+.modal-gallery-item {
+    display: flex;
+    flex-direction: column;
+    transition: transform var(--transition-fast);
+}
+
+.modal-gallery-item img {
+    aspect-ratio: 3/4;
+    border-radius: var(--radius-sm);
+    overflow: hidden;
+    cursor: pointer;
+    width: 100%;
+    height: auto;
+    object-fit: cover; /* Remplit tout le cadre 3/4 */
+    background: #ffffff;
+}
+
+/* Pour les images qui ne doivent pas être recadrées (ex: bannières) */
+.modal-gallery-item.unadapted img {
+    object-fit: contain !important;
+    background: #ffffff;
+}
+
+.modal-gallery-item:hover {
+    transform: translateY(-5px);
+}
+
+.modal-gallery-item:hover img {
+    box-shadow: 0 10px 20px rgba(255, 118, 0, 0.2);
+}
+
+@keyframes zoomIn {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+}
+
+@keyframes fadeIn {
+    from {opacity:0} 
+    to {opacity:1}
+}
+
+/* Mission Cards Grid */
+.modal-missions-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1rem;
+    margin-top: 0.5rem;
+}
+
+/* Group Headers */
+.mission-group-header {
+    grid-column: 1 / -1;
+    font-family: var(--font-heading);
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--primary);
+    padding: 0.75rem 0 0.5rem;
+    margin-top: 0.5rem;
+    border-bottom: 2px solid var(--primary);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.mission-group-header:first-child {
+    margin-top: 0;
+}
+
+.mission-group-header i {
+    font-size: 0.9rem;
+}
+
+.mission-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    padding: 1.25rem;
+    transition: all var(--transition-fast);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center !important; /* Centrage vertical total */
+    min-height: 85px; /* Harmonise la hauteur et permet le centrage vertical */
+}
+
+.mission-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    border-color: var(--primary);
+}
+
+.mission-card-title {
+    font-family: var(--font-heading);
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: var(--text-main);
+    margin: 0 !important; /* Supprime toute marge qui décentre */
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.mission-card-title i {
+    color: var(--primary) !important; /* Force orange color */
+    font-size: 0.85rem;
+}
+
+/* Clickable Diploma Card */
+.mission-card.mission-card-link {
+    cursor: pointer;
+    background: var(--bg-card);
+    border-color: var(--border);
+}
+
+.mission-card.mission-card-link:hover {
+    background: var(--bg-card-hover);
+    border-color: var(--primary);
+}
+
+.mission-card.mission-card-link::after {
+    content: '\f054';
+    font-family: 'Font Awesome 6 Free';
+    font-weight: 900;
+    position: absolute;
+    right: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--primary);
+    font-size: 0.9rem;
+    opacity: 0.6;
+    transition: all var(--transition-fast);
+}
+
+.mission-card.mission-card-link:hover::after {
+    opacity: 1;
+    right: 0.75rem;
+}
+
+/* Style spécial pour les Trophées/Palmarès */
+.mission-card-trophy {
+    border-color: rgba(255, 118, 0, 0.3) !important;
+    background: var(--bg-card) !important;
+    overflow: hidden;
+}
+
+.mission-card-trophy::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 4px;
+    height: 100%;
+    background: linear-gradient(to bottom, #FFD700, var(--primary));
+}
+
+.mission-card-trophy .mission-card-title i {
+    color: #FFD700 !important; /* Couleur Or pour le trophée */
+    font-size: 1.1rem;
+}
+
+.mission-card-trophy:hover {
+    border-color: var(--primary) !important;
+    background: linear-gradient(145deg, var(--bg-card-hover), rgba(255, 118, 0, 0.08)) !important;
+    box-shadow: 0 10px 30px rgba(255, 118, 0, 0.2) !important;
+}
+
+.mission-card-trophy:hover .mission-card-title i {
+    transform: scale(1.2) rotate(10deg);
+    transition: transform 0.3s ease;
+}
+
+.modal-split-layout h3.modal-section-title {
+    margin-top: 0;
+}
+
+/*
+   SPLIT LAYOUT (NEW)
+*/.modal-split-layout {
+    display: flex;
+    gap: 30px;
+    align-items: stretch;
+    margin-top: 1rem;
+}
+
+.modal-split-left {
+    flex: 1;
+}
+
+.modal-split-divider {
+    width: 2px;
+    background: var(--primary);
+    border-radius: 2px;
+    flex-shrink: 0;
+    margin: 0 10px;
+}
+
+.modal-split-right {
+    flex: 0.8;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Timeline Chronologique */
+.modal-timeline {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.timeline-season-block {
+    background: var(--bg-card);
+    border-left: 3px solid var(--primary);
+    padding: 1rem 1.25rem;
+    border-radius: var(--radius-md);
+    border: 1px solid var(--border);
+    border-left: 3px solid var(--primary);
+}
+
+.timeline-season-header {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    margin-bottom: 0.75rem;
+}
+
+.timeline-season-title {
+    font-family: var(--font-heading);
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: var(--primary);
+}
+
+.timeline-season-subtitle {
+    font-family: var(--font-body);
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    font-style: italic;
+}
+
+.timeline-items {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.timeline-item-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--bg-white);
+    padding: 0.75rem 1rem;
+    border-radius: var(--radius-sm);
+    border: 1px solid rgba(255, 118, 0, 0.15);
+    position: relative;
+    gap: 1rem;
+}
+
+.timeline-item-content {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    flex: 1;
+}
+
+.timeline-item-card-icon {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
+[data-theme="dark"] .timeline-item-card-icon {
+    filter: brightness(1.2);
+}
+
+/* Clickable Timeline Items */
+.timeline-item-clickable {
+    cursor: pointer;
+    transition: all var(--transition-fast);
+}
+
+.timeline-item-clickable:hover {
+    background: var(--bg-card-hover);
+    border-color: var(--primary);
+    transform: translateX(4px);
+    padding-right: 2rem; /* Espace pour la flèche */
+}
+
+.timeline-item-clickable::after {
+    content: '\f054';
+    font-family: 'Font Awesome 6 Free';
+    font-weight: 900;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--primary);
+    font-size: 0.8rem;
+    opacity: 0;
+    transition: opacity 0.2s;
+}
+
+.timeline-item-clickable:hover::after {
+    opacity: 1;
+}
+
+.timeline-item-title {
+    font-family: var(--font-body);
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--text-main);
+}
+
+.timeline-item-club {
+    font-family: var(--font-body);
+    font-size: 0.8rem;
+    color: var(--primary);
+    font-weight: 600;
+}
+
+/* Right Column Cards (Diplomas etc.) */
+.modal-right-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    padding: 1.25rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    cursor: pointer;
+    transition: all var(--transition-fast);
+}
+
+.modal-right-card:hover {
+    border-color: var(--primary);
+    background: var(--bg-card-hover);
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.modal-right-card-icon {
+    width: 60px;
+    height: 60px;
+    background: rgba(255, 118, 0, 0.1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    color: var(--primary);
+    flex-shrink: 0;
+    overflow: hidden;
+}
+
+.modal-right-card-icon-img {
+    width: 48px;
+    height: 48px;
+    object-fit: contain;
+}
+
+[data-theme="dark"] .modal-right-card-icon-img {
+    filter: brightness(1.2);
+}
+
+.modal-right-card-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.modal-right-card-title {
+    font-family: var(--font-heading);
+    font-weight: 600;
+    font-size: 1rem;
+    color: var(--text-main);
+    margin: 0 0 0.25rem 0;
+}
+
+.modal-right-card-desc {
+    font-family: var(--font-body);
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    margin: 0;
+}
+
+/* Gallery Section */
+.modal-gallery {
+    margin-top: 1.5rem;
+}
+
+.modal-gallery-title {
+    font-family: var(--font-heading);
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--text-main);
+    margin: 0 0 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.modal-gallery-title i {
+    color: var(--primary);
+}
+
+/* Video Highlights Section */
+.modal-video-highlights {
+    margin: 2rem 0;
+}
+
+.video-highlights-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+}
+
+.video-highlight-item {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.video-title {
+    font-weight: 600;
+    color: var(--primary);
+    font-size: 0.9rem;
+}
+
+.video-wrapper {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+    height: 0;
+    border-radius: 8px;
+    overflow: hidden;
+    background: #000;
+}
+
+.video-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+@media (max-width: 768px) {
+    .video-highlights-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.modal-gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1.5rem;
+}
+
+/* Additional styling for clickable materials */
+.modal-material p {
+    line-height: 1.6;
+}
+
+.modal-material-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.5rem 2rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.modal-material-grid li {
+    font-family: var(--font-body);
+    color: var(--text-main);
+    line-height: 1.6;
+    padding-left: 1.2rem;
+    position: relative;
+}
+
+.modal-material-grid li::before {
+    content: "\f0ad"; /* Wrench icon */
+    font-family: 'Font Awesome 6 Free';
+    font-weight: 900;
+    color: var(--primary);
+    position: absolute;
+    left: 0;
+    font-size: 0.8rem;
+    top: 4px;
+}
+
+.clickable-material {
+    display: inline-block;
+    color: var(--secondary);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    font-weight: 500;
+}
+
+.clickable-material:hover {
+    color: var(--primary);
+    transform: translateY(-1px);
+    text-decoration-thickness: 2px;
+}
+
+/* Skills/Tags */
+.modal-tags {
+    display: none;
+}
+
+.modal-tag {
+    font-family: var(--font-body);
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: var(--primary);
+    padding: 0.4rem 0.85rem;
+    background: rgba(255, 118, 0, 0.1);
+    border: 1px solid rgba(255, 118, 0, 0.2);
+    border-radius: 20px;
+    transition: all var(--transition-fast);
+}
+
+.modal-tag:hover {
+    background: var(--primary);
+    color: white;
+}
+
+/* Related Modals Links */
+.modal-related-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+}
+
+.modal-related-btn {
+    font-family: var(--font-body);
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--text-main);
+    padding: 0.6rem 1rem;
+    background: var(--bg-card-hover);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+    cursor: pointer;
+    transition: all var(--transition-fast);
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.modal-related-btn::before {
+    content: '\f0a9';
+    font-family: 'Font Awesome 6 Free';
+    font-weight: 900;
+    color: var(--primary);
+    font-size: 0.8rem;
+}
+
+.modal-related-btn:hover {
+    background: var(--primary);
+    color: white;
+    border-color: var(--primary);
+    transform: translateX(3px);
+}
+
+.modal-related-btn:hover::before {
+    color: white;
+}
+
+/* Clickable elements cursor */
+[data-modal] {
+    cursor: pointer;
+    transition: transform var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+[data-modal]:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(255, 118, 0, 0.15);
+}
+
+/* =========================================
+   RESPONSIVE
+   ========================================= */
+
+@media (max-width: 968px) {
+    .modal-split-layout {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .modal-split-divider {
+        width: 100%;
+        height: 2px;
+        margin: 10px 0;
+        background: var(--border);
+    }
+    
+    .modal-split-left, .modal-split-right {
+        flex: auto;
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .modal-overlay {
+        padding: 1rem;
+        align-items: flex-start;
+        padding-top: 3rem;
+    }
+
+    .modal-container {
+        max-height: 90vh;
+        border-radius: var(--radius-md);
+    }
+
+    .modal-header {
+        padding: 1.5rem 1.25rem 1.25rem;
+    }
+
+    .modal-title {
+        font-size: 1.35rem;
+    }
+
+    .modal-body {
+        padding: 1.25rem;
+    }
+
+    .modal-close {
+        top: 1rem;
+        right: 1rem;
+        width: 40px;
+        height: 40px;
+        font-size: 1.25rem;
+    }
+
+    .modal-gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .modal-material-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .modal-overlay {
+        padding: 0.5rem;
+        padding-top: 2rem;
+    }
+
+    .modal-title {
+        font-size: 1.2rem;
+    }
+
+    .modal-period {
+        font-size: 0.85rem;
+    }
+}
+
+/* Video in Gallery Support */
+.modal-gallery-item.video-item {
+    cursor: pointer;
+    position: relative;
+}
+
+.video-thumbnail-container {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 3 / 4;
+    background: #000;
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.video-thumbnail-container video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.7;
+}
+
+.video-play-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(255, 102, 0, 0.9);
+    color: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+    z-index: 2;
+}
+
+.modal-gallery-item:hover .video-play-icon {
+    transform: translate(-50%, -50%) scale(1.1);
+    background: var(--primary);
+}
+
+/* Lightbox video adjustments */
+#lightbox-video {
+    max-width: 90%;
+    max-height: 80vh;
+    border-radius: 8px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+}

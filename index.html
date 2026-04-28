@@ -1,0 +1,1011 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matéis Cherpeau | Portfolio</title>
+    <meta name="description"
+        content="Portfolio de Matéis Cherpeau - Étudiant en BUT Mesures Physiques, passionné de Volley-ball et de Communication.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/sections/hero.css">
+    <link rel="stylesheet" href="css/sections/about.css">
+    <link rel="stylesheet" href="css/sections/education.css">
+    <link rel="stylesheet" href="css/sections/expertise.css">
+    <link rel="stylesheet" href="css/sections/volleyball.css">
+    <link rel="stylesheet" href="css/sections/communication.css">
+    <link rel="stylesheet" href="css/sections/animation.css">
+    <link rel="stylesheet" href="css/sections/contact.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/theme-dark.css">
+    <link rel="stylesheet" href="css/components/modal.css">
+    <link rel="stylesheet" href="css/components/toolbox.css">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- MathJax for LaTeX rendering -->
+    <script>
+        MathJax = {
+            tex: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']],
+                displayMath: [['$$', '$$'], ['\\[', '\\]']]
+            },
+            chtml: {
+                scale: 0.9, /* Réduire l'échelle globale */
+                matchFontHeight: true /* Adapter à la hauteur de police environnante */
+            },
+            startup: {
+                pageReady: () => {
+                    return MathJax.startup.defaultPageReady();
+                }
+            }
+        };
+    </script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <a href="#home" class="logo">
+                    <img src="assets/profile.jpg" alt="Matéis Cherpeau" class="logo-photo">
+                    <span data-i18n="nav-name">MATÉIS CHERPEAU</span>
+                </a>
+
+                <div class="nav-menu">
+                    <ul class="nav-list" id="navList">
+                        <li class="nav-item"><a href="#home" class="nav-link active" data-i18n="nav-home">Accueil</a></li>
+                        <li class="nav-item"><a href="#about" class="nav-link" data-i18n="nav-about">À propos</a></li>
+                        <li class="nav-item"><a href="#expertise" class="nav-link" data-i18n="nav-expertise">Ingénierie & Mesures</a></li>
+                        <li class="nav-item"><a href="#volleyball" class="nav-link" data-i18n="nav-volley">Volley-ball</a></li>
+                        <li class="nav-item"><a href="#communication" class="nav-link" data-i18n="nav-com">Communication & Événementiel</a>
+                        </li>
+                        <li class="nav-item"><a href="#animation" class="nav-link" data-i18n="nav-animation">Animation</a></li>
+                        <li class="nav-item"><a href="#contact" class="nav-link" data-i18n="nav-contact">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="toolbox-wrapper">
+                    <div class="toolbox-btn" id="toolboxBtn" title="Boîte à outils">
+                        <i class="fas fa-toolbox"></i>
+                    </div>
+                    <div class="toolbox-menu" id="toolboxMenu">
+                        <div class="toolbox-item search-toolbox-item">
+                            <div class="search-wrapper">
+                                <i class="fas fa-search"></i>
+                                <input type="text" id="siteSearch" data-i18n-placeholder="search-placeholder" placeholder="Rechercher...">
+                            </div>
+                            <div id="searchResults" class="search-results"></div>
+                        </div>
+                        <div class="toolbox-item theme-toolbox-item">
+                            <span data-i18n="nav-theme-dark">Mode sombre</span>
+                            <label class="theme-switch" for="checkbox">
+                                <input type="checkbox" id="checkbox" />
+                                <div class="slider round"></div>
+                            </label>
+                        </div>
+                        <div class="toolbox-item" id="langToggle">
+                            <span data-i18n="nav-lang">Langue</span>
+                            <i class="fas fa-language"></i>
+                        </div>
+                        <div class="submenu-languages" id="langSubmenu">
+                            <div class="lang-option active" data-lang="fr">Français</div>
+                            <div class="lang-option" data-lang="en">English</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="header-controls">
+                    <div class="nav-toggle" id="navToggle">
+                        <i class="fas fa-bars"></i>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="home" class="hero-section">
+            <div class="hero-container">
+                <!-- Profile Side -->
+                <div class="profile-card-link fade-in-up" id="heroProfileCard">
+                    <div class="profile-card">
+                        <div class="profile-img-container">
+                            <img src="assets/profile.jpg" alt="MATÉIS CHERPEAU" class="profile-img">
+                        </div>
+                        <h1 class="profile-name" data-i18n="profile-title">PORTFOLIO</h1>
+                        <span class="profile-role" data-i18n="profile-role">MATÉIS CHERPEAU</span>
+                        <p class="profile-bio" data-i18n="profile-bio">
+                            Etudiant en BUT mesures physiques, alliant rigueur, curiosité et détermination, passioné de
+                            sport, de partage, et de performance.
+                        </p>
+                        <div class="social-mini-links">
+                            <a href="https://www.linkedin.com/in/mat%C3%A9is-cherpeau/" class="social-mini-btn"
+                                aria-label="LinkedIn" target="_blank">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a href="https://instagram.com/lamat_11" class="social-mini-btn" aria-label="Instagram" target="_blank">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="mailto:mateischerpeau37@gmail.com" class="social-mini-btn" aria-label="Email">
+                                <i class="fas fa-envelope"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Navigation Grid Side -->
+                <div class="nav-grid fade-in-up">
+                    <a href="#about" class="nav-tile">
+                        <div class="tile-icon"><i class="fas fa-user"></i></div>
+                        <div class="tile-content">
+                            <h3 data-i18n="nav-about">À propos</h3>
+                            <p data-i18n="subtitle-about">Formation, parcours et diplômes</p>
+                        </div>
+                        <i class="fas fa-arrow-right tile-arrow"></i>
+                    </a>
+
+                    <a href="#expertise" class="nav-tile">
+                        <div class="tile-icon"><i class="fas fa-microscope"></i></div>
+                        <div class="tile-content">
+                            <h3 data-i18n="nav-expertise">Ingénierie & Mesures</h3>
+                            <p data-i18n="subtitle-expertise">Projets académiques et expériences professionnelles</p>
+                        </div>
+                        <i class="fas fa-arrow-right tile-arrow"></i>
+                    </a>
+
+                    <a href="#volleyball" class="nav-tile">
+                        <div class="tile-icon"><i class="fas fa-volleyball-ball"></i></div>
+                        <div class="tile-content">
+                            <h3 data-i18n="nav-volley">Volley-ball</h3>
+                            <p data-i18n="subtitle-volley">Passion, Compétition et Entraînement</p>
+                        </div>
+                        <i class="fas fa-arrow-right tile-arrow"></i>
+                    </a>
+
+                    <a href="#communication" class="nav-tile">
+                        <div class="tile-icon"><i class="fas fa-bullhorn"></i></div>
+                        <div class="tile-content">
+                            <h3 data-i18n="nav-com">Communication & Événementiel</h3>
+                            <p data-i18n="subtitle-com">Création visuelle, réseaux sociaux et gestion d'événements</p>
+                        </div>
+                        <i class="fas fa-arrow-right tile-arrow"></i>
+                    </a>
+
+                    <a href="#animation" class="nav-tile">
+                        <div class="tile-icon"><i class="fas fa-child"></i></div>
+                        <div class="tile-content">
+                            <h3 data-i18n="nav-animation">Animation</h3>
+                            <p data-i18n="subtitle-animation">Animation, encadrement et transmission</p>
+                        </div>
+                        <i class="fas fa-arrow-right tile-arrow"></i>
+                    </a>
+
+                    <a href="#contact" class="nav-tile">
+                        <div class="tile-icon"><i class="fas fa-paper-plane"></i></div>
+                        <div class="tile-content">
+                            <h3 data-i18n="nav-contact">Contact</h3>
+                            <p data-i18n="subtitle-contact">Me joindre</p>
+                        </div>
+                        <i class="fas fa-arrow-right tile-arrow"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="about" class="section about-section section-fullwidth">
+            <div class="container">
+                <div class="section-header fade-in-up">
+                    <h2 class="section-title" data-i18n="title-about">À PROPOS</h2>
+                    <p class="section-subtitle" data-i18n="subtitle-about">Formation, parcours et diplômes</p>
+                    <div class="section-line"></div>
+                </div>
+
+                <!-- Texte introductif (Cahier des charges) -->
+                <div class="about-intro fade-in-up">
+                    <p data-i18n="about-bio">
+                        Jeune homme de 18 ans, je suis actuellement étudiant en première année de <strong>BUT Mesures
+                            Physiques</strong> à l'IUT de Blois. Je suis véritablement passionné par le
+                        <strong>sport</strong> et la <strong>performance athlétique</strong>. Mon dynamisme et ma
+                        curiosité me poussent à m'intéresser à de nombreux domaines, allant de la communication aux
+                        sciences, en passant par le sport et l'animation. Je suis un travailleur acharné, efficace et
+                        coriace, toujours déterminé à atteindre mes objectifs. J'ai une soif insatiable de découvrir le
+                        monde et de m'y investir pleinement, cherchant constamment à apprendre, transmettre et à mettre
+                        mes capacités à profit.
+                    </p>
+                </div>
+
+                <!-- Légende stylisée -->
+                <div class="parcours-legend-container fade-in-up">
+                    <div class="parcours-legend">
+                        <div class="legend-pill legend-pill--structure">
+                            <div class="legend-icon"><i class="fas fa-building"></i></div>
+                            <span class="legend-text" data-i18n="legend-structure">Structure</span>
+                        </div>
+                        <div class="legend-divider"></div>
+                        <div class="legend-pill legend-pill--diploma">
+                            <div class="legend-icon"><i class="fas fa-graduation-cap"></i></div>
+                            <span class="legend-text" data-i18n="legend-diploma">Diplôme ou certifications</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Parcours : Blocs Thématiques -->
+                <div class="parcours-layout parcours-blocks active" id="parcours-blocks">
+                    <!-- Formations et structures actuelles -->
+                    <div class="parcours-category fade-in-up">
+                        <h3 class="category-title"><i class="fas fa-clock"></i> <span data-i18n="cat-current">Formations et structures actuelles</span></h3>
+                        <div class="category-cards">
+                            <div class="parcours-card parcours-card--diploma parcours-card--upcoming" data-modal="but-mp">
+                                <div class="parcours-image-container">
+                                    <img src="assets/projects/iut/Icone IUT blanc.png" alt="Logo IUT" class="parcours-img parcours-img--but">
+                                </div>
+                                <div class="parcours-content">
+                                    <h4 data-i18n="but-title">BUT Mesures Physiques</h4>
+                                    <span class="parcours-subtitle" data-i18n="but-subtitle">IUT de Blois</span>
+                                    <div class="parcours-date-wrapper">
+                                        <span class="parcours-date">09/2024 - 08/2027</span>
+                                        <span class="parcours-badge parcours-badge--orange" data-i18n="badge-current">En cours</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="parcours-card parcours-card--structure parcours-card--upcoming" data-modal="stage-mp2">
+                                <div class="parcours-image-container">
+                                    <img src="assets/projects/radiall/radiall blanc.png" alt="Logo Radiall" class="parcours-img">
+                                </div>
+                                <div class="parcours-content">
+                                    <h4 data-i18n="stage-radiall-title">Stage Technique - Radiall</h4>
+                                    <span class="parcours-subtitle" data-i18n="stage-radiall-subtitle">Laboratoire d'essais</span>
+                                    <div class="parcours-date-wrapper">
+                                        <span class="parcours-date">04/2026 - 06/2026</span>
+                                        <span class="parcours-badge parcours-badge--green" data-i18n="badge-current">En cours</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="parcours-card parcours-card--structure parcours-card--upcoming" data-modal="service-civique">
+                                <div class="parcours-image-container">
+                                    <img src="assets/projects/service-civique/Icone snc blanc.png" alt="Logo Service Civique" class="parcours-img">
+                                </div>
+                                <div class="parcours-content">
+                                    <h4 data-i18n="sc-title">Service civique - AAJB</h4>
+                                    <span class="parcours-subtitle" data-i18n="sc-subtitle">Communication & Encadrement volley</span>
+                                    <div class="parcours-date-wrapper">
+                                        <span class="parcours-date">2025 - 2026</span>
+                                        <span class="parcours-badge parcours-badge--green" data-i18n="badge-current">En cours</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="parcours-card parcours-card--structure parcours-card--upcoming" data-modal="etudiant-relai">
+                                <div class="parcours-image-container">
+                                    <img src="assets/projects/suaps/Icone SUAPS blanc.png" alt="Logo SUAPS" class="parcours-img">
+                                </div>
+                                <div class="parcours-content">
+                                    <h4 data-i18n="er-title">SUAPS - Université de Tours</h4>
+                                    <span class="parcours-subtitle" data-i18n="er-subtitle">Étudiant Relai Sport</span>
+                                    <div class="parcours-date-wrapper">
+                                        <span class="parcours-date">09/2025 - 06/2026</span>
+                                        <span class="parcours-badge parcours-badge--green" data-i18n="badge-current">En cours</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="parcours-card parcours-card--diploma parcours-card--upcoming" data-modal="dre-2-detail">
+                                <div class="parcours-image-container">
+                                    <img src="assets/projects/ligue/icone ffvb blanc.png" alt="Logo FFVB" class="parcours-img">
+                                </div>
+                                <div class="parcours-content">
+                                    <h4 data-i18n="dre2-title">DRE 2</h4>
+                                    <span class="parcours-subtitle" data-i18n="dre2-subtitle">Diplôme Régional d'Entraineur 2</span>
+                                    <div class="parcours-date-wrapper">
+                                        <span class="parcours-date">05/2026</span>
+                                        <span class="parcours-badge parcours-badge--orange" data-i18n="badge-upcoming">À venir</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Nouveaux éléments demandés -->
+                            <div class="parcours-card parcours-card--structure parcours-card--upcoming" data-modal="lvf-june-detail">
+                                <div class="parcours-icon">
+                                    <img src="assets/projects/lvf-camp/icone LVF camp blanc.png" alt="Logo LVF" class="parcours-icon-img--lvf">
+                                </div>
+                                <div class="parcours-content">
+                                    <h4 data-i18n="lvf-june-title">LVF Camp</h4>
+                                    <span class="parcours-subtitle" data-i18n="lvf-june-subtitle">Stage de volley en salle</span>
+                                    <div class="parcours-date-wrapper">
+                                        <span class="parcours-date" data-i18n="lvf-june-date">06/2026</span>
+                                        <span class="parcours-badge parcours-badge--green" data-i18n="badge-upcoming">À venir</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="parcours-card parcours-card--structure parcours-card--upcoming" data-modal="alsh-2026-detail">
+                                <div class="parcours-icon">
+                                    <img src="assets/projects/alsh-2024/icone ALSH blanc.png" alt="ALSH" class="parcours-icon-img--alsh">
+                                </div>
+                                <div class="parcours-content">
+                                    <h4 data-i18n="alsh-2026-title">ALSH Nouzilly</h4>
+                                    <span class="parcours-subtitle" data-i18n="alsh-2026-subtitle">Animateur BAFA</span>
+                                    <div class="parcours-date-wrapper">
+                                        <span class="parcours-date" data-i18n="alsh-2026-date">07/2026</span>
+                                        <span class="parcours-badge parcours-badge--green" data-i18n="badge-upcoming">À venir</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="parcours-card parcours-card--structure parcours-card--upcoming" data-modal="lvf-august-detail">
+                                <div class="parcours-icon">
+                                    <img src="assets/projects/lvf-camp/icone LVF camp blanc.png" alt="Logo LVF" class="parcours-icon-img--lvf">
+                                </div>
+                                <div class="parcours-content">
+                                    <h4 data-i18n="lvf-august-title">LVF Camp</h4>
+                                    <span class="parcours-subtitle" data-i18n="lvf-august-subtitle">Stage de beach volley</span>
+                                    <div class="parcours-date-wrapper">
+                                        <span class="parcours-date" data-i18n="lvf-august-date">08/2026</span>
+                                        <span class="parcours-badge parcours-badge--green" data-i18n="badge-upcoming">À venir</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="parcours-card parcours-card--structure parcours-card--upcoming" data-modal="recherche-club-detail">
+                                <div class="parcours-icon">
+                                    <img src="assets/projects/recherche-club/Icone recherche club.png" alt="Recherche Club" class="parcours-icon-img--recherche-club">
+                                </div>
+                                <div class="parcours-content">
+                                    <h4 data-i18n="recherche-club-title">Club de Volley</h4>
+                                    <span class="parcours-subtitle" data-i18n="recherche-club-subtitle">Poste : Libéro / Entraineur</span>
+                                    <div class="parcours-date-wrapper">
+                                        <span class="parcours-date" data-i18n="recherche-club-date">09/2026</span>
+                                        <span class="parcours-badge parcours-badge--green" data-i18n="badge-search">Recherche</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="parcours-card parcours-card--structure parcours-card--upcoming" data-modal="alternance-mp3">
+                                <div class="parcours-icon">
+                                    <img src="assets/projects/recherche-alternance/icone recherche alternance blanc.png" alt="Recherche Alternance" class="parcours-icon-img--recherche-alternance">
+                                </div>
+                                <div class="parcours-content">
+                                    <h4 data-i18n="recherche-alternance-title">Alternance BUT MP</h4>
+                                    <span class="parcours-subtitle" data-i18n="recherche-alternance-subtitle">Domaine : Mesures / Instrumentation</span>
+                                    <div class="parcours-date-wrapper">
+                                        <span class="parcours-date" data-i18n="recherche-alternance-date">09/2026</span>
+                                        <span class="parcours-badge parcours-badge--green" data-i18n="badge-search">Recherche</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Diplômes d'États -->
+                    <div class="parcours-category fade-in-up">
+                        <h3 class="category-title"><i class="fas fa-graduation-cap"></i> <span data-i18n="cat-diplomas">Diplômes d'États</span></h3>
+                        <div class="category-cards">
+                            <div class="parcours-card parcours-card--diploma" data-modal="bac-detail">
+                                <div class="parcours-icon"><i class="fas fa-graduation-cap"></i></div>
+                                <div class="parcours-content">
+                                    <h4 data-i18n="bac-title">Baccalauréat</h4>
+                                    <span class="parcours-subtitle" data-i18n="bac-subtitle">Mention Bien - Lycée Vaucanson</span>
+                                    <span class="parcours-date">06/2024</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Certifications -->
+                    <div class="parcours-category fade-in-up">
+                        <h3 class="category-title"><i class="fas fa-certificate"></i> <span data-i18n="cat-certs">Certifications</span></h3>
+                        <div class="category-cards">
+                            <div class="parcours-card parcours-card--diploma" data-modal="dre-detail">
+                                <div class="parcours-image-container">
+                                    <img src="assets/projects/ligue/icone ffvb blanc.png" alt="Logo FFVB" class="parcours-img">
+                                </div>
+                                <div class="parcours-content">
+                                    <h4 data-i18n="dre-title">DRE 1</h4>
+                                    <span class="parcours-subtitle" data-i18n="dre-subtitle">Diplôme Régional d'Entraineur 1</span>
+                                    <span class="parcours-date">10/2025 - 04/2026</span>
+                                </div>
+                            </div>
+                            <div class="parcours-card parcours-card--diploma" data-modal="bafa-detail">
+                                <div class="parcours-icon"><i class="fas fa-certificate"></i></div>
+                                <div class="parcours-content">
+                                    <h4 data-i18n="bafa-title">BAFA</h4>
+                                    <span class="parcours-subtitle" data-i18n="bafa-subtitle">Brevet d'Aptitude aux Fonctions d'Animateur</span>
+                                    <span class="parcours-date">02/2024 - 11/2025</span>
+                                </div>
+                            </div>
+                            <div class="parcours-card parcours-card--diploma" data-modal="psc1-detail">
+                                <div class="parcours-icon"><img src="assets/projects/protection-civile/Icone PC blanc.png" alt="PSC1" class="parcours-icon-img--pc"></div>
+                                <div class="parcours-content">
+                                    <h4 data-i18n="psc1-title">PSC1</h4>
+                                    <span class="parcours-subtitle" data-i18n="psc1-subtitle">Prévention et secours civiques niveau 1</span>
+                                    <span class="parcours-date">06/2021</span>
+                                </div>
+                            </div>
+                            <div class="parcours-card parcours-card--diploma">
+                                <div class="parcours-icon"><i class="fas fa-car"></i></div>
+                                <div class="parcours-content">
+                                    <h4 data-i18n="permis-title">Permis B</h4>
+                                    <span class="parcours-subtitle" data-i18n="permis-subtitle">Mobilité et autonomie</span>
+                                    <span class="parcours-date" data-i18n="permis-date">02/2025</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Structures -->
+                    <div class="parcours-category fade-in-up">
+                        <h3 class="category-title"><i class="fas fa-university" style="color: var(--complementary);"></i> <span data-i18n="cat-structures">Structures</span></h3>
+                        <div class="category-cards">
+                            <div class="parcours-card parcours-card--structure" data-modal="ajb-detail">
+                                <div class="parcours-image-container">
+                                    <img src="assets/projects/aajb/Icone AAJB Blanc.png" alt="Logo AAJB" class="parcours-img parcours-img--aajb">
+                                </div>
+                                <div class="parcours-content">
+                                    <h4 data-i18n="ajb-title">AAJB Volley</h4>
+                                    <span class="parcours-subtitle" data-i18n="ajb-club">Club de Volley-ball (Blois)</span>
+                                    <span class="parcours-date">09/2024 - 06/2026</span>
+                                </div>
+                            </div>
+                            <div class="parcours-card parcours-card--structure" data-modal="lycee">
+                                <div class="parcours-icon"><img src="assets/projects/lycee/icone lycee blanc.png" alt="Lycée Vaucanson" class="project-icon-img"></div>
+                                <div class="parcours-content">
+                                    <h4 data-i18n="lycee-title">Lycée Vaucanson</h4>
+                                    <span class="parcours-subtitle" data-i18n="lycee-subtitle">Établissement scolaire</span>
+                                    <span class="parcours-date">2021 - 2024</span>
+                                </div>
+                            </div>
+                            <div class="parcours-card parcours-card--structure" data-modal="rssc-detail">
+                                <div class="parcours-image-container">
+                                    <img src="assets/projects/rssc/Icone RSSC blanc.png" alt="Logo RSSC" class="parcours-img">
+                                </div>
+                                <div class="parcours-content">
+                                    <h4 data-i18n="rssc-title">RS Saint-Cyr-sur-Loire</h4>
+                                    <span class="parcours-subtitle" data-i18n="rssc-subtitle">Club de Volley-ball (RSSC)</span>
+                                    <span class="parcours-date">2023 - 2024</span>
+                                </div>
+                            </div>
+                            <div class="parcours-card parcours-card--structure" data-modal="eso-detail">
+                                <div class="parcours-image-container">
+                                    <img src="assets/projects/eso/Logo ESO - icone à propos.png" alt="Logo ESO" class="parcours-img">
+                                </div>
+                                <div class="parcours-content">
+                                    <h4 data-i18n="eso-title">ESO Notre-Dame-d'Oé</h4>
+                                    <span class="parcours-subtitle" data-i18n="eso-subtitle">Club de Volley-ball (UFOLEP)</span>
+                                    <span class="parcours-date">2021 - 2023</span>
+                                </div>
+                            </div>
+                            <div class="parcours-card parcours-card--structure" data-modal="animation-alsh-nouzilly">
+                                <div class="parcours-icon">
+                                    <img src="assets/projects/alsh-2024/icone ALSH blanc.png" alt="ALSH" class="parcours-icon-img--alsh">
+                                </div>                                <div class="parcours-content">
+                                    <h4 data-i18n="alsh-title">ALSH de Nouzilly</h4>
+                                    <span class="parcours-subtitle" data-i18n="ani-subtitle">Animateur BAFA</span>
+                                    <span class="parcours-date" data-i18n="date-july-25">07/2025</span>
+                                </div>
+                            </div>
+                            <div class="parcours-card parcours-card--structure" data-modal="stage-bafa-nouzilly">
+                                <div class="parcours-icon">
+                                    <img src="assets/projects/alsh-2024/icone ALSH blanc.png" alt="ALSH" class="parcours-icon-img--alsh">
+                                </div>                                <div class="parcours-content">
+                                    <h4 data-i18n="alsh-title">ALSH de Nouzilly</h4>
+                                    <span class="parcours-subtitle" data-i18n="stage-subtitle">Stage pratique BAFA</span>
+                                    <span class="parcours-date" data-i18n="date-july-24">Juillet 2024</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="expertise" class="section expertise-section section-fullwidth">
+            <div class="container">
+                <div class="section-header fade-in-up">
+                    <h2 class="section-title" data-i18n="nav-expertise">INGÉNIERIE & MESURES</h2>
+                    <p class="section-subtitle" data-i18n="subtitle-expertise">Parcours universitaire, professionnel et projets</p>
+                    <div class="section-line"></div>
+                </div>
+
+                <!-- Bannière introductive -->
+                <div class="section-intro-banner fade-in-up">
+                    <p data-i18n="exp-intro">
+                        Naturellement curieux et passionné par la compréhension des phénomènes qui nous entourent, j'ai toujours perçu les sciences comme un terrain d'épanouissement privilégié. Attiré par l'innovation et la recherche de performance, j'ai orienté mon parcours vers un <strong>BUT Mesures Physiques</strong>. Ce choix délibéré privilégie l'approche concrète et expérimentale, indispensable pour maîtriser la réalité technique. Au-delà de la technique pure, je m'investis particulièrement dans la <strong>gestion de projet</strong> et la <strong>dynamique de groupe</strong>.
+                    </p>
+                </div>
+
+                <!-- Section BUT Mesures Physiques -->
+                <div class="formation-section fade-in-up">
+                    <h3 class="formation-section-title"><i class="fas fa-university"></i> <span data-i18n="but-title">BUT Mesures Physiques</span></h3>
+                    <p class="formation-section-subtitle" data-i18n="but-institution">IUT de Blois - 2024-2027</p>
+
+                    <div class="expertise-top-card fade-in-up">
+                        <div class="project-card project-card--full" data-modal="but-mp">
+                            <div class="project-icon"><img src="assets/projects/iut/Icone IUT orange.png" alt="IUT Logo" class="project-icon-img project-icon-img--but"></div>
+                            <div class="project-info">
+                                <h4 data-i18n="but-desc-title">Descriptif du BUT Mesures Physiques</h4>
+                                <p data-i18n="but-desc-subtitle">Découvrez le contenu de la formation, les matières enseignées et les compétences visées.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="expertise-grid">
+                        <!-- Projects Column -->
+                        <div class="expertise-column fade-in-up">
+                            <h3 id="projets-universitaires" class="column-title" data-i18n="cat-projects">Projets Universitaires</h3>
+                            <div class="project-card" data-modal="projet-batio3">
+                                <div class="project-icon"><img src="assets/projects/batio3/pastille orange.png" alt="BaTiO3 Pastille" class="project-icon-img project-icon-img--pastille"></div>
+                                <div class="project-info">
+                                    <h4 data-i18n="batio3-title">Céramiques BaTiO3</h4>
+                                    <p data-i18n="batio3-desc">Synthèse et caractérisation de céramiques piézoélectriques.</p>
+                                </div>
+                            </div>
+                            <div class="project-card" data-modal="electro-reparo">
+                                <div class="project-icon"><img src="assets/projects/electro-reparo/Icone ER orange.png" alt="Electro Reparo Icon" class="project-icon-img"></div>
+                                <div class="project-info">
+                                    <h4 data-i18n="erp-title">Projet Electro Reparo</h4>
+                                    <p data-i18n="erp-desc">Ingénierie de maintenance et Reverse Engineering sur DEEE.</p>
+                                </div>
+                            </div>
+                            <div class="project-card" data-modal="projet-pendule">
+                                <div class="project-icon"><img src="assets/projects/pendule/Icone orange.png" alt="Icone Pendule" class="project-icon-img"></div>
+                                <div class="project-info">
+                                    <h4 data-i18n="pendule-title">Projet Pendule</h4>
+                                    <p data-i18n="pendule-desc">Étude dynamique d'un pendule simple via capteurs MEMS.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Internships Column -->
+                        <div class="expertise-column fade-in-up">
+                            <h3 class="column-title" data-i18n="cat-stages">Stages Professionnels</h3>
+                            <div class="project-card" data-modal="stage-mp2">
+                                <div class="project-icon"><img src="assets/projects/radiall/Icone Radiall orange.png" alt="Radiall Icon" class="project-icon-img project-icon-img--radiall"></div>
+                                <div class="project-info">
+                                    <h4 data-i18n="stage-radiall-title">Stage MP2 Radiall</h4>
+                                    <p data-i18n="stage-radiall-desc">Stage de deuxième année - Application pratique des connaissances.</p>
+                                </div>
+                            </div>
+                            <div class="project-card" data-modal="alternance-mp3">
+                                <div class="project-icon"><img src="assets/projects/alternance-mp3/Apprentissage orange.png" alt="Apprenticeship Icon" class="project-icon-img project-icon-img--apprentissage"></div>
+                                <div class="project-info">
+                                    <h4 data-i18n="alternance-mp3-title">Apprentissage MP3</h4>
+                                    <p data-i18n="alternance-mp3-desc">Recherche d'une entreprise pour un contrat d'apprentissage (Sept. 2026 - Juin 2027).</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="volleyball" class="section volleyball-section section-fullwidth">
+            <div class="container">
+                <div class="section-header fade-in-up">
+                    <h2 class="section-title" data-i18n="nav-volley">VOLLEY-BALL</h2>
+                    <p class="section-subtitle" data-i18n="subtitle-volley">Passion, compétition et encadrement</p>
+                    <div class="section-line"></div>
+                </div>
+
+                <!-- Bannière introductive -->
+                <div class="section-intro-banner fade-in-up">
+                    <p data-i18n="volley-intro">
+                        Passionné de volley-ball depuis plusieurs années, je perçois ce sport bien plus que comme une simple discipline physique. C'est pour moi une véritable école de la rigueur, de la cohésion et du dépassement de soi. De joueur en championnat Pré-National à l'encadrement de jeunes équipes, chaque moment passé sur le terrain renforce ma détermination et mon esprit d'équipe.
+                    </p>
+                </div>
+
+                <div class="volleyball-grid">
+                    <div class="volley-card fade-in-up" data-modal="carriere-joueur">
+                        <div class="card-header">
+                            <div class="card-header-img-container">
+                                <img src="assets/projects/volleyball/logo-joueur-orange.png" alt="Icone Joueur" class="card-header-img img-default">
+                                <img src="assets/projects/volleyball/logo-joueur-invers.png" alt="Icone Joueur Inversé" class="card-header-img img-hover">
+                            </div>
+                            <div class="card-info">
+                                <h3 data-i18n="volley-joueur-title">Carrière Joueur</h3>
+                                <p class="card-description" data-i18n="volley-joueur-desc">Parcours compétitif, clubs et progression technique.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="volley-card fade-in-up" data-modal="encadrement-volley">
+                        <div class="card-header">
+                            <div class="card-header-img-container">
+                                <img src="assets/projects/volleyball/logo-encadrement-orange.png" alt="Icone Encadrement" class="card-header-img img-default">
+                                <img src="assets/projects/volleyball/logo-encadrement-invers.png" alt="Icone Encadrement Inversé" class="card-header-img img-hover">
+                            </div>
+                            <div class="card-info">
+                                <h3 data-i18n="volley-enc-title">Encadrement</h3>
+                                <p class="card-description" data-i18n="volley-enc-desc">Entraîneur, formation des jeunes et diplômes fédéraux.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="volley-card fade-in-up" data-modal="palmares-volley">
+                        <div class="card-header">
+                            <i class="fas fa-trophy"></i>
+                            <div class="card-info">
+                                <h3 data-i18n="volley-palmares-title">Palmarès et Événements</h3>
+                                <p class="card-description" data-i18n="volley-palmares-desc">Titres, récompenses et participations aux tournois nationaux.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="communication" class="section communication-section section-fullwidth">
+            <div class="container">
+                <div class="section-header fade-in-up">
+                    <h2 class="section-title" data-i18n="nav-com">COMMUNICATION & ÉVÉNEMENTIEL</h2>
+                    <p class="section-subtitle" data-i18n="subtitle-com">Création, gestion et animation</p>
+                    <div class="section-line"></div>
+                </div>
+
+                <div class="section-intro-banner fade-in-up">
+                    <p data-i18n="com-intro">
+                        Au-delà de ma formation technique, je cultive un vif intérêt pour la communication digitale et la gestion d'événements. À travers mes missions en service civique ou dans des projets étudiants comme Electro Reparo, je m'attache à créer des contenus visuels percutants et à fédérer des communautés autour de projets porteurs de sens, alliant créativité et sens de l'organisation.
+                    </p>
+                </div>
+
+                <div class="com-two-columns">
+                    <div class="com-box fade-in-up">
+                        <div class="com-box-header">
+                            <i class="fas fa-lightbulb"></i>
+                            <h3 data-i18n="cat-skills">Compétences</h3>
+                        </div>
+                        <div class="com-box-content">
+                            <div class="com-skill" data-modal="creation-visuelle">
+                                <i class="fas fa-pen-nib"></i>
+                                <span data-i18n="skill-vis">Création Visuelle</span>
+                            </div>
+                            <div class="com-skill" data-modal="reseaux-sociaux">
+                                <i class="fas fa-hashtag"></i>
+                                <span data-i18n="skill-soc">Réseaux Sociaux</span>
+                            </div>
+                            <div class="com-skill" data-modal="journalisme-speaker">
+                                <i class="fas fa-microphone-alt"></i>
+                                <span data-i18n="skill-jour">Journalisme & Speaker</span>
+                            </div>
+                            <div class="com-skill" data-modal="montage-video">
+                                <i class="fas fa-video"></i>
+                                <span data-i18n="skill-vid">Montage Vidéo</span>
+                            </div>
+                            <div class="com-skill" data-modal="orga-evenements">
+                                <i class="fas fa-calendar-check"></i>
+                                <span data-i18n="skill-eve">Organisation d'Événements</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="com-box fade-in-up">
+                        <div class="com-box-header">
+                            <i class="fas fa-briefcase"></i>
+                            <h3 data-i18n="cat-exp">Expériences</h3>
+                        </div>
+                        <div class="com-box-content">
+                            <div class="com-exp" data-modal="service-civique-com">
+                                <img src="assets/projects/service-civique/Icone snc orange.png" alt="Service Civique Icon" class="com-exp-icon-img">
+                                <div class="com-exp-info">
+                                    <div class="com-exp-title" data-i18n="sc-title">Service Civique AAJB</div>
+                                    <div class="com-exp-desc" data-i18n="sc-desc">Communication digitale, interne et organisation d'événements</div>
+                                </div>
+                            </div>
+                            <div class="com-exp" data-modal="etudiant-relai-com">
+                                <img src="assets/projects/suaps/Icone SUAPS orange.png" alt="SUAPS Icon" class="com-exp-icon-img">
+                                <div class="com-exp-info">
+                                    <div class="com-exp-title" data-i18n="er-title">Étudiant Relai Sport</div>
+                                    <div class="com-exp-desc" data-i18n="er-desc">Promotion des activités sportives universitaires (SUAPS Tours)</div>
+                                </div>
+                            </div>
+                            <div class="com-exp" data-modal="electro-reparo-com">
+                                <img src="assets/projects/electro-reparo/Icone ER orange.png" alt="Electro Reparo Icon" class="com-exp-icon-img">
+                                <div class="com-exp-info">
+                                    <div class="com-exp-title" data-i18n="erp-title">Projet Electro Reparo</div>
+                                    <div class="com-exp-desc" data-i18n="erp-desc-short">Responsable Communication & Gestion de Projet</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="animation" class="section animation-section section-fullwidth">
+            <div class="container">
+                <div class="section-header fade-in-up">
+                    <h2 class="section-title" data-i18n="nav-animation">ANIMATION</h2>
+                    <p class="section-subtitle" data-i18n="subtitle-animation">Animation, encadrement et transmission</p>
+                    <div class="section-line"></div>
+                </div>
+
+                <div class="section-intro-banner fade-in-up">
+                    <p data-i18n="ani-intro">
+                        Détenteur du BAFA, l'animation est pour moi un terrain d'épanouissement privilégié pour transmettre des valeurs et encadrer des groupes avec bienveillance et dynamisme. Qu'il s'agisse de séjours en ALSH ou d'encadrement sportif, je m'investis pour garantir la sécurité et l'épanouissement des plus jeunes tout en développant ma propre capacité d'adaptation et ma prise de responsabilité.
+                    </p>
+                </div>
+
+                <div class="animation-journey">
+                    <!-- Colonne Formations : Style "Badge Wall" -->
+                    <div class="ani-column ani-formations fade-in-up">
+                        <div class="ani-column-header">
+                            <div class="ani-icon-box"><i class="fas fa-certificate"></i></div>
+                            <h3 data-i18n="ani-cat-form">Formations Certifiantes</h3>
+                        </div>
+                        
+                        <div class="ani-badge-grid">
+                            <div class="ani-badge-item" data-modal="bafa-detail">
+                                <div class="ani-badge-icon"><i class="fas fa-certificate"></i></div>
+                                <div class="ani-badge-info">
+                                    <span class="ani-badge-title">BAFA</span>
+                                    <span class="ani-badge-date">2024</span>
+                                </div>
+                            </div>
+                            <div class="ani-badge-item ani-badge-item--alt" data-modal="psc1-detail">
+                                <div class="ani-badge-icon"><img src="assets/projects/protection-civile/Icone PC blanc.png" alt="PSC1"></div>
+                                <div class="ani-badge-info">
+                                    <span class="ani-badge-title">PSC1</span>
+                                    <span class="ani-badge-date">2020</span>
+                                </div>
+                            </div>
+                            <div class="ani-badge-item" data-modal="dre-detail">
+                                <div class="ani-badge-icon"><img src="assets/projects/ligue/icone ffvb blanc.png" alt="FFVB"></div>
+                                <div class="ani-badge-info">
+                                    <span class="ani-badge-title">DRE 1</span>
+                                    <span class="ani-badge-date">2025-2026</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Colonne Expériences : Style "Staggered List" -->
+                    <div class="ani-column ani-experiences fade-in-up">
+                        <div class="ani-column-header">
+                            <div class="ani-icon-box"><i class="fas fa-hands-helping"></i></div>
+                            <h3 data-i18n="ani-cat-exp">Expériences Pratiques</h3>
+                        </div>
+
+                        <div class="ani-stepper">
+                            <!-- Plus récent en haut -->
+                            <div class="ani-step" data-modal="encadrement-sc-volley">
+                                <div class="ani-step-marker"></div>
+                                <div class="ani-step-card">
+                                    <div class="ani-step-content">
+                                        <div>
+                                            <h4 data-i18n="ani-volley-title">Entraineur de Volleyball</h4>
+                                            <p data-i18n="ani-volley-sub">Encadrement, stages et projet sportif</p>
+                                        </div>
+                                    </div>
+                                    <span class="ani-step-date">2023 - Présent</span>
+                                </div>
+                            </div>
+
+                            <div class="ani-step" data-modal="animation-alsh-nouzilly">
+                                <div class="ani-step-marker"></div>
+                                <div class="ani-step-card">
+                                    <div class="ani-step-content">
+                                        <h4 data-i18n="alsh-title">ALSH de Nouzilly</h4>
+                                        <p data-i18n="ani-sub-2">Animateur diplômé saisonnier</p>
+                                    </div>
+                                    <span class="ani-step-date" data-i18n="date-july-25">Juillet 2025</span>
+                                </div>
+                            </div>
+
+                            <div class="ani-step" data-modal="stage-bafa-nouzilly">
+                                <div class="ani-step-marker"></div>
+                                <div class="ani-step-card">
+                                    <div class="ani-step-content">
+                                        <h4 data-i18n="alsh-title">ALSH de Nouzilly</h4>
+                                        <p data-i18n="stage-subtitle">Stage pratique BAFA</p>
+                                    </div>
+                                    <span class="ani-step-date" data-i18n="date-july-24">Juillet 2024</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section contact-section section-fullwidth">
+            <div class="container">
+                <div class="section-header fade-in-up">
+                    <h2 class="section-title" data-i18n="nav-contact">CONTACT</h2>
+                    <div class="section-line"></div>
+                </div>
+
+                <div class="contact-wrapper fade-in-up">
+                    <div class="contact-info">
+                        <p data-i18n="contact-intro">N'hésitez pas à me contacter pour discuter de projets, de collaborations ou simplement pour
+                            échanger.</p>
+
+                        <div class="contact-links">
+                            <a href="mailto:mateischerpeau37@gmail.com" class="contact-link">
+                                <i class="fas fa-envelope"></i>
+                                <span>mateischerpeau37@gmail.com</span>
+                            </a>
+                            <a href="tel:+33651657848" class="contact-link">
+                                <i class="fas fa-phone"></i>
+                                <span>+33 6 51 65 78 48</span>
+                            </a>
+                        </div>
+
+                        <div class="social-big">
+                            <a href="https://www.linkedin.com/in/mat%C3%A9is-cherpeau/" target="_blank"
+                                class="social-btn linkedin">
+                                <i class="fab fa-linkedin-in"></i> LinkedIn
+                            </a>
+                            <a href="https://instagram.com/lamat_11" target="_blank" class="social-btn instagram">
+                                <i class="fab fa-instagram"></i> Instagram
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <p data-i18n="footer-copy" class="footer-copy-text">Tous droits réservés | Matéis CHERPEAU</p>
+                    <p class="footer-update"><span data-i18n="footer-update">Dernière mise à jour :</span> <span data-i18n="footer-date">7 février 2026</span></p>
+                </div>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/mat%C3%A9is-cherpeau/" target="_blank" aria-label="LinkedIn"><i
+                            class="fab fa-linkedin-in"></i></a>
+                    <a href="https://instagram.com/lamat_11" target="_blank" aria-label="Instagram"><i
+                            class="fab fa-instagram"></i></a>
+                    <a href="mailto:mateischerpeau37@gmail.com" aria-label="Email"><i
+                            class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Experience Modal -->
+    <div id="experienceModal" class="modal-overlay" aria-hidden="true" role="dialog" aria-modal="true">
+        <div class="modal-container">
+            <button class="modal-close" aria-label="Fermer">&times;</button>
+            <div class="modal-scroll-content">
+                <div class="modal-header">
+                    <div class="modal-header-content">
+                        <h2 class="modal-title" id="modalTitle"></h2>
+                        <span class="modal-period" id="modalPeriod"></span>
+                    </div>
+                    <div class="modal-left-logo" id="modalLeftLogo" style="display: none;"></div>
+                    <div class="modal-brand-logo" id="modalBrandLogo" style="display: none;"></div>
+                </div>
+                <div class="modal-body">
+                    <div class="modal-section modal-summary" id="modalSummary">
+                        <p></p>
+                    </div>
+
+                    <div class="modal-section modal-context" id="modalContext">
+                        <h3 class="modal-section-title"><i class="fas fa-map-marker-alt"></i> <span data-i18n="modal-context">Contexte</span></h3>
+                        <p></p>
+                    </div>
+
+                    <div class="modal-section modal-objective" id="modalObjective" style="display: none;">
+                        <h3 class="modal-section-title"><i class="fas fa-bullseye"></i> <span data-i18n="modal-objective">Objectif</span></h3>
+                        <p></p>
+                    </div>
+
+                    <div class="modal-section modal-training-structure" id="modalTrainingStructure" style="display: none;">
+                        <h3 class="modal-section-title"><i class="fas fa-layer-group"></i> <span data-i18n="modal-training-structure">Structure du projet</span></h3>
+                        <ul class="modal-list"></ul>
+                    </div>
+
+                    <div class="modal-grid-row">
+                        <div class="modal-section modal-teams-rep" id="modalTeamsRep" style="display: none;">
+                            <h3 class="modal-section-title"><i class="fas fa-users-viewfinder"></i> <span data-i18n="modal-teams-rep">Équipes représentées</span></h3>
+                            <ul class="modal-list-grid"></ul>
+                        </div>
+                        <div class="modal-section modal-positions" id="modalPositions" style="display: none;">
+                            <h3 class="modal-section-title"><i class="fas fa-tshirt"></i> <span data-i18n="modal-positions">Postes occupés</span></h3>
+                            <ul class="modal-list-grid"></ul>
+                        </div>
+                    </div>
+
+                    <div class="modal-section modal-team" id="modalTeam" style="display: none;">
+                        <h3 class="modal-section-title"><i class="fas fa-users"></i> <span data-i18n="modal-team">Effectif</span></h3>
+                        <p></p>
+                    </div>
+
+                    <div class="modal-section modal-missions" id="modalMissions">
+                        <h3 class="modal-section-title"><i class="fas fa-tasks"></i> <span data-i18n="modal-missions">Missions & Réalisations</span></h3>
+                        <ul></ul>
+                    </div>
+
+                    <div class="modal-section modal-results" id="modalResults" style="display: none;">
+                        <h3 class="modal-section-title"><i class="fas fa-medal"></i> <span data-i18n="modal-results">Résultats & Palmarès</span></h3>
+                        <ul class="modal-list-grid"></ul>
+                    </div>
+
+                    <div id="modalSkillsSection">
+                        <div class="modal-grid-row" id="modalSkillsRow">
+                            <div class="modal-section modal-hard-skills" id="modalHardSkills" style="display: none;">
+                                <h3 class="modal-section-title"><i class="fas fa-cogs" id="modalHardSkillsIcon"></i> <span data-i18n="modal-hard-skills">Mes Points Forts</span></h3>
+                                <ul></ul>
+                            </div>
+                            <div class="modal-section modal-soft-skills" id="modalSoftSkills" style="display: none;">
+                                <h3 class="modal-section-title"><i class="fas fa-handshake" id="modalSoftSkillsIcon"></i> <span data-i18n="modal-soft-skills">Soft Skills</span></h3>
+                                <ul></ul>
+                            </div>                        </div>
+                    </div>
+
+                    <div class="modal-section modal-philosophy" id="modalPhilosophy" style="display: none;">
+                        <h3 class="modal-section-title"><i class="fas fa-brain"></i> <span data-i18n="modal-philosophy">Principes et philosophie de jeu</span></h3>
+                        <ul class="modal-list-grid"></ul>
+                    </div>
+
+                    <div class="modal-section modal-competences" id="modalCompetences" style="display: none;">
+                        <h3 class="modal-section-title"><i class="fas fa-list-ul"></i> <span data-i18n="modal-program">Programme & Matières</span></h3>
+                        <ul class="modal-list-grid"></ul>
+                    </div>
+
+                    <div class="modal-section modal-material" id="modalMaterial" style="display: none;">
+                        <h3 class="modal-section-title"><i class="fas fa-tools" id="modalMaterialIcon"></i> <span data-i18n="modal-material">Matériel/Logiciels utilisés</span></h3>
+                        <div class="modal-material-content"></div>
+                    </div>
+
+                    <div class="modal-gallery" id="modalGallery">
+                        <h3 class="modal-gallery-title"><i class="fas fa-images"></i> <span data-i18n="modal-gallery">Galerie</span></h3>
+                        <div class="modal-gallery-grid"></div>
+                    </div>
+
+                    <div class="modal-section modal-related" id="modalRelated">
+                        <h3 class="modal-section-title"><i class="fas fa-link"></i> <span data-i18n="modal-related">Voir aussi</span></h3>
+                        <div class="modal-related-links"></div>
+                    </div>
+
+                    <div class="modal-tags" id="modalTags"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Lightbox -->
+    <div id="lightbox" class="lightbox">
+        <span class="lightbox-close">&times;</span>
+        <img class="lightbox-content" id="lightbox-img" alt="Vue agrandie">
+        <video class="lightbox-content" id="lightbox-video" controls style="display: none;"></video>
+        <div id="lightbox-caption" class="lightbox-caption"></div>
+    </div>
+
+    <!-- Initialisation des données -->
+    <script src="js/data/init.js"></script>
+    <script src="js/data/translations.js"></script>
+    
+    <!-- Modales en Français -->
+    <script src="js/data/fr/education.js"></script>
+    <script src="js/data/fr/sports.js"></script>
+    <script src="js/data/fr/animation.js"></script>
+    <script src="js/data/fr/communication.js"></script>
+    
+    <!-- Modales en Anglais -->
+    <script src="js/data/en/education.js"></script>
+    <script src="js/data/en/sports.js"></script>
+    <script src="js/data/en/animation.js"></script>
+    <script src="js/data/en/communication.js"></script>
+
+    <script src="js/main.js?v=stable_v12"></script>
+</body>
+
+</html>

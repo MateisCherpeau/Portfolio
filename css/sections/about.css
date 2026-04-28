@@ -1,0 +1,306 @@
+/* About Section - Refonte Fusionnée */
+.about-section.active {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    /* padding-top géré dans layout.css */
+    padding-bottom: 40px;
+}
+
+/* Full Width pour sections concernées */
+.section-fullwidth .container {
+    max-width: 100%;
+    padding: 0 5%;
+}
+
+/* Section Subtitle */
+.section-subtitle {
+    font-size: 1.1rem;
+    color: var(--text-muted);
+    margin-bottom: 8px;
+    font-weight: 400;
+}
+
+/* About Intro (Texte présentation) */
+.about-intro {
+    background: transparent;
+    border-left: 4px solid var(--primary);
+    padding: 2rem 2.5rem;
+    border-radius: 0 var(--radius-lg) var(--radius-lg) 0;
+    margin-bottom: 3rem;
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left; /* Force text alignment to left */
+}
+
+.about-intro p {
+    font-size: 1.15rem;
+    color: var(--text-muted);
+    line-height: 1.8;
+    margin: 0;
+}
+
+.about-intro strong {
+    color: var(--text-main);
+    font-weight: 600;
+}
+
+/* Légende du Parcours - Design Premium */
+.parcours-legend-container {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto 3.5rem auto;
+    padding: 0 1.5rem;
+}
+
+.parcours-legend {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 0.85rem 1.75rem;
+    background: var(--bg-header);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md); /* Forme rectangle arrondi cohérente avec le site */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    transition: var(--transition-normal);
+}
+
+.parcours-legend:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+    border-color: var(--primary);
+}
+
+.legend-pill {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.5rem 0.25rem;
+}
+
+.legend-icon {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.9rem;
+    transition: var(--transition-fast);
+}
+
+.legend-pill--structure .legend-icon {
+    background: rgba(46, 90, 71, 0.1);
+    color: var(--complementary);
+    border: 1px solid rgba(46, 90, 71, 0.2);
+}
+
+.legend-pill--diploma .legend-icon {
+    background: rgba(255, 118, 0, 0.1);
+    color: var(--primary);
+    border: 1px solid rgba(255, 118, 0, 0.2);
+}
+
+.legend-text {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: var(--text-main);
+    letter-spacing: 0.02em;
+}
+
+.legend-divider {
+    width: 1px;
+    height: 24px;
+    background: var(--border);
+}
+
+/* Hover effects on pills */
+.parcours-legend:hover .legend-icon {
+    transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+    .parcours-legend {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+        border-radius: 20px;
+        padding: 1.5rem;
+        width: 100%;
+        max-width: 350px;
+    }
+
+    .legend-divider {
+        width: 100%;
+        height: 1px;
+    }
+    
+    .legend-pill {
+        width: 100%;
+    }
+}
+
+/* Parcours Layouts */
+.parcours-layout {
+    width: 100%;
+}
+
+/* Option A : Blocs Thématiques */
+.parcours-blocks {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    max-width: 1400px; /* Alignement global */
+    margin: 0 auto;    /* Centrage */
+}
+
+.parcours-category:hover {
+    border-color: var(--border-hover);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+}
+
+.parcours-category {
+    background: var(--bg-card);
+    border: 2px solid var(--border);
+    border-radius: var(--radius-lg);
+    padding: 2rem;
+    transition: var(--transition-normal);
+}
+
+.category-title {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: var(--text-main);
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.category-title i {
+    color: var(--primary);
+    font-size: 1.1rem;
+}
+
+.category-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+/* Legacy stats-grid support */
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+    margin-top: 48px;
+}
+
+.stat-item {
+    background: var(--bg-card);
+    padding: 32px;
+    border-radius: var(--radius-lg);
+    border: 1.5px solid var(--border);
+    transition: var(--transition-normal);
+}
+
+.stat-item:hover {
+    border-color: var(--primary);
+    background: var(--bg-card-hover);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+}
+
+.stat-link {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+
+.stat-link:hover {
+    transform: translateY(-5px);
+}
+
+.stat-number {
+    display: block;
+    font-size: 3rem;
+    font-weight: 800;
+    color: var(--primary);
+    margin-bottom: 12px;
+    font-family: var(--font-heading);
+}
+
+.stat-label {
+    color: var(--text-muted);
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+/* Icon styles for Parcours Cards */
+.parcours-icon-img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transition: var(--transition-normal);
+}
+
+.parcours-icon-img--alsh {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+}
+
+/* Redimensionnement spécifique demandé par l'utilisateur */
+.parcours-icon-img--lvf {
+    width: 65%;
+    height: 65%;
+    object-fit: contain;
+}
+
+.parcours-icon-img--recherche-club {
+    width: 85%;
+    height: 85%;
+    object-fit: contain;
+}
+
+.parcours-icon-img--recherche-alternance {
+    width: 80%;
+    height: 80%;
+    object-fit: contain;
+}
+
+.parcours-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 45px;
+    overflow: hidden;
+}
+
+.parcours-icon img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+@media (max-width: 767px) {
+    .stats-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .section-fullwidth .container {
+        padding: 0 1.5rem;
+    }
+
+    .about-intro {
+        padding: 1.5rem;
+    }
+
+    .category-cards {
+        grid-template-columns: 1fr;
+    }
+}

@@ -1,0 +1,214 @@
+/* Animation Section - Unique Journey Layout */
+.animation-journey {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 4rem;
+    max-width: 1400px;
+    margin: 0 auto;
+    align-items: start;
+}
+
+/* Header des colonnes */
+.ani-column-header {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+    margin-bottom: 2.5rem;
+}
+
+.ani-icon-box {
+    width: 50px;
+    height: 50px;
+    background: var(--primary);
+    color: white;
+    border-radius: var(--radius-md);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.4rem;
+}
+
+.ani-column-header h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 0;
+    color: var(--text-main);
+}
+
+/* --- Colonne Formations : Badge Wall --- */
+.ani-badge-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    gap: 1.5rem;
+}
+
+.ani-badge-item {
+    background: var(--bg-card);
+    border: 2px solid var(--border);
+    border-radius: var(--radius-lg);
+    padding: 1.5rem;
+    text-align: center;
+    transition: var(--transition-normal);
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+.ani-badge-item:hover {
+    border-color: var(--primary);
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px var(--shadow-hover);
+}
+
+.ani-badge-icon {
+    width: 60px;
+    height: 60px;
+    margin: 0 auto 1rem;
+    background: rgba(255, 118, 0, 0.1);
+    color: var(--primary);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.8rem;
+    transition: var(--transition-normal);
+}
+
+.ani-badge-icon img {
+    width: 35px;
+    height: 35px;
+    object-fit: contain;
+    filter: brightness(0) saturate(100%) invert(48%) sepia(91%) saturate(2475%) hue-rotate(1deg) brightness(105%) contrast(105%); /* Force primary color */
+}
+
+.ani-badge-item:hover .ani-badge-icon {
+    background: var(--primary);
+    color: white;
+}
+
+.ani-badge-item:hover .ani-badge-icon img {
+    filter: brightness(0) invert(1); /* White on hover */
+}
+
+.ani-badge-title {
+    display: block;
+    font-weight: 700;
+    font-size: 1.1rem;
+    color: var(--text-main);
+    margin-bottom: 0.3rem;
+}
+
+.ani-badge-date {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    font-weight: 600;
+}
+
+/* --- Colonne Expériences : Stepper --- */
+.ani-stepper {
+    position: relative;
+    padding-left: 2rem;
+}
+
+.ani-stepper::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 3px;
+    background: var(--primary); /* Ligne unifiée */
+    border-radius: 3px;
+    opacity: 0.3;
+}
+
+.ani-step {
+    position: relative;
+    margin-bottom: 2.5rem;
+    display: flex;
+    align-items: stretch;
+}
+
+.ani-step-marker {
+    position: absolute;
+    left: -2.35rem; /* Centré sur la ligne */
+    top: 50%;
+    transform: translateY(-50%);
+    width: 14px;
+    height: 14px;
+    background: var(--bg-dark);
+    border: 3px solid var(--primary);
+    border-radius: 50%;
+    z-index: 2;
+    transition: var(--transition-normal);
+}
+
+.ani-step-card {
+    background: var(--bg-card);
+    border: 2px solid var(--border);
+    border-radius: var(--radius-md);
+    padding: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    transition: var(--transition-normal);
+    cursor: pointer;
+    width: 100%;
+}
+
+.ani-step:hover .ani-step-marker {
+    transform: translateY(-50%) scale(1.5);
+    background: var(--primary);
+}
+
+.ani-step:hover .ani-step-card {
+    border-color: var(--border-hover);
+    transform: translateX(10px);
+    box-shadow: 0 10px 30px var(--shadow-hover);
+}
+
+.ani-step-content h4 {
+    margin: 0 0 0.3rem 0;
+    font-size: 1.1rem;
+    color: var(--text-main);
+}
+
+.ani-step-content p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: var(--text-muted);
+}
+
+.ani-step-date {
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: var(--primary);
+    background: rgba(255, 118, 0, 0.1);
+    padding: 0.4rem 0.8rem;
+    border-radius: 20px;
+    white-space: nowrap;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+    .animation-journey {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .ani-badge-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .ani-step-card {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .ani-step-date {
+        margin-top: 0.5rem;
+    }
+}
