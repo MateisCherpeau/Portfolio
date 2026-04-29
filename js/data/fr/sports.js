@@ -3,7 +3,7 @@
  */
 Object.assign(window.siteData.modalData.fr, {
     'carriere-joueur': {
-        title: 'Carrière Joueur',
+        title: 'Parcours joueur',
         summary: 'Un parcours compétitif marqué par une progression constante, du niveau départemental UFOLEP à l\'élite régionale. Cette page retrace mon évolution technique et tactique à travers mes différents clubs (ESO, RSSC, AAJB) et mes sélections scolaires (UNSS), avec un focus sur ma spécialisation au poste de Libéro.',
         useTimeline: true,
         timelineSeasons: [
@@ -154,7 +154,7 @@ Object.assign(window.siteData.modalData.fr, {
     },
     'palmares-volley': {
         title: 'Palmarès et Événements',
-        summary: 'Récapitulatif complet de mes performances en compétition et de mes expériences immersives. Cette page présente mon palmarès de joueur au sein de l\'élite régionale, en tant que joueur et entraîneur, ainsi qu\'une rétrospective de mes participations à des tournois et stages de haut niveau. Découvrez pour chaque étape l\'analyse technique, les résultats obtenus et le contexte de ces expériences.',
+        summary: 'Récapitulatif complet de mes performances en compétition et de mes expériences immersives. Cette page présente mon palmarès de joueur au sein de l\'élite régionale, ainsi qu\'une rétrospective de mes participations à des tournois et stages de haut niveau. Découvrez pour chaque étape l\'analyse technique, les résultats obtenus et le contexte de ces expériences.',
         missionsTitle: 'Résultats sportifs',
         useTimeline: true,
         timelineSeasons: [
@@ -164,13 +164,6 @@ Object.assign(window.siteData.modalData.fr, {
                 items: [
                     { title: 'Champion M18 Pré-National 2024-2025', club: 'AAJB', targetModal: 'champion-prenational-m18' },
                     { title: 'Vainqueur Phases Finales Régionales M18 2025', club: 'AAJB', targetModal: 'champion-pfr-m18' }
-                ]
-            },
-            {
-                season: 'Entraîneur',
-                subtitle: 'Résultats sportifs',
-                items: [
-                    { title: 'À venir...', club: '', targetModal: null }
                 ]
             },
             {
@@ -223,7 +216,7 @@ Object.assign(window.siteData.modalData.fr, {
         ],
         gallery: [],
         relatedModals: [
-            { id: 'carriere-joueur', label: 'Carrière Joueur' }
+            { id: 'carriere-joueur', label: 'Parcours joueur' }
         ],
         tags: ['ESO', 'UFOLEP', 'Formation', 'Libéro', 'Débuts']
     },
@@ -259,7 +252,7 @@ Object.assign(window.siteData.modalData.fr, {
             { src: 'assets/projects/rssc-detail/stage-club-2.png', caption: "Ateliers techniques pendant les vacances scolaires." }
         ],
         relatedModals: [
-            { id: 'carriere-joueur', label: 'Carrière Joueur' }
+            { id: 'carriere-joueur', label: 'Parcours joueur' }
         ],
         tags: ['RSSC', 'Formation', 'Haut Niveau', 'Coaching']
     },

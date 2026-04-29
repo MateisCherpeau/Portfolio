@@ -3,7 +3,7 @@
  */
 Object.assign(window.siteData.modalData.en, {
     'carriere-joueur': {
-        title: 'Player Career - Volleyball',
+        title: 'Player Journey - Volleyball',
         summary: 'A competitive journey marked by constant progression, from UFOLEP departmental level to the regional elite. This page traces my technical and tactical evolution across various clubs (ESO, RSSC, AAJB) and school selections (UNSS), with a focus on my specialization as a Libero.',
         useTimeline: true,
         timelineSeasons: [
@@ -154,7 +154,7 @@ Object.assign(window.siteData.modalData.en, {
     },
     'palmares-volley': {
         title: 'Awards and Events',
-        summary: 'A comprehensive summary of my competitive performances and immersive experiences. This page presents my achievements within the regional elite, both as a player and a coach, as well as a retrospective of my participation in high-level tournaments and camps. For each stage, discover the technical analysis, results achieved, and the context of these experiences.',
+        summary: 'A comprehensive summary of my competitive performances and immersive experiences. This page presents my achievements within the regional elite, as well as a retrospective of my participation in high-level tournaments and camps. For each stage, discover the technical analysis, results achieved, and the context of these experiences.',
         missionsTitle: 'Sporting Results',
         useTimeline: true,
         timelineSeasons: [
@@ -164,13 +164,6 @@ Object.assign(window.siteData.modalData.en, {
                 items: [
                     { title: 'M18 Pre-National Champion 2024-2025', club: 'AAJB', targetModal: 'champion-prenational-m18' },
                     { title: 'Regional Final Phase Winner 2024-2025', club: 'AAJB', targetModal: 'champion-pfr-m18' }
-                ]
-            },
-            {
-                season: 'Coach',
-                subtitle: 'Sporting results',
-                items: [
-                    { title: 'Coming soon...', club: '', targetModal: null }
                 ]
             },
             {
@@ -223,7 +216,7 @@ Object.assign(window.siteData.modalData.en, {
         ],
         gallery: [],
         relatedModals: [
-            { id: 'carriere-joueur', label: 'Player Career' }
+            { id: 'carriere-joueur', label: 'Player Journey' }
         ],
         tags: ['ESO', 'UFOLEP', 'Training', 'Libero', 'Beginnings']
     },
@@ -259,7 +252,7 @@ Object.assign(window.siteData.modalData.en, {
             { src: 'assets/projects/rssc-detail/stage-club-2.png', caption: "Technical workshops during school holidays." }
         ],
         relatedModals: [
-            { id: 'carriere-joueur', label: 'Player Career' }
+            { id: 'carriere-joueur', label: 'Player Journey' }
         ],
         tags: ['RSSC', 'Formation', 'High Level', 'Coaching']
     },
