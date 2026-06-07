@@ -28,31 +28,30 @@ Object.assign(window.siteData.modalData.fr, {
         ],
         competences: {
             'Physique & Mécanique': [
+                'Mécanique des fluides & Techniques du Vide (statique, pertes de charge, pompes, spectrométrie de masse, jauges)',
+                'Mécanique vibratoire & Acoustique (systèmes à 1 ddl, propagation, niveaux acoustiques)',
+                'Optique géométrique & Ondulatoire (polarisation, diffraction, interférométrie Michelson, Mach-Zender, Fabry-Perot)',
+                'Thermodynamique & Transferts thermiques',
                 'Mécanique du point et du solide',
-                'Mécanique des fluides et du vide',
-                'Mécanique vibratoire et acoustique',
-                'Thermodynamique et transferts thermiques',
-                'Optique géométrique et ondulatoire',
-                'Rhéologie'
+                'Rhéologie (mesure de viscosité, rhéogrammes)'
             ],
             'Chimie, Matériaux & Atomistique': [
-                'Chimie générale et solutions',
-                'Spectroscopie (UV-Visible, IR, RMN)',
-                'Chromatographie',
-                'Science et caractérisation des matériaux',
-                'Physique nucléaire',
-                'Atomistique'
+                'Techniques Spectroscopiques (UV-Visible, IR, Raman, Fluorescence)',
+                'Analyses Chromatographiques (HPLC, CPG) & Électrochimiques (courbes intensité-potentiel)',
+                'Science & Caractérisation des Matériaux (RDM, traitements physiques et chimiques, microstructure)',
+                'Chimie générale, solutions & Atomistique',
+                'Physique nucléaire'
             ],
             'Électronique, Mesure & Informatique': [
-                'Électronique analogique et numérique',
-                'Électricité et électromagnétisme',
-                'Conditionnement du signal',
-                'Traitement du signal',
-                'Métrologie et capteurs',
+                'Électricité & Électromagnétisme (induction, loi de Laplace, capteurs inductifs et capacitifs)',
+                'Traitement du Signal (Fourier, filtrage, échantillonnage, DSP, rapport signal/bruit)',
+                'Conditionnement du signal & Instrumentation (amplification, impédance, pilotage d\'instruments, IHM)',
+                'Métrologie, Qualité & Statistiques (fiabilité, traçabilité, capabilité machine, cartes de contrôle)',
                 'Mathématiques pour la physique',
                 'Programmation et Informatique d\'instrumentation'
             ],
-            'Transverses & Langues': [
+            'Énergie, Environnement & Transverses': [
+                'Énergies renouvelables & décarbonées, Qualité d\'un milieu',
                 'Anglais technique et scientifique',
                 'Culture et Communication',
                 'Projet Professionnel Personnalisé (PPP)',
@@ -90,7 +89,7 @@ Object.assign(window.siteData.modalData.fr, {
         trainingStructureTitle: 'Structure du parcours',
         trainingStructure: [
             '<div class="modal-list-grid"><div><span class="modal-list-title">Seconde :</span><br>Parcours général et consolidation.</div><div><span class="modal-list-title">Première :</span><br>Spécialités : Mathématiques, Physique-Chimie et SVT.</div></div>',
-            '<div class="modal-info-box"><span class="modal-list-title">Terminale</span><br>Spécialités Mathématiques & Physique-Chimie + Option Mathématiques Expertes. Cette classe spécifique regroupait les élèves avec ces mêmes spécialités-options et ayant les meilleurs résultats sous la direction de <span class="modal-badge">M. Emmanuel Thibault</span> (Professeur Principal), avec une équipe enseignante officiant pour la majorité dans l\'enseignement supérieur.</div>',
+            '<div class="modal-info-box"><span class="modal-list-title">Terminale</span><br>Spécialités Mathématiques & Physique-Chimie + Option Mathématiques Expertes. Cette classe spécifique regroupait les élèves avec ces mêmes spécialités-options et ayant les meilleurs résultats sous la direction de <span class="modal-badge">M. Emmanuel Thibault</span> (Professeur Principal), avec une équipe enseignante officiant pour la majority dans l\'enseignement supérieur.</div>',
             '<div class="modal-info-box"><span class="modal-list-title">Immersion Scientifique au CERN</span><br>Une semaine en Suisse avec ma classe de terminale pour la visite du CERN (Organisation européenne pour la recherche nucléaire), découverte du LHC et des enjeux de la physique des particules.</div>'
         ],
 
@@ -206,7 +205,7 @@ Object.assign(window.siteData.modalData.fr, {
         ],
         missionsTitle: 'Actions Réalisées (Technique & Com)',
         missions: [
-            '<strong>Expertise Maintenance :</strong> Diagnostics réussis sur veilleuses (soudure LEDs), tondeuses (mécanique) et analyses sur radios et aspirateurs.',
+            '<strong>Expertise Maintenance :</strong> Diagnostics réussis on nightlights (soudure LEDs), tondeuses (mécanique) et analyses sur radios et aspirateurs.',
             '<strong>Pilotage Stratégique :</strong> Négociation et signature de la convention avec la Ressourcerie "Les Bonnes Manières".',
             '<strong>Création Digitale :</strong> Gestion multi-canaux (Instagram, TikTok) et production de contenus "Avant/Après".',
             '<strong>Pérennisation :</strong> Rédaction d\'un guide complet pour le transfert de compétences aux promotions futures.'
@@ -264,7 +263,7 @@ Object.assign(window.siteData.modalData.fr, {
             'Caractérisation complète des propriétés physiques et diélectriques.',
             'Rédaction d\'un rapport technique détaillé et présentation des résultats.'
         ],
-        softSkills: ['Adaptabilité (Décisions correctives)', 'Rigueur scientifique', 'Esprit critique et prise de décision factuelle', 'Autonomie (Semaine intensive)', 'Esprit critique'],
+        softSkills: ['Adaptability (Décisions correctives)', 'Rigueur scientifique', 'Esprit critique et prise de décision factuelle', 'Autonomie (Semaine intensive)', 'Esprit critique'],
         material: [
             { name: 'Balance analytique', image: 'assets/projects/batio3/materiel/Balance .jpg' },
             { name: 'Bain à ultrasons', image: 'assets/projects/batio3/materiel/Bain ultrason.jpg' },
@@ -276,7 +275,7 @@ Object.assign(window.siteData.modalData.fr, {
             { name: 'Four de calcination (1100°C)', image: 'assets/projects/batio3/materiel/Four 1100°C (ouvert).jpg' },
             { name: 'Moule de pressage en acier', image: 'assets/projects/batio3/materiel/Moule pressage.jpeg' },
             { name: 'Presse uniaxiale manuelle', image: 'assets/projects/batio3/materiel/Presse pour pastille.jpg' },
-            { name: 'Dilatomètre', image: 'assets/projects/batio3/materiel/Dilatomètre.jpeg' },
+            { name: 'Dilatometer', image: 'assets/projects/batio3/materiel/Dilatomètre.jpeg' },
             { name: 'Four de frittage (1400°C)', image: 'assets/projects/batio3/materiel/Four 1400°C.jpg' },
             { name: 'Polisseuse EcoMet 30', image: 'assets/projects/batio3/materiel/Polisseuse- EcoMet 30.jpeg' },
             { name: 'Métalliseur sous vide', image: 'assets/projects/batio3/materiel/Métallisation sous vide.jpg' },
@@ -321,26 +320,80 @@ Object.assign(window.siteData.modalData.fr, {
         ]
     },
     'stage-mp2': {
-        title: 'Stage Technique - Radiall <span class="badge badge--orange" style="font-size: 0.6em; vertical-align: middle; margin-left: 10px;">À VENIR</span>',
+        title: 'Développement Logiciel : Banc de Test de Cyclage Thermique (Radiall)',
         period: '07/04/2026 - 19/06/2026',
-        summary: 'Immersion technique de deuxième année (BUT MP) au sein du laboratoire d\'essais de Radiall, leader mondial des solutions d\'interconnexion pour l\'aéronautique.',
-        context: 'Ce stage de 11 semaines se déroulera au sein du Laboratoire d\'essais de Radiall SA à Blois (39 rue Velpeau), sous la tutelle d\'Emilie Ourion, Responsable développement laboratoire. Le projet s\'inscrit dans une démarche d\'innovation technique pour le marché multi-contact de l\'aéronautique.',
+        summary: 'Ce projet, mené au Laboratoire d’Essais de Radiall, visait à automatiser et sécuriser la qualification des connecteurs aéronautiques haute puissance face aux exigences de l\'avion plus électrique. Ma mission a consisté à transformer un prototype logiciel fragile (V36) en une application de rang industriel (V40) capable de piloter le banc en continu et en toute autonomie (24h/24) selon la norme NF EN 2591-218. En combinant le développement Python à l\'utilisation innovante de Gemini CLI, j\'ai restructuré l\'architecture logicielle en modules spécialisés, fiabilisé l\'exportation redondante des données et intégré une sécurité active par Watchdog pour protéger les composants testés. Cette expérience, conclue par la rédaction d\'un manuel technique de 26 pages, m\'a permis de développer une solide culture de la sécurité industrielle et de confirmer mon projet d\'évolution vers des fonctions d\'ingénieur. (<a href="assets/docs/Rapport de stage_Radiall_CHERPEAU_Mateis.pdf" target="_blank" class="modal-link">Lire le rapport complet</a>)',
+        context: 'Ce stage d’une durée de 11 semaines, réalisé dans le cadre de ma deuxième année de BUT Mesures Physiques à l’IUT de Blois, s’est déroulé au sein du Laboratoire d’Essais de l’entreprise Radiall, sur le site de Château-Renault. Leader mondial des solutions d’interconnexion critiques, Radiall fait face à de profondes mutations technologiques, notamment portées par le concept de l\'avion plus électrique. Cette transition implique l\'abandon progressif des systèmes hydrauliques traditionnels au profit de réseaux électriques de forte puissance. Pour répondre à ces nouveaux besoins, le laboratoire met en place de nouveaux bancs de test de cyclage thermique haute puissance. C\'est dans le cadre du déploiement de ces nouveaux outils que j\'ai été intégré au projet pour perfectionner l\'un de ces bancs. Ma mission s\'est concentrée sur l\'amélioration globale du logiciel de pilotage des composantes du banc.',
         brandLogo: [
             'assets/projects/iut/Icone IUT orange.png',
             'assets/projects/iut/Icone MP orange.png',
             'assets/projects/radiall/Icone Radiall orange.png'
         ],
-        missionsTitle: 'Missions Prévisionnelles & Environnement Technique',
-        missions: [
-            'Participation au développement d\'un nouveau banc de test de cyclage en courant pour les produits du marché multi-contact.',
-            'Maîtrise et application rigoureuse des protocoles et procédures de tests en laboratoire aéronautique.',
-            'Développement sous langage Python de fonctionnalités spécifiques du banc (pilotage d\'alimentation, de centrales d\'acquisition).',
-            'Récupération, enregistrement et post-traitement des données issues de sondes de mesure.',
-            'Test et validation de la correcte exécution des fonctionnalités pour dérouler le logigramme de programmation.',
-            'Découverte du milieu professionnel de l\'entreprise aéronautique.'
+        objective: 'L\'objectif principal était de transformer un prototype logiciel (V36) en un outil industriel (V40) capable de piloter le banc d\'essai en toute autonomie et en continu (24h/24). Le projet visait quatre finalités majeures :<ul class="modal-inner-list"><li><strong>Sécurité active :</strong> Automatiser la mise en sécurité du banc (Watchdog et Interlock) en cas de bug ou de surchauffe pour protéger les composants testés.</li><li><strong>Simplicité d\'usage :</strong> Centraliser le contrôle des instruments (TDK Lambda et Graphtec) sur une interface graphique intuitive pour les opérateurs.</li><li><strong>Fiabilité métrologique :</strong> Garantir la conformité à la norme NF EN 2591-218 via le calcul automatique de la résistance de contact (Rc) et l\'export des données.</li><li><strong>Pérennité du système :</strong> Assurer la maintenance future grâce à une architecture logicielle modulaire et un manuel technique complet.</li></ul>',
+        resultsTitle: 'Cahier des charges technique',
+        results: [
+            '<strong>Besoin industriel :</strong> L\'électrification de l\'aéronautique impose des courants critiques allant jusqu\'à 500 A. Le banc simule la vie des composants par cyclage thermique pour détecter toute dérive de la résistance de contact (Rc) par effet Joule, évitant ainsi les risques d\'incendie.',
+            '<strong>Cahier des charges :</strong> Automatisation totalement la norme NF EN 2591-218 (jusqu\'à 1500 cycles) en pilotant de manière synchronisée l\'alimentation TDK Lambda, la centrale Graphtec et les ventilateurs de refroidissement.',
+            '<strong>Structuration initiale :</strong> Passer d\'essais manuels chronophages à un outil autonome fonctionnant 24h/24. La logique du programme repose sur une machine à états finis pour garantir des transitions sécurisées entre chaque phase du cycle.',
+            '<strong>Exigences de sécurité :</strong> Assurer la coupure immédiate du courant via une boucle Interlock en cas de dépassement de la température critique ou de gel du logiciel.'
         ],
-        tags: ['Stage à venir', 'Python', 'Aéronautique', 'Banc de test', 'Instrumentation', 'Électronique'],
-        gallery: []
+        missionsTitle: 'Missions Réalisées',
+        missions: [
+            '<strong>Refonte logicielle :</strong> Migration du script Python monolithique initial vers une architecture modulaire, via la création de "Managers" spécialisés (Datalog, Stats, Plot, Sequence) pour garantir la robustesse du code.',
+            '<strong>Modernisation de l\'IHM :</strong> Développement d\'une interface graphique complète sous CustomTkinter structurée en 5 onglets thématiques, offrant un tableau de bord centralisé et un mode "lecture seule" pour verrouiller les paramètres pendant les essais.',
+            '<strong>Système d\'exportation et gestion des données :</strong> Automatisation de la génération d\'une arborescence de dossiers hiérarchisée et redondante à chaque essai, séparant les fichiers globaux (CSV/TXT) des sauvegardes automatiques cycle par cycle pour éliminer tout risque de perte de données.',
+            '<strong>Ingénierie documentaire :</strong> Rédaction d\'un manuel technique de référence de 26 pages et modélisation complète des schémas de câblage matériel et de l\'architecture logicielle pour pérenniser le système au laboratoire.'
+        ],
+        technicalDetailsTitle: 'Détails Techniques (Architecture & Sécurité)',
+        technicalDetails: [
+            '<strong>Architecture Multithreading :</strong> Séparation de l\'interface graphique (GUI) et des boucles d\'acquisition pour garantir la stabilité du logiciel lors de tests de longue durée (> 1000h).',
+            '<strong>Watchdog Matériel-Logiciel :</strong> Développement d\'un protocole de surveillance avec une carte relais USB. En cas de gel logiciel, la puissance est coupée instantanément via une boucle Interlock.',
+            '<strong>Automatisation Normative :</strong> Codage d\'une machine à états pilotant les phases de chauffe, stabilisation ($\pm 0.5$°C), refroidissement et repos selon la norme NF EN 2591-218.',
+            '<strong>Gestion des Flux de Données :</strong> Implémentation d\'un système de sauvegarde redondant (cycle par cycle) pour prévenir toute perte de données en cas d\'incident.'
+        ],
+        hardSkills: [
+            'Développement Python (Restructuration, CustomTkinter, automatisation)',
+            'Instrumentation et pilotage (TDK Lambda, Graphtec GL240, protocoles de communication)',
+            'Sécurisation de bancs d\'essai (Watchdog, boucles de sécurité Interlock)',
+            'Co-développement par IA (Gemini CLI, audit de code, débogage)',
+            'Rédaction technique (Manuels utilisateurs, schémas de câblage matériels et logiciels)'
+        ],
+        softSkills: [
+            'Autonomie (Gestion du projet seul suite au départ de l\'alternant)',
+            'Culture de la sécurité (Rigueur face aux risques normés et industriels)',
+            'Esprit de synthèse',
+            'Force de proposition (Initiative de faire évoluer le prototype vers un outil industriel qualifiable)',
+            'Communication professionnelle (Rédaction technique pour les équipes et passation)',
+            'Esprit d\'équipe (Collaboration transverse avec les chargés d\'essais et les clients internes)'
+        ],
+        material: [
+            { name: 'Pycharm (Envirronement de développement python)', image: 'assets/projects/radiall/materiel/pycharm_interface.png' },
+            { name: 'Gemini CLI', image: 'assets/projects/radiall/materiel/gemini_cli.png' },
+            { name: 'Alimentation TDK Lambda GEN 10-500', image: 'assets/projects/radiall/materiel/tdk_lambda.jpg' },
+            { name: 'Centrale Graphtec GL240', image: 'assets/projects/radiall/materiel/graphtec.jpeg' },
+            { name: 'Carte Relais SEEIT', image: 'assets/projects/radiall/materiel/carte_relais.jpeg' },
+            { name: 'Ventilateur SUNON 230V - 110mA', image: 'assets/projects/radiall/materiel/ventilateur_sunon.jpeg' },
+            { name: 'Banc de test', image: 'assets/projects/radiall/materiel/banc_test_physique.jpeg' }
+        ],
+        tags: ['Python', 'Instrumentation', 'Aéronautique', 'Industrie 4.0', 'IA', 'Banc de test'],
+        gallery: [
+            { src: 'assets/projects/radiall/gallery/extrait_normes.png', caption: 'Extrait de la norme EN2591-218 (méthodes d\'essai)' },
+            { src: 'assets/projects/radiall/gallery/cahier_des_charges.png', caption: 'Extrait du cahier des charges client (besoins techniques)' },
+            { src: 'assets/projects/radiall/gallery/schema_cyclage.png', caption: 'Schéma théorique du cycle de température (norme EN2591)' },
+            { src: 'assets/projects/radiall/gallery/schema_banc.png', caption: 'Schéma de cablage du banc de test' },
+            { src: 'assets/projects/radiall/gallery/logigramme.png', caption: 'Logigramme de fonctionnement du cycle de test' },
+            { src: 'assets/projects/radiall/gallery/machine_etats.png', caption: 'Machine à états finis pilotant le cycle' },
+            { src: 'assets/projects/radiall/gallery/architecture_logicielle.png', caption: 'Architecture logicielle modulaire (POO)' },
+            { src: 'assets/projects/radiall/gallery/interface_v36.png', caption: 'Interface héritée (Version V36) avant refonte' },
+            { src: 'assets/projects/radiall/gallery/dashboard_v40.png', caption: 'Dashboard de pilotage en temps réel (V40)' },
+            { src: 'assets/projects/radiall/gallery/onglet_1_initialisation.png', caption: 'Interface : Onglet 1 - Configuration et Contrôle Direct' },
+            { src: 'assets/projects/radiall/gallery/onglet_5_fichiers.png', caption: 'Interface : Onglet 5 - Gestion des Fichiers et Exports' },
+            { src: 'assets/projects/radiall/gallery/graphique_temperature.png', caption: 'Évolution de la température lors d\'un test de 6 cycles' },
+            { src: 'assets/projects/radiall/gallery/graphique_tension.png', caption: 'Évolution de la tension (V) lors d\'un test de 6 cycles' },
+            { src: 'assets/projects/radiall/gallery/compte_rendu_test.png', caption: 'Exemple de rapport de test automatisé (Crash-Test USB)' },
+            { src: 'assets/projects/radiall/gallery/resume_tests.png', caption: 'Tableau de suivi et de validation des tests unitaires' },
+            { src: 'assets/projects/radiall/gallery/gestion_projet.png', caption: 'Pilotage de projet via la liste de tâches dynamique' }
+        ]
     },
     'alternance-mp3': { 
         title: 'Alternance BUT MP3', 
@@ -354,11 +407,12 @@ Object.assign(window.siteData.modalData.fr, {
         ],
         missionsTitle: 'Missions cibles & Projets',
         missions: [
-            '<strong>Caractérisation de matériaux :</strong> Étude des propriétés physiques, chimiques et mécaniques pour le contrôle qualité ou la R&D.',
-            '<strong>Chargé d\'essais :</strong> Mise en œuvre de protocoles de mesure, exploitation de bancs de tests et analyse de données métrologiques.',
-            '<strong>Développement de nouveaux produits :</strong> Participation à la conception, au prototypage et à la validation technique de solutions innovantes.',
-            '<strong>Gestion et pilotage de projet :</strong> Planification, coordination des ressources et suivi des objectifs pour mener à bien des missions techniques complexes.',
-            '<strong>Poursuite d\'études :</strong> Recherche d\'une structure permettant d\'effectuer le cycle ingénieur en alternance suite au BUT.'
+            '<strong>Instrumentation & Pilotage de Systèmes :</strong> Traitement de signaux (amplification, filtrage), programmation d\'instruments et d\'interfaces homme-machine (IHM) pour l\'acquisition de données.',
+            '<strong>Caractérisation & Analyses Physico-Chimiques :</strong> Utilisation de techniques spectroscopiques (UV-Visible, IR, Raman), chromatographiques (HPLC, CPG) et électrochimiques pour le contrôle qualité ou la R&D.',
+            '<strong>Essais, Métrologie & Qualité :</strong> Mise en œuvre de protocoles de mesure, exploitation de bancs de tests, analyse statistique des résultats et établissement de la traçabilité selon les normes.',
+            '<strong>Matériaux, Vibrations & Acoustique :</strong> Étude des propriétés mécaniques (RDM), analyses vibratoires et mesures acoustiques en environnement industriel.',
+            '<strong>Énergie, Fluides & Vide :</strong> Optimisation de systèmes de production d\'énergie, étude de mécanique des fluides et dimensionnement d\'installations de techniques du vide (primaire et secondaire).',
+            '<strong>Gestion & Pilotage de Projet :</strong> Planification, coordination et suivi d\'objectifs techniques complexes dans une démarche de futur apprenti ingénieur.'
         ], 
         tags: ['Alternance BUT MP3', 'Caractérisation', 'Essais', 'R&D', 'Futur Ingénieur'], 
         gallery: [], 

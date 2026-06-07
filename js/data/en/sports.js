@@ -84,9 +84,15 @@ Object.assign(window.siteData.modalData.en, {
                 desc: 'Regional Coaching Diploma 1',
                 iconImg: 'assets/projects/ligue/icone ffvb orange.png',
                 targetModal: 'dre-detail'
-            },
-            {
-                title: 'First Aid Level 1',
+                },
+                {
+                title: 'DRE 2',
+                desc: 'Beach Volleyball Animator',
+                iconImg: 'assets/projects/ligue/icone ffvb orange.png',
+                targetModal: 'dre2-detail'
+                },
+                {
+                title: 'PSC1',
                 desc: 'First Aid',
                 iconImg: 'assets/projects/protection-civile/Icone PC orange 2.png',
                 targetModal: 'psc1-detail'
@@ -750,10 +756,11 @@ Object.assign(window.siteData.modalData.en, {
         summary: 'Global management of a squad in a technical and tactical reconstruction phase. The main theme of this season is to establish a new training cycle focused on regional excellence, the integration of game systems, the learning of technical movements, and the development of individual potential towards the regional and national senior levels.', 
         context: 'Head coach of the Female Under 18 Pre-National (Regional) squad. I manage 3 hours of weekly training and the French Cup campaign, while coordinating the league with an assistant. The challenge this season is to launch a new training cycle by combining individual progression towards high-level play and collective unity.', 
         positions: ['Head Coach'],
-        teamsRep: ['Female Under 18 Pre-National (AAJB)', 'Female Under 18 French Cup'],
+        teamsRep: ['Female Under 18 Pre-National (AAJB)', 'Female Under 18 French Cup', 'Female Under 18 Loir-et-Cher Cup'],
         results: [
             '5th in Pre-National U18F',
-            '3rd round of Challenge France'
+            '3rd round of Challenge France',
+            '1st in Loir-et-Cher Cup'
         ],
         people: '<span class="roster-bullet">•</span> 12 players (ages 13 to 18).<br><span class="roster-bullet">•</span> Homogeneous group with already one year of experience in the championship (majority of girls in their last year).<br><span class="roster-bullet">•</span> Key individuals :<ul class="modal-inner-list"><li>Solenne Quessard Bourget (Outside Hitter, 15 years old)</li><li>Axelle Romero (Setter, 17 years old)</li><li>Chloé Roudier (Middle Blocker, 14 years old, selection for the CRE of Ligue du Centre-Val de Loire)</li></ul>',
         missionsTitle: 'Missions & achievements',
@@ -862,7 +869,8 @@ Object.assign(window.siteData.modalData.en, {
         positions: ['Head Coach'],
         teamsRep: ['Team 1 UFOLEP (Loir-et-Cher)', 'Team 2 UFOLEP (Loir-et-Cher)', 'Coupe de France Compet\'lib Team'],
         results: [
-            'Regular season in progress (Teams manage matches autonomously)'
+            '1st in the UFOLEP 41 championship',
+            '9th in the regional phase of compet\'lib'
         ],
         people: '<span class="roster-bullet">•</span> 20 to 25 people (Mixed group).<br><span class="roster-bullet">•</span> Wide age range (18 to 50 years old, average 25).<br><span class="roster-bullet">•</span> Notable individuals:<ul class="modal-inner-list"><li>Justin Fotso Tetchou (Assistant Coach, International Cameroonian Referee)</li><li>Claire Pinto (Former professional soccer player)</li></ul>',
         missionsTitle: 'Missions & achievements',
@@ -1014,20 +1022,50 @@ Object.assign(window.siteData.modalData.en, {
         ],
         parentModalId: 'carriere-joueur' 
     },
-    'recherche-club-detail': {
-        title: 'Sports Project & Collaborations - 2026/2027',
+    'laval-detail': {
+        title: 'ASPTT Laval - 2026/2027 Season',
         period: '2026-2027 Season',
-        summary: 'With a hybrid profile combining technical expertise on the court and management skills on the bench, I am seeking an ambitious project for the 2026-2027 season. My commitment can revolve around two major axes, separate or combined according to the organization\'s needs.',
-        context: 'My journey within the regional elite and my coaching diplomas now allow me to aspire to increased responsibilities. I wish to put my dynamism and tactical vision at the service of a club aiming for excellence, with a total openness to national levels and high-level structuring projects.',
-        brandLogo: [],
-        missionsTitle: 'Collaboration Opportunities',
-        missions: [
-            '<strong>Coaching Axis:</strong> Technical direction of a Senior squad (Pre-National / N3 minimum) or joining a high-level staff (N3, N2, Elite) as an assistant coach to provide my expertise in video and tactical analysis.',
-            '<strong>Performance Axis (Player):</strong> First Choice Libero position from National 3 upwards. I remain open to Pre-National projects if they are driven by a clear ambition for promotion or to squads in higher divisions (N2) looking for a dedicated and invested player.',
-            '<strong>Dual Competence:</strong> Possibility of combining these two roles within the club if the organization allows it.',
-            '<strong>Ambition:</strong> Beyond the level, I am primarily looking for a demanding environment where learning and self-improvement are at the heart of the sporting project.'
+        summary: 'Commitment to ASPTT Laval Volleyball for the 2026-2027 season. This new chapter is part of a dynamic of performance and continuous development within an ambitious organization in Mayenne.',
+        context: '<strong>[Content Coming Soon]</strong> - My precise mission and role within ASPTT Laval (player/coaching) will be detailed soon with the launch of the season.',
+        brandLogo: [
+            'assets/icons/laval-orange.png'
         ],
-        tags: ['Libero', 'Coach', 'N3 / N2 / Pre-Nat', 'High Level', 'Versatility', 'Performance'],
+        missionsTitle: 'Season Outlook',
+        missions: [
+            'Integration into the ASPTT Laval sports project.',
+            'Contribution to the club\'s collective performance.',
+            'Development of technical and tactical skills in a federal environment.',
+            'Collaboration with technical staff and club members.'
+        ],
+        tags: ['ASPTT Laval', 'Laval', 'New Club', '2026-2027 Season', 'Performance'],
         gallery: []
+    },
+    'dre2-detail': {
+        title: 'Beach Volleyball Animator Certificate (DRE 2)',
+        period: 'May 23 - 24, 2026',
+        summary: 'Intensive 2-day training held at the Plaine Départementale des Sports in Châteauroux. This course leads to the Beach Volleyball Animator Certificate, validating the technical and pedagogical skills required to supervise the discipline on sand.',
+        context: 'Training led by Frederic Cros and Johny Francoise, using the M15 Female and Masculine regional selections as support groups. This DRE 2 module focuses on the transmission of fundamentals and group management of youth in a specific environment (sand).',
+        brandLogo: [
+            'assets/projects/ligue/Icone LDC orange.png'
+        ],
+        missionsTitle: 'Acquisitions & Supervision',
+        missions: [
+            '<strong>Animator Certification:</strong> Validation of supervision skills specific to Beach Volleyball.',
+            '<strong>Sand Pedagogy:</strong> Adaptation of technical exercises to the constraints of the surface and the outdoor environment.',
+            '<strong>Youth Team Direction:</strong> Coaching and session animation with the M15 regional selections.',
+            '<strong>Session Engineering:</strong> Design of progressive learning situations for 2x2 on sand.',
+            '<strong>Expert Instructors:</strong> Learning high-level methods from Frederic Cros and Johny Francoise.',
+            '<strong>Collective Life:</strong> Management of collective life and group cohesion during a camp.'
+        ],
+        tags: ['DRE 2', 'Beach Volleyball', 'Coach', 'FFVB', 'Performance', 'High Level'],
+        gallery: [
+            { src: 'assets/projects/dre/IMG_5912.jpeg', caption: "Beach Volleyball Animator training poster - Level 1." },
+            { src: 'assets/projects/dre/IMG_5893.jpeg', caption: "Overview of the indoor structure in Châteauroux." },
+            { src: 'assets/projects/dre/IMG_5892.jpeg', caption: "Opposition situation with the U15F group" },
+            { src: 'assets/projects/dre/IMG_5888.jpeg', caption: "Game situation during the training camp" }
+        ],
+        relatedModals: [
+            { id: 'encadrement-volley', label: 'Volleyball Coaching' }
+        ]
     }
 });

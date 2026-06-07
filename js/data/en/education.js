@@ -28,31 +28,30 @@ Object.assign(window.siteData.modalData.en, {
         ],
         competences: {
             'Physics & Mechanics': [
+                'Fluid Mechanics & Vacuum Techniques (statics, pressure drops, pumps, mass spectrometry, gauges)',
+                'Vibratory Mechanics & Acoustics (1-DOF systems, propagation, acoustic levels)',
+                'Geometric & Wave Optics (polarization, diffraction, Michelson, Mach-Zender, Fabry-Perot interferometry)',
+                'Thermodynamics & Heat Transfer',
                 'Point and Solid Mechanics',
-                'Fluid and Vacuum Mechanics',
-                'Vibrational Mechanics and Acoustics',
-                'Thermodynamics and Heat Transfer',
-                'Geometric and Wave Optics',
-                'Rheology'
+                'Rheology (viscosity measurement, rheograms)'
             ],
             'Chemistry, Materials & Atomistics': [
-                'General Chemistry and Solutions',
-                'Spectroscopy (UV-Visible, IR, NMR)',
-                'Chromatographie',
-                'Materials Science and Characterization',
-                'Nuclear Physics',
-                'Atomistics'
+                'Spectroscopic Techniques (UV-Visible, IR, Raman, Fluorescence)',
+                'Chromatographic (HPLC, GC) & Electrochemical Analysis (current-potential curves)',
+                'Science & Characterization of Materials (Strength of Materials, physical and chemical treatments, microstructure)',
+                'General Chemistry, Solutions & Atomistics',
+                'Nuclear Physics'
             ],
             'Electronics, Measurement & IT': [
-                'Analog and Digital Electronics',
-                'Electricity and Electromagnetism',
-                'Signal Conditioning',
-                'Signal Processing',
-                'Metrology and Sensors',
+                'Electricity & Electromagnetism (induction, Laplace\'s law, inductive and capacitive sensors)',
+                'Signal Processing (Fourier, filtering, sampling, DSP, signal-to-noise ratio)',
+                'Signal Conditioning & Instrumentation (amplification, impedance, instrument control, HMI)',
+                'Metrology, Quality & Statistics (reliability, traceability, machine capability, control charts)',
                 'Mathematics for Physics',
                 'Programming and Instrumentation Computing'
             ],
-            'Transversal & Languages': [
+            'Energy, Environment & Transversal': [
+                'Renewable & Decarbonized Energies, Environment Quality',
                 'Technical and Scientific English',
                 'Culture and Communication',
                 'Personalized Professional Project (PPP)',
@@ -270,7 +269,7 @@ Object.assign(window.siteData.modalData.en, {
             { name: 'Analytical balance', image: 'assets/projects/batio3/materiel/Balance .jpg' },
             { name: 'Ultrasonic bath', image: 'assets/projects/batio3/materiel/Bain ultrason.jpg' },
             { name: 'Planetary ball mill', image: 'assets/projects/batio3/materiel/Broyeur planétaire(ouvert).jpg' },
-            { name: 'Grinding jar', image: 'assets/projects/batio3/materiel/creuset broyage.jpeg' },
+            { name: 'Creuset de broyage', image: 'assets/projects/batio3/materiel/creuset broyage.jpeg' },
             { name: 'Zirconia grinding media', image: 'assets/projects/batio3/materiel/Billes de zircon dans verre de montre .jpg' },
             { name: 'Drying oven', image: 'assets/projects/batio3/materiel/Étuve.jpg' },
             { name: 'Mortar and pestle', image: 'assets/projects/batio3/gallery_valid/Projet_BaTiO3_Mortier_P1.jpg' },
@@ -283,9 +282,9 @@ Object.assign(window.siteData.modalData.en, {
             { name: 'Vacuum metallizer', image: 'assets/projects/batio3/materiel/Métallisation sous vide.jpg' },
             { name: 'Scanning Electron Microscope (SEM)', image: 'assets/projects/batio3/materiel/Microscope Électronique à Balayage .jpg' },
             { name: 'X-ray diffractometer (XRD)', image: 'assets/projects/batio3/materiel/DRX.jpg' },
-            { name: 'Thermal analysis (DSC)', image: 'assets/projects/batio3/materiel/DSC.jpg' },
-            { name: 'Laser particle size analyzer', image: 'assets/projects/batio3/materiel/Granulomètre.jpg' },
-            { name: 'Hydrostatic balance (Archimedes)', image: 'assets/projects/batio3/materiel/Densité balance archimède INSA à vide.jpg' },
+            { name: 'Analyse thermique (DSC)', image: 'assets/projects/batio3/materiel/DSC.jpg' },
+            { name: 'Granulomètre laser', image: 'assets/projects/batio3/materiel/Granulomètre.jpg' },
+            { name: 'Balance hydrostatique (Archimède)', image: 'assets/projects/batio3/materiel/Densité balance archimède INSA à vide.jpg' },
             { name: 'Impedance analyzer (Bode 100)', image: 'assets/projects/batio3/materiel/Impédancemètre.jpeg' },
             { name: 'Precision micrometer', image: 'assets/projects/batio3/materiel/Micromètre mitutoyo (épaisseur).jpg' }
         ],
@@ -322,26 +321,80 @@ Object.assign(window.siteData.modalData.en, {
         ]
     },
     'stage-mp2': {
-        title: 'Technical Internship - Radiall <span class="badge badge--orange" style="font-size: 0.6em; vertical-align: middle; margin-left: 10px;">UPCOMING</span>',
-        period: '07/04/2026 - 19/06/2026',
-        summary: 'Second-year technical internship (BUT MP) within the test laboratory of Radiall, a world leader in interconnection solutions for aeronautics.',
-        context: 'This 11-week internship will take place at the Radiall SA Test Laboratory in Blois (39 rue Velpeau), under the supervision of Emilie Ourion, Laboratory Development Manager. The project is part of a technical innovation process for the aeronautical multi-contact market.',
+        title: 'Software Development: Thermal Cycling Test Bench (Radiall)',
+        period: '07/04/2026 - 06/19/2026',
+        summary: 'This project, conducted at Radiall\'s Test Laboratory, aimed to automate and secure the qualification of high-power aeronautical connectors in the face of more electric aircraft requirements. My mission involved transforming a fragile software prototype (V36) into an industrial-grade application (V40) capable of controlling the bench continuously and autonomously (24/7) according to the NF EN 2591-218 standard. By combining Python development with the innovative use of Gemini CLI, I restructured the software architecture into specialized modules, made redundant data exportation reliable, and integrated active safety via Watchdog to protect the tested components. This experience, concluded by drafting a 26-page technical manual, allowed me to develop a solid industrial safety culture and confirm my project to evolve toward engineering roles. (<a href="assets/docs/Rapport de stage_Radiall_CHERPEAU_Mateis.pdf" target="_blank" class="modal-link">Read the full report</a>)',
+        context: 'This 11-week internship, completed as part of my second year of the BUT Physical Measurements at the IUT of Blois, took place within the Test Laboratory of the Radiall company at the Château-Renault site. A world leader in critical interconnection solutions, Radiall is facing profound technological shifts, particularly driven by the concept of the more electric aircraft. This transition involves the gradual phase-out of traditional hydraulic systems in favor of high-power electrical networks. To meet these new needs, the laboratory is setting up new high-power thermal cycling test benches. It was within the framework of deploying these new tools that I was integrated into the project to perfect one of these benches. My mission focused on the overall improvement of the software controlling the bench components.',
         brandLogo: [
             'assets/projects/iut/Icone IUT orange.png',
             'assets/projects/iut/Icone MP orange.png',
             'assets/projects/radiall/Icone Radiall orange.png'
         ],
-        missionsTitle: 'Planned Missions & Technical Environment',
-        missions: [
-            'Participation in the development of a new current cycling test bench for multi-contact market products.',
-            'Rigorous mastery and application of test protocols and procedures in an aeronautical laboratory.',
-            'Development in Python language of specific bench functionalities (power supply control, data acquisition units).',
-            'Retrieval, recording, and post-processing of data from measurement probes.',
-            'Testing and validation of the correct execution of functionalities to run the programming flowcharts.',
-            'Discovery of the professional environment of an aeronautical company.'
+        objective: 'The primary objective was to transform a software prototype (V36) into an industrial-grade tool (V40) capable of controlling the test bench autonomously and continuously (24/7). The project aimed at four major goals:<ul class="modal-inner-list"><li><strong>Active Safety:</strong> Automate bench safety procedures (Watchdog and Interlock) in case of bugs or overheating to protect the tested components.</li><li><strong>Ease of Use:</strong> Centralize instrument control (TDK Lambda and Graphtec) on an intuitive graphical interface for operators.</li><li><strong>Metrological Reliability:</strong> Guarantee compliance with the NF EN 2591-218 standard through automatic calculation of contact resistance (Rc) and data export.</li><li><strong>System Sustainability:</strong> Ensure future maintenance through modular software architecture and a comprehensive technical manual.</li></ul>',
+        resultsTitle: 'Technical Specifications',
+        results: [
+            '<strong>Industrial Need:</strong> Aeronautical electrification imposes critical currents up to 500 A. The bench simulates component life through thermal cycling to detect any contact resistance (Rc) drift due to the Joule effect, thus avoiding fire risks.',
+            '<strong>Specifications:</strong> Fully automate the NF EN 2591-218 standard (up to 1500 cycles) by synchronized control of the TDK Lambda power supply, the Graphtec data logger, and the cooling fans.',
+            '<strong>Initial Structuring:</strong> Transition from time-consuming manual tests to an autonomous tool operating 24/7. The program logic relies on a finite state machine to guarantee secure transitions between each phase of the cycle.',
+            '<strong>Safety Requirements:</strong> Ensure immediate current cutoff via an Interlock loop in case of critical temperature exceedance or software freeze.'
         ],
-        tags: ['Upcoming Internship', 'Python', 'Aeronautics', 'Test Bench', 'Instrumentation', 'Electronics'],
-        gallery: []
+        missionsTitle: 'Missions Carried Out',
+        missions: [
+            '<strong>Software Refactoring:</strong> Migration of the initial monolithic Python script to a modular architecture through the creation of specialized "Managers" (Datalog, Stats, Plot, Sequence) to ensure code robustness.',
+            '<strong>GUI Modernization:</strong> Development of a full graphical interface under CustomTkinter structured into 5 thematic tabs, providing a centralized dashboard and a "read-only" mode to lock parameters during tests.',
+            '<strong>Export System and Data Management:</strong> Automation of hierarchical and redundant folder tree generation for each test, separating global files (CSV/TXT) from cycle-by-cycle automatic backups to eliminate any risk of data loss.',
+            '<strong>Technical Documentation:</strong> Drafting a 26-page reference technical manual and complete modeling of hardware wiring diagrams and software architecture to ensure system sustainability in the laboratory.'
+        ],
+        technicalDetailsTitle: 'Technical Details (Architecture & Security)',
+        technicalDetails: [
+            '<strong>Asynchronous Threading:</strong> Separation of the graphical interface (GUI) and acquisition loops to guarantee software stability during long-duration tests (> 1000h).',
+            '<strong>Hardware-Software Watchdog:</strong> Development of a monitoring protocol with a USB relay board. In case of a software freeze, power is instantly cut via an Interlock loop.',
+            '<strong>Normative Automation:</strong> Coding of a state machine controlling heating, stabilization ($\pm 0.5$°C), cooling, and rest phases according to the NF EN 2591-218 standard.',
+            '<strong>Data Flow Management:</strong> Implementation of a redundant backup system (cycle by cycle) to prevent any data loss in case of an incident.'
+        ],
+        hardSkills: [
+            'Python Development (Refactoring, CustomTkinter, automation)',
+            'Instrumentation and Control (TDK Lambda, Graphtec GL240, communication protocols)',
+            'Test Bench Security (Watchdog, Interlock safety loops)',
+            'AI-assisted Co-development (Gemini CLI, code audit, debugging)',
+            'Technical Writing (User manuals, hardware and software wiring diagrams)'
+        ],
+        softSkills: [
+            'Autonomy (Sole project management following the apprentice\'s departure)',
+            'Safety Culture (Rigor in the face of standardized and industrial risks)',
+            'Synthesis Skills',
+            'Initiative (Driving the evolution from prototype to a certifiable industrial tool)',
+            'Professional Communication (Technical writing for teams and handovers)',
+            'Team Spirit (Cross-functional collaboration with test engineers and internal clients)'
+        ],
+        material: [
+            { name: 'PyCharm (Python Development Environment)', image: 'assets/projects/radiall/materiel/pycharm_interface.png' },
+            { name: 'Gemini CLI', image: 'assets/projects/radiall/materiel/gemini_cli.png' },
+            { name: 'TDK Lambda GEN 10-500 Power Supply', image: 'assets/projects/radiall/materiel/tdk_lambda.jpg' },
+            { name: 'Graphtec GL240 Data Acquisition', image: 'assets/projects/radiall/materiel/graphtec.jpeg' },
+            { name: 'SEEIT Relay Board', image: 'assets/projects/radiall/materiel/carte_relais.jpeg' },
+            { name: 'SUNON 230V - 110mA Fan', image: 'assets/projects/radiall/materiel/ventilateur_sunon.jpeg' },
+            { name: 'Test Bench', image: 'assets/projects/radiall/materiel/banc_test_physique.jpeg' }
+        ],
+        tags: ['Python', 'Instrumentation', 'Aerospace', 'Industry 4.0', 'AI', 'Test Bench'],
+        gallery: [
+            { src: 'assets/projects/radiall/gallery/extrait_normes.png', caption: 'Excerpt from the EN2591-218 standard (test methods)' },
+            { src: 'assets/projects/radiall/gallery/cahier_des_charges.png', caption: 'Excerpt from the customer specifications (technical requirements)' },
+            { src: 'assets/projects/radiall/gallery/schema_cyclage.png', caption: 'Theoretical temperature cycle diagram (EN2591 standard)' },
+            { src: 'assets/projects/radiall/gallery/schema_banc.png', caption: 'Wiring diagram of the test bench' },
+            { src: 'assets/projects/radiall/gallery/logigramme.png', caption: 'Flowchart of the test cycle operation' },
+            { src: 'assets/projects/radiall/gallery/machine_etats.png', caption: 'Finite state machine controlling the cycle' },
+            { src: 'assets/projects/radiall/gallery/architecture_logicielle.png', caption: 'Modular software architecture (OOP)' },
+            { src: 'assets/projects/radiall/gallery/interface_v36.png', caption: 'Legacy interface (Version V36) before refactoring' },
+            { src: 'assets/projects/radiall/gallery/dashboard_v40.png', caption: 'Real-time control dashboard (V40)' },
+            { src: 'assets/projects/radiall/gallery/onglet_1_initialisation.png', caption: 'Interface: Tab 1 - Configuration and Direct Control' },
+            { src: 'assets/projects/radiall/gallery/onglet_5_fichiers.png', caption: 'Interface: Tab 5 - File Management and Exports' },
+            { src: 'assets/projects/radiall/gallery/graphique_temperature.png', caption: 'Temperature evolution during a 6-cycle test' },
+            { src: 'assets/projects/radiall/gallery/graphique_tension.png', caption: 'Voltage (V) evolution during a 6-cycle test' },
+            { src: 'assets/projects/radiall/gallery/compte_rendu_test.png', caption: 'Automated test report example (USB Crash-Test)' },
+            { src: 'assets/projects/radiall/gallery/resume_tests.png', caption: 'Tracking and validation table for unit tests' },
+            { src: 'assets/projects/radiall/gallery/gestion_projet.png', caption: 'Project management via dynamic task list' }
+        ]
     },
     'alternance-mp3': { 
         title: 'Apprenticeship BUT MP3', 
@@ -355,11 +408,12 @@ Object.assign(window.siteData.modalData.en, {
         ],
         missionsTitle: 'Target Missions & Projects',
         missions: [
-            '<strong>Material Characterization:</strong> Study of physical, chemical, and mechanical properties for quality control or R&D.',
-            '<strong>Test Engineer:</strong> Implementation of measurement protocols, operation of test benches, and analysis of metrological data.',
-            '<strong>New Product Development:</strong> Participation in the design, prototyping, and technical validation of innovative solutions.',
-            '<strong>Project Management & Leadership:</strong> Planning, resource coordination, and goal tracking to successfully complete complex technical missions.',
-            '<strong>Further Studies:</strong> Searching for a structure allowing to complete the engineering cycle as an apprentice following the BUT.'
+            '<strong>Instrumentation & System Control:</strong> Signal processing (amplification, filtering), instrument programming, and Human-Machine Interface (HMI) design for data acquisition.',
+            '<strong>Characterization & Physico-Chemical Analysis:</strong> Use of spectroscopic (UV-Visible, IR, Raman), chromatographic (HPLC, GC), and electrochemical techniques for quality control or R&D.',
+            '<strong>Testing, Metrology & Quality:</strong> Implementation of measurement protocols, operation of test benches, statistical analysis of results, and establishing traceability according to standards.',
+            '<strong>Materials, Vibrations & Acoustics:</strong> Study of mechanical properties (Strength of Materials), vibration analysis, and acoustic measurements in industrial environments.',
+            '<strong>Energy, Fluids & Vacuum:</strong> Optimization of energy production systems, fluid mechanics study, and sizing of vacuum technique installations (primary and secondary).',
+            '<strong>Project Management & Leadership:</strong> Planning, coordination, and tracking of complex technical objectives as a future engineering apprentice.'
         ], 
         tags: ['Apprenticeship Opportunity', 'BUT MP3', 'Characterization', 'Testing', 'R&D', 'Future Engineer'], 
         gallery: [], 

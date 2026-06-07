@@ -86,6 +86,12 @@ Object.assign(window.siteData.modalData.fr, {
                 targetModal: 'dre-detail'
             },
             {
+                title: 'DRE 2',
+                desc: 'Animateur Beach Volley',
+                iconImg: 'assets/projects/ligue/icone ffvb orange.png',
+                targetModal: 'dre2-detail'
+            },
+            {
                 title: 'PSC1',
                 desc: 'Premiers Secours',
                 iconImg: 'assets/projects/protection-civile/Icone PC orange 2.png',
@@ -751,10 +757,11 @@ Object.assign(window.siteData.modalData.fr, {
         summary: 'Pilotage global d\'un collectif en phase de reconstruction technique et tactique. Le fil conducteur de cette saison vise à instaurer un nouveau cycle de formation axé sur l\'excellence régionale, l\'intégration de systèmes de jeu, l\'apprentissage de mouvements techniques et le développement du potentiel individuel vers le niveau senior régional et national', 
         context: 'Coach principal du collectif Moins de 18 ans Féminine Pré-Nationale (Régionale). dirige les 3h d\'entraînements hebdomadaires et le parcours en Coupe de France, tout en coordonnant le championnat avec un adjoint. L\'enjeu de cette saison est de lancer un nouveau cycle de formation en alliant progression individuelle vers le haut niveau et cohésion collective.', 
         positions: ['Entraîneur Principal (Head Coach)'],
-        teamsRep: ['Moins de 18 ans Féminine Pré-Nationale (AAJB)', 'Moins de 18 ans Féminine Coupe de France'],
+        teamsRep: ['Moins de 18 ans Féminine Pré-Nationale (AAJB)', 'Moins de 18 ans Féminine Coupe de France', 'Moins de 18 ans Féminine Coupe du Loir et Cher'],
         results: [
             '5e Pré-Nationale M18F',
-            '3e tour de Challenge France'
+            '3e tour de Challenge France',
+            '1er Coupe Loir-et-Cher'
         ],
         people: '<span class="roster-bullet">•</span> 12 joueuses (entre 13 et 18 ans).<br><span class="roster-bullet">•</span> Groupe homogène avec déjà une année d\'expérience dans le championnat (majorité de filles en M18 dernière année).<br><span class="roster-bullet">•</span> Individualités :<ul class="modal-inner-list"><li>Solenne Quessard Bourget (R4, 15 ans)</li><li>Axelle Romero (Passeuse, 17 ans)</li><li>Chloé Roudier (Centrale, 14 ans, sélection au CRE de la Ligue du Centre-Val de Loire)</li></ul>',
         missionsTitle: 'Missions & réalisations',
@@ -863,7 +870,8 @@ Object.assign(window.siteData.modalData.fr, {
         positions: ['Entraîneur Principal'],
         teamsRep: ['Équipe 1 UFOLEP (Loir-et-Cher)', 'Équipe 2 UFOLEP (Loir-et-Cher)', 'Équipe Coupe de France Compet\'lib'],
         results: [
-            'Saison régulière en cours (Gestion autonome des matchs par les équipes)'
+            '1er du championnat UFOLEP 41',
+            '9e de la phase régionale de compet\'lib'
         ],
         people: '<span class="roster-bullet">•</span> 20 à 25 personnes (Groupe mixte).<br><span class="roster-bullet">•</span> Large mixité d\'âge (18 à 50 ans, moyenne 25 ans).<br><span class="roster-bullet">•</span> Individualités notables :<ul class="modal-inner-list"><li>Justin Fotso Tetchou (Entraîneur adjoint, Arbitre International Camerounais)</li><li>Claire Pinto (Ex-footballeuse professionnelle)</li></ul>',
         missionsTitle: 'Missions & réalisations',
@@ -888,20 +896,50 @@ Object.assign(window.siteData.modalData.fr, {
         ],
         parentModalId: 'encadrement-volley' 
     },
-    'recherche-club-detail': {
-        title: 'Projet Sportif & Collaborations - 2026/2027',
+    'laval-detail': {
+        title: 'ASPTT Laval - Saison 2026/2027',
         period: 'Saison 2026-2027',
-        summary: 'Fort d\'un profil hybride alliant expertise technique sur le terrain et compétences de direction sur le banc, je suis à l\'écoute d\'un projet ambitieux pour la saison 2026-2027. Mon engagement peut s\'articuler autour de deux axes majeurs, distincts ou combinés selon les besoins de la structure.',
-        context: 'Mon parcours au sein de l\'élite régionale et mes diplômes de coaching me permettent aujourd\'hui de prétendre à des responsabilités accrues. Je souhaite mettre mon dynamisme et ma vision tactique au service d\'un club visant l\'excellence, avec une ouverture totale vers le niveau national et les projets de structuration de haut niveau.',
-        brandLogo: [],
-        missionsTitle: 'Opportunités de Collaboration',
-        missions: [
-            '<strong>Axe Entraîneur (Coaching) :</strong> Direction technique d\'un collectif Senior (Pré-Nationale / N3 minimum) ou intégration d\'un staff de haut niveau (N3, N2, Elite) en tant qu\'entraîneur adjoint pour apporter mon expertise en analyse vidéo et tactique.',
-            '<strong>Axe Performance (Joueur) :</strong> Poste de Libéro titulaire à partir de la Nationale 3. Je reste attentif aux projets de Pré-Nationale s\'ils s\'inscrivent dans une dynamique d\'accession au niveau supérieur ou à des effectifs de divisions supérieures (N2) cherchant un joueur de devoir investi.',
-            '<strong>Double Compétence :</strong> Possibilité de combiner ces deux rôles au sein du club si l\'organisation le permet.',
-            '<strong>Ambition :</strong> Au-delà du niveau, je recherche avant tout un environnement exigeant où l\'apprentissage et le dépassement de soi sont au cœur du projet sportif.'
+        summary: 'Engagement au sein de l\'ASPTT Laval Volley-ball pour la saison 2026-2027. Ce nouveau chapitre s\'inscrit dans une dynamique de performance et de développement continu au sein d\'une structure ambitieuse de la Mayenne.',
+        context: '<strong>[Contenu à venir]</strong> - Ma mission et mon rôle précis au sein de l\'ASPTT Laval (joueur/encadrement) seront détaillés prochainement avec le lancement de la saison.',
+        brandLogo: [
+            'assets/icons/laval-orange.png'
         ],
-        tags: ['Libéro', 'Entraîneur', 'N3 / N2 / Pré-Nat', 'Haut Niveau', 'Polyvalence', 'Performance'],
+        missionsTitle: 'Perspectives de la Saison',
+        missions: [
+            'Intégration du projet sportif de l\'ASPTT Laval.',
+            'Contribution à la performance collective du club.',
+            'Développement des compétences techniques et tactiques en milieu fédéral.',
+            'Collaboration avec le staff technique et les membres du club.'
+        ],
+        tags: ['ASPTT Laval', 'Laval', 'Nouveau Club', 'Saison 2026-2027', 'Performance'],
         gallery: []
+    },
+    'dre2-detail': {
+        title: 'Certificat d\'Animateur de Beach-Volley (DRE 2)',
+        period: '23 - 24 Mai 2026',
+        summary: 'Formation intensive de 2 jours réalisée à la Plaine Départementale des Sports de Châteauroux. Ce cursus permet l\'obtention du Certificat d\'Animateur de Beach-Volley, validant les compétences techniques et pédagogiques nécessaires pour encadrer la discipline sur sable.',
+        context: 'Formation dirigée par Frederic Cros et Johny Francoise, s\'appuyant sur la sélection régionale M15 Féminine et Masculine comme collectifs supports. Ce module du DRE 2 se concentre sur la transmission des fondamentaux et la gestion de groupes de jeunes en milieu spécifique (sable).',
+        brandLogo: [
+            'assets/projects/ligue/Icone LDC orange.png'
+        ],
+        missionsTitle: 'Acquisitions & Encadrement',
+        missions: [
+            '<strong>Certification Animateur :</strong> Validation des compétences d\'encadrement spécifique au Beach-Volley.',
+            '<strong>Pédagogie Sable :</strong> Adaptation des exercices techniques aux contraintes de la surface et de l\'environnement extérieur.',
+            '<strong>Direction de Collectif Jeune :</strong> Coaching et animation de séances avec les sélections régionales M15.',
+            '<strong>Ingénierie de Séance :</strong> Conception de situations d\'apprentissage progressives pour le 2x2 sur sable.',
+            '<strong>Expertise Intervenants :</strong> Apprentissage des méthodes de haut niveau auprès de Frederic Cros et Johny Francoise.',
+            '<strong>Vie Collective :</strong> Gestion des temps de vie collective et de la cohésion de groupe lors d\'un stage.'
+        ],
+        tags: ['DRE 2', 'Beach-Volley', 'Entraîneur', 'FFVB', 'Performance', 'Haut Niveau'],
+        gallery: [
+            { src: 'assets/projects/dre/IMG_5912.jpeg', caption: "Affiche de la formation Animateur Beach Volley - Niveau 1." },
+            { src: 'assets/projects/dre/IMG_5893.jpeg', caption: "Vue d'ensemble de la structure couverte de Châteauroux." },
+            { src: 'assets/projects/dre/IMG_5892.jpeg', caption: "Situation d'opposition avec le groupe M15F" },
+            { src: 'assets/projects/dre/IMG_5888.jpeg', caption: "Situation de jeu lors du stage" }
+        ],
+        relatedModals: [
+            { id: 'encadrement-volley', label: 'Encadrement Volley-ball' }
+        ]
     }
 });

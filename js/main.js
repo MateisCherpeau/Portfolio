@@ -191,8 +191,8 @@ document.addEventListener('DOMContentLoaded', () => {
             if (modalSkillsSection && modalMissions) {
                 modalBody.insertBefore(modalSkillsSection, modalMissions);
             }
-        } else if (id === 'encadrement-volley' || id === 'entraineur-m18f' || id === 'entraineur-adjoint-pnf' || id === 'entraineur-ufolep-blois' || id.startsWith('assistant-') || id.startsWith('detail-unss-vaucanson-') || id === 'ajb-detail' || id.startsWith('sc-')) {
-            // Coach: Results ABOVE Missions, and Strengths/Philosophy at the BOTTOM
+        } else if (id === 'stage-mp2' || id === 'encadrement-volley' || id === 'entraineur-m18f' || id === 'entraineur-adjoint-pnf' || id === 'entraineur-ufolep-blois' || id.startsWith('assistant-') || id.startsWith('detail-unss-vaucanson-') || id === 'ajb-detail' || id.startsWith('sc-')) {
+            // Engineering Stage or Coach: Results ABOVE Missions, and Strengths/Philosophy at the BOTTOM
             if (modalResults && modalMissions) {
                 modalBody.insertBefore(modalResults, modalMissions);
             }
@@ -280,6 +280,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         if (logoLower.includes('canva')) classes.push('modal-logo--canva');
                         if (logoLower.includes('photoshop')) classes.push('modal-logo--photoshop');
                         if (logoLower.includes('capcut')) classes.push('modal-logo--capcut');
+                        if (logoLower.includes('radiall')) classes.push('modal-logo--radiall');
                         return `<img src="${logo}" alt="Logo" class="${classes.join(' ')}">`;
                     }).join('');
                 } else {
@@ -308,6 +309,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         if (logoLower.includes('mbv')) classes.push('modal-logo--mbv');
                         if (logoLower.includes('canva')) classes.push('modal-logo--canva');
                         if (logoLower.includes('photoshop')) classes.push('modal-logo--photoshop');
+                        if (logoLower.includes('radiall')) classes.push('modal-logo--radiall');
                         modalBrandLogo.innerHTML = `<img src="${data.brandLogo}" alt="Logo" class="${classes.join(' ')}">`;                    }
                 }
                 modalBrandLogo.style.display = 'flex';
@@ -495,8 +497,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
         const modalObjective = document.getElementById('modalObjective');
         if (modalObjective) {
+            const contentContainer = modalObjective.querySelector('.modal-objective-content') || modalObjective.querySelector('p');
             if (data.objective) {
-                modalObjective.querySelector('p').textContent = data.objective;
+                contentContainer.innerHTML = data.objective;
                 modalObjective.style.display = 'block';
             } else {
                 modalObjective.style.display = 'none';
@@ -712,7 +715,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
                 data.results.forEach(res => {
                     const li = document.createElement('li');
-                    li.textContent = res;
+                    li.innerHTML = res;
                     list.appendChild(li);
                 });
                 modalResults.style.display = 'block';

@@ -137,13 +137,14 @@ Object.assign(window.siteData.modalData.fr, {
         ],
         tags: ['Événementiel', 'Logistique', 'Musique Classique', 'Sport', 'Coordination', 'Management'],
         gallery: [
-            { src: 'assets/projects/orga-evenements/concert orée des sons 2023.jpg', caption: "Festival L'Orée des Sons : Installation et logistique pour le concert symphonique en plein air." },
-            { src: 'assets/projects/orga-evenements/equipe de bénévoles orée des sons 2024.png', caption: "L'équipe de l'Orée des Sons 2024 : un engagement bénévole au service de l'excellence musicale." },
+            { src: 'assets/projects/orga-evenements/Affiche tournoi de beach volley S3 Blois.png', caption: "Communication et organisation : Tournoi S3 de Beach Volley à Blois." },
             { src: 'assets/projects/orga-evenements/Photo festival de rentrée.JPG', caption: "Festival de Rentrée de l'Université de Tours : Gestion de l'accueil et des flux de milliers d'étudiants." },
-            { src: 'assets/projects/orga-evenements/Equipe SUAPS festival de rentrée 2025-2026.JPG', caption: "L'équipe d'organisation SUAPS mobilisée pour l'accueil des nouveaux étudiants." },
+            { src: 'assets/projects/orga-evenements/concert orée des sons 2023.jpg', caption: "Festival L'Orée des Sons : Installation et logistique pour le concert symphonique en plein air." },
             { src: 'assets/projects/orga-evenements/Publication tournoi en salle .png', caption: "Promotion et organisation du tournoi annuel de l'AAJB Volley." },
-            { src: 'assets/projects/orga-evenements/Publication_Organisation_Phase_finales_régionales.png', caption: "Organisation logistique des Phases Finales Régionales de volley-ball." },
-            { src: 'assets/projects/orga-evenements/Photo colective nuit du basket.JPG', caption: "Nuit du Basket (SUAPS) : Coordination d'une compétition inter-facultés." }
+            { src: 'assets/projects/orga-evenements/Equipe SUAPS festival de rentrée 2025-2026.JPG', caption: "L'équipe d'organisation SUAPS mobilisée pour l'accueil des nouveaux étudiants." },
+            { src: 'assets/projects/orga-evenements/equipe de bénévoles orée des sons 2024.png', caption: "L'équipe de l'Orée des Sons 2024 : un engagement bénévole au service de l'excellence musicale." },
+            { src: 'assets/projects/orga-evenements/Photo colective nuit du basket.JPG', caption: "Nuit du Basket (SUAPS) : Coordination d'une compétition inter-facultés." },
+            { src: 'assets/projects/orga-evenements/Publication_Organisation_Phase_finales_régionales.png', caption: "Organisation logistique des Phases Finales Régionales de volley-ball." }
         ]
     },
     'service-civique': {
@@ -391,7 +392,8 @@ Object.assign(window.siteData.modalData.fr, {
         ],
         tags: ['Beach Volley', 'Été', 'Animation', 'Sport pour tous'],
         gallery: [
-            { src: 'assets/projects/sc-beach/Tournoi beach volley_AAJB.png', caption: "Communication : Affiche officielle du tournoi Savonnières 3x3 (S3)." },
+            { src: 'assets/projects/sc-beach/Affiche tournoi de beach volley S3 Blois.png', caption: "Communication : Affiche promotionnelle du tournoi de Beach Volley S3 à Blois." },
+            { src: 'assets/projects/sc-beach/Tournoi beach volley_AAJB.png', caption: "Action de jeu lors du tournoi de Beach Volley S3 de Blois" },
             { src: 'assets/projects/sc-beach/IMG_E5586.JPG', caption: "Ambiance et compétition : Vue d'ensemble des terrains lors de l'édition 2025." },
             { src: 'assets/projects/sc-beach/Tournoi beach volley .png', caption: "Visuel réseaux sociaux pour la promotion de l'événement estival." }
         ],
@@ -529,13 +531,14 @@ Object.assign(window.siteData.modalData.fr, {
         ],
         tags: ['Événementiel', 'Logistique', 'IUT', 'SUAPS', 'Orientation'],
         gallery: [
-            { src: 'assets/projects/orga-evenements/Photo festival de rentrée.JPG', caption: "Accueil et gestion de flux : Festival de Rentrée de l'Université de Tours" },
             { src: 'assets/projects/orga-evenements/Equipe SUAPS festival de rentrée 2025-2026.JPG', caption: "Équipe d'organisation SUAPS : Festival de Rentrée 2025-2026" },
-            { src: 'assets/projects/orga-evenements/Photo colective nuit du basket.JPG', caption: "Organisation de la coupe interfac de basket masculine" },
+            { src: 'assets/projects/orga-evenements/Affiche tournoi de beach volley S3 Blois.png', caption: "Communication : Promotion du tournoi de Beach Volley S3." },
+            { src: 'assets/projects/orga-evenements/Photo festival de rentrée.JPG', caption: "Accueil et gestion de flux : Festival de Rentrée de l'Université de Tours" },
+            { src: 'assets/projects/orga-evenements/Publication tournoi en salle .png', caption: "Organisation du tournoi annuel de l'AAJB Volley 2026" },
             { src: 'assets/projects/orga-evenements/concert orée des sons 2023.jpg', caption: "Concert en plein air de l'orée des sons (2023)" },
+            { src: 'assets/projects/orga-evenements/Photo colective nuit du basket.JPG', caption: "Organisation de la coupe interfac de basket masculine" },
             { src: 'assets/projects/orga-evenements/equipe de bénévoles orée des sons 2024.png', caption: "Collectif de bénévoles L'Orée des Sons 2024" },
-            { src: 'assets/projects/orga-evenements/Publication_Organisation_Phase_finales_régionales.png', caption: "Organisation des Phases finales régionales de Volley-ball 2026" },
-            { src: 'assets/projects/orga-evenements/Publication tournoi en salle .png', caption: "Organisation du tournoi annuel de l'AAJB Volley 2026" }
+            { src: 'assets/projects/orga-evenements/Publication_Organisation_Phase_finales_régionales.png', caption: "Organisation des Phases finales régionales de Volley-ball 2026" }
         ]
     },
     'electro-reparo-com': {

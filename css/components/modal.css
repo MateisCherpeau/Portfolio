@@ -174,6 +174,11 @@ body.modal-open {
     margin: 0 1rem;
 }
 
+.modal-logo--radiall {
+    transform: scale(1.4);
+    margin: 0 0.5rem;
+}
+
 .modal-logo--rssc {
     transform: scale(1.8);
     margin: 0 1rem;
@@ -436,6 +441,7 @@ body.modal-open {
 
 .modal-section p {
     font-family: var(--font-body);
+    font-size: 1rem;
     color: var(--text-main);
     line-height: 1.8;
     margin: 0;
@@ -788,7 +794,7 @@ body.modal-open {
 }
 
 #modalSummary p {
-    font-size: 1.05rem; /* Taille légèrement réduite pour le résumé */
+    font-size: 1rem;
     line-height: 1.7;
     margin-bottom: 1rem;
 }
@@ -805,7 +811,7 @@ body.modal-open {
 
 .modal-summary p {
     color: var(--text-main);
-    font-size: 0.95rem;
+    font-size: 1rem;
     line-height: 1.6;
 }
 
@@ -832,6 +838,7 @@ body.modal-open {
 
 .modal-missions li {
     font-family: var(--font-body);
+    font-size: 1rem;
     color: var(--text-main);
     line-height: 1.7;
     padding-left: 1.5rem;
