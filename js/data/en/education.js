@@ -63,9 +63,41 @@ Object.assign(window.siteData.modalData.en, {
             { src: 'assets/projects/iut/20240703_121143.jpg', caption: 'The IUT of Blois - Chocolaterie Site' }
         ],
         relatedModals: [
+            { id: 'dut-mp', label: 'DUT Physical Measurements' },
             { id: 'projets-universitaires', label: 'University Projects' },
             { id: 'stage-mp2', label: 'MP2 Internship' },
             { id: 'alternance-mp3', label: 'MP3 Apprenticeship' }
+        ]
+    },
+    'dut-mp': {
+        title: 'DUT Physical Measurements',
+        period: '06/2026',
+        summary: 'University Technology Diploma (DUT) in Physical Measurements awarded by the IUT of Blois (University of Tours). This state diploma validates the successful completion of the first two years of the BUT program, certifying a solid scientific and technical foundation in metrology, instrumentation, applied physics, materials science, and data processing.',
+        context: 'Awarded after completing the first four semesters of higher education and successfully defending the technical internship at Radiall, the DUT in Physical Measurements certifies a two-year undergraduate level of technical excellence. It confirms proficiency in advanced measurement instruments and experimental methodologies in both laboratory and industrial settings, paving the way for the final work-study BUT year and subsequent entry into engineering schools.',
+        brandLogo: [
+            'assets/projects/iut/Icone IUT orange.png',
+            'assets/projects/iut/Icone MP orange.png',
+            'assets/projects/iut/Icone univ orange.png'
+        ],
+        hardSkills: [
+            'High-precision scientific metrology and instrumentation',
+            'Physicochemical materials characterization (Mechanics, XRD, spectrometry)',
+            'Data acquisition, modeling, and processing (Python, Regressi, Excel)',
+            'Mechanical and thermal testing, laboratory metrological validation',
+            'Strict adherence to quality standards, safety rules, and test protocols'
+        ],
+        softSkills: [
+            'Scientific rigor and critical uncertainty analysis',
+            'Teamwork and experimental independence in laboratory environments',
+            'Synthesis and technical reporting skills (reports, oral defenses)'
+        ],
+        tags: ['DUT', 'Obtained Diploma', 'Physical Measurements', 'IUT of Blois', 'Metrology', 'Sciences'],
+        relatedModals: [
+            { id: 'but-mp', label: 'BUT Physical Measurements (Ongoing)' },
+            { id: 'stage-mp2', label: 'Technical Internship (Radiall)' }
+        ],
+        gallery: [
+            { src: 'assets/projects/iut/20240703_121143.jpg', caption: 'IUT of Blois - Chocolaterie Campus' }
         ]
     },
     'bac-detail': { 
@@ -394,28 +426,28 @@ Object.assign(window.siteData.modalData.en, {
             { src: 'assets/projects/radiall/gallery/compte_rendu_test.png', caption: 'Automated test report example (USB Crash-Test)' },
             { src: 'assets/projects/radiall/gallery/resume_tests.png', caption: 'Tracking and validation table for unit tests' },
             { src: 'assets/projects/radiall/gallery/gestion_projet.png', caption: 'Project management via dynamic task list' }
-        ]
+        ],
+        parentModalId: 'but-mp'
     },
     'alternance-mp3': { 
-        title: 'Apprenticeship BUT MP3', 
-        period: '09/2026', 
-        summary: 'I am seeking an apprenticeship for my third year of BUT Physical Measurements within a company offering perspectives for evolution as an engineering apprentice thereafter.', 
-        context: 'This one-year immersion (September 2026 - September 2027) is a key step in my professional project, aiming to consolidate my technical expertise before pursuing studies in an engineering school.', 
+        title: 'Apprenticeship: Quality Validation Engineer (Moldtecs)', 
+        period: '09/2026 - 08/2027', 
+        summary: 'Apprentice Quality Validation Engineer at Moldtecs in Laval as part of my third year of BUT Physical Measurements. My primary mission is to structure and prepare the company\'s laboratory to successfully pass and obtain ISO 17025 certification.', 
+        context: 'This one-year immersion (September 2026 - August 2027) at Moldtecs in Laval is a pivotal milestone in my career path. Within the testing and metrology laboratory, my missions consist of aligning processes with standards, qualifying measurement methods, and deploying the quality management system required for the laboratory to successfully pass ISO 17025 certification.', 
         brandLogo: [
             'assets/projects/iut/Icone IUT orange.png',
             'assets/projects/iut/Icone MP orange.png',
-            'assets/projects/recherche-alternance/icone recherche alternance blanc.png'
+            'assets/projects/moldtecs/moldtecs orange.png'
         ],
-        missionsTitle: 'Target Missions & Projects',
+        missionsTitle: 'Missions & ISO 17025 Certification Approach',
         missions: [
-            '<strong>Instrumentation & System Control:</strong> Signal processing (amplification, filtering), instrument programming, and Human-Machine Interface (HMI) design for data acquisition.',
-            '<strong>Characterization & Physico-Chemical Analysis:</strong> Use of spectroscopic (UV-Visible, IR, Raman), chromatographic (HPLC, GC), and electrochemical techniques for quality control or R&D.',
-            '<strong>Testing, Metrology & Quality:</strong> Implementation of measurement protocols, operation of test benches, statistical analysis of results, and establishing traceability according to standards.',
-            '<strong>Materials, Vibrations & Acoustics:</strong> Study of mechanical properties (Strength of Materials), vibration analysis, and acoustic measurements in industrial environments.',
-            '<strong>Energy, Fluids & Vacuum:</strong> Optimization of energy production systems, fluid mechanics study, and sizing of vacuum technique installations (primary and secondary).',
-            '<strong>Project Management & Leadership:</strong> Planning, coordination, and tracking of complex technical objectives as a future engineering apprentice.'
+            '<strong>ISO 17025 Preparation & Certification:</strong> Steering regulatory requirements and deploying quality standards to enable the laboratory to pass ISO 17025 certification (general requirements for the competence of testing and calibration laboratories).',
+            '<strong>Test Method Validation:</strong> Characterization, qualification, and validation of test protocols and methods on industrial components and sub-assemblies.',
+            '<strong>Metrology & Measurement Uncertainty:</strong> Evaluating and calculating measurement uncertainties, tracking equipment calibration, and guaranteeing metrological traceability.',
+            '<strong>Quality System & Documentation:</strong> Drafting standard operating procedures, test protocols, technical instructions, and accreditation dossiers in accordance with ISO 17025.',
+            '<strong>Audits & Continuous Improvement:</strong> Preparing quality reviews, carrying out mock laboratory audits, managing deviations, and implementing long-term corrective actions.'
         ], 
-        tags: ['Apprenticeship Opportunity', 'BUT MP3', 'Characterization', 'Testing', 'R&D', 'Future Engineer'], 
+        tags: ['Moldtecs', 'ISO 17025', 'Quality', 'Validation', 'Metrology', 'Testing Laboratory', 'BUT MP3', 'Laval'], 
         gallery: [], 
         parentModalId: 'but-mp' 
     }

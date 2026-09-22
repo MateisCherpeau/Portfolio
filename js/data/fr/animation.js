@@ -77,7 +77,7 @@ Object.assign(window.siteData.modalData.fr, {
         title: 'Animation en Accueil de Loisirs - Nouzilly', 
         period: '07/2025', 
         summary: 'Mois complet d\'animation en tant qu\'animateur référent du groupe des grands (6-12 ans). Consolidation de l\'expérience terrain et prise de responsabilités au sein du collectif.', 
-        context: 'Sous la direction de Virginie Chauvel Breard et d\'Emeline, j\'ai intégré une équipe dynamique d\'une dizaine d\'animateurs. Fort de mon expérience passée dans cette structure, j\'ai pris une place centrale au sein du collectif en servant de guide aux animateurs moins expérimentés tout en assurant la gestion quotidienne d\'un groupe de grands particulièrement actif.', 
+        context: 'Sous la direction de Virginie Chauvel Breard et d\'Emeline Merron Besnard, j\'ai intégré une équipe dynamique d\'une dizaine d\'animateurs. Fort de mon expérience passée dans cette structure, j\'ai pris une place centrale au sein du collectif en servant de guide aux animateurs moins expérimentés tout en assurant la gestion quotidienne d\'un groupe de grands particulièrement actif.', 
         brandLogo: ['assets/projects/com-com/icone com com orange.png'], 
         missionsTitle: 'Missions & Responsabilités', 
         missions: [
@@ -88,11 +88,11 @@ Object.assign(window.siteData.modalData.fr, {
         ], 
         tags: ['Animation', 'Leadership', 'Management d\'équipe', 'Pédagogie', 'ALSH'], 
         gallery: [
-            { src: 'assets/projects/alsh-2025/Equipe animation juillet 2025.png', caption: "L'équipe d'animation (juillet 2025) sous la direction de Virginie et Emeline." },
+            { src: 'assets/projects/alsh-2025/Equipe animation juillet 2025.png', caption: "L'équipe d'animation (juillet 2025) sous la direction de Virginie et Emeline Merron Besnard." },
             { src: 'assets/projects/alsh-2025/Activité en foret.jpeg', caption: "Exploration et découverte de l'environnement forestier avec les grands." },
             { src: 'assets/projects/alsh-2025/Activité peche.jpeg', caption: "Atelier initiation pêche : patience et technique." },
-            { src: 'assets/projects/alsh-2025/Activité créatif.jpeg', caption: "Atelier de création manuelle : expression et imagination." },
-            { src: 'assets/projects/alsh-2025/Activité cuisine.jpeg', caption: "Atelier cuisine : éveil des sens et partage." },
+            { src: 'assets/projects/alsh-2025/Atelier créatif.jpeg', caption: "Atelier de création manuelle : expression et imagination." },
+            { src: 'assets/projects/alsh-2025/Atelier cuisine.jpeg', caption: "Atelier cuisine : éveil des sens et partage." },
             { src: 'assets/projects/alsh-2025/Chasse au tresor.jpeg', caption: "Briefing d'une grande chasses au trésor thématique." },
             { src: 'assets/projects/alsh-2025/Chasse au trésor.jpeg', caption: "Énigmes et réflexion collective lors de l'activité phare de la semaine." }
         ] 
@@ -119,10 +119,10 @@ Object.assign(window.siteData.modalData.fr, {
         ]
     },
     'lvf-june-detail': {
-        title: 'LVF Camp - Juin 2026 <span class="badge badge--orange" style="font-size: 0.6em; vertical-align: middle; margin-left: 10px;">À VENIR</span>',
+        title: 'LVF Camp - Juin 2026',
         period: '06/2026',
-        summary: 'Immersion intensive de 3 jours au sein d\'un collectif de 50 volleyeurs. Une opportunité de perfectionner mes fondamentaux et de monter en exigence technique en profitant de l\'expertise d\'un staff professionnel dans un cadre exceptionnel.',
-        context: 'Stage de volley en salle de trois jours, qui se déroulera au centre sportif de Méjannes-le-Clap.',
+        summary: 'Une très belle expérience dans un cadre exceptionnel qui m\'a permis de progresser et de rencontrer plein de nouvelles personnes. L\'accès à des coachs aussi performants m\'a énormément apporté.',
+        context: 'Stage de volley en salle de trois jours qui s\'est déroulé au centre sportif de Méjannes-le-Clap.',
         brandLogo: [
             'assets/projects/lvf-camp/icone LVF camp blanc.png'
         ],
@@ -136,13 +136,22 @@ Object.assign(window.siteData.modalData.fr, {
             '<strong>Jérôme Brysse :</strong> Journaliste et influenceur volley ("Le Volleyeur Français").'
         ],
         tags: ['Haut Niveau', 'Coaching', 'Volleyball', 'Événements', 'Méjannes'],
-        gallery: []
+        gallery: [
+            { src: 'assets/projects/lvf-camp/juin-2026/LVF CAMP x CHINENYEZE-345.jpg', caption: "Photo avec Barthélémy Chinenyeze" },
+            { src: 'assets/projects/lvf-camp/juin-2026/LVF CAMP x CHINENYEZE-0554.jpg', caption: "Conseils techniques donnés par Malo Foncarnier" },
+            { src: 'assets/projects/lvf-camp/juin-2026/LVF CAMP x CHINENYEZE-0596.jpg', caption: "Situation de jeu lors des entraînements" },
+            { src: 'assets/projects/lvf-camp/juin-2026/LVF CAMP x CHINENYEZE-0610.jpg', caption: "Situation de jeu lors des entraînements" },
+            { src: 'assets/projects/lvf-camp/juin-2026/LVF CAMP x CHINENYEZE-0846.jpg', caption: "Situation de jeu lors des entraînements" },
+            { src: 'assets/projects/lvf-camp/juin-2026/LVF CAMP x CHINENYEZE-0848.jpg', caption: "Situation de jeu lors des entraînements" },
+            { src: 'assets/projects/lvf-camp/juin-2026/LVF CAMP x CHINENYEZE-0856.jpg', caption: "Situation de jeu lors des entraînements" },
+            { src: 'assets/projects/lvf-camp/juin-2026/LVF CAMP x CHINENYEZE-0857.jpg', caption: "Célébration collective" }
+        ]
     },
     'lvf-august-detail': {
-        title: 'LVF Camp - Août 2026 <span class="badge badge--orange" style="font-size: 0.6em; vertical-align: middle; margin-left: 10px;">À VENIR</span>',
+        title: 'LVF Camp - Août 2026',
         period: '08/2026',
-        summary: 'Stage de perfectionnement sur sable avec 50 passionnés, au contact d\'un staff d\'élite composé d\'olympiens et de coachs pros. Un moment privilégié pour repousser mes limites et m\'imprégner de l\'expérience unique des LVF Camps à Montpellier.',
-        context: 'Stage de Beach-Volley de trois jours réalisé au Montpellier Beach Club avec d\'anciens participants des LVF Camps.',
+        summary: '3 jours tout simplement incroyables ! Pour fêter les 2 ans des LVF Camps, on s\'est retrouvés entre anciens participants pour faire la fête et jouer au volley. Un cadre et une organisation au top, des entraîneurs surqualifiés et ultra motivés, des infrastructures de premier plan : ce sont des souvenirs qui resteront gravés à vie.',
+        context: 'Stage de Beach-Volley de 3 jours organisé au Montpellier Beach Club pour célébrer les 2 ans des LVF Camps avec la communauté des anciens participants.',
         brandLogo: [
             'assets/projects/lvf-camp/icone LVF camp blanc.png'
         ],
@@ -159,24 +168,38 @@ Object.assign(window.siteData.modalData.fr, {
             '<strong>Jérôme Brysse :</strong> Journaliste et influenceur volley ("Le Volleyeur Français").'
         ],
         tags: ['Haut Niveau', 'Beach-Volley', 'Olympiens', 'Montpellier', 'Coaching'],
-        gallery: []
+        gallery: [
+            { src: 'assets/projects/lvf-camp/aout-2026/LVF ADULTES - AOUT 2026-1108.jpg', caption: "Photo collective de l'ensemble du camp" },
+            { src: 'assets/projects/lvf-camp/aout-2026/LVF ADULTES - AOUT 2026-0801.jpg', caption: "Podium du tournoi" },
+            { src: 'assets/projects/lvf-camp/aout-2026/LVF ADULTES - AOUT 2026-0854.jpg', caption: "Photo des anciens des LVF CAMP" },
+            { src: 'assets/projects/lvf-camp/aout-2026/LVF ADULTES - AOUT 2026-0542.jpg', caption: "Situation de jeu lors des entraînements" },
+            { src: 'assets/projects/lvf-camp/aout-2026/LVF ADULTES - AOUT 2026-1014.jpg', caption: "Situation de jeu lors des entraînements" },
+            { src: 'assets/projects/lvf-camp/aout-2026/LVF ADULTES - AOUT 2026-1015.jpg', caption: "Situation de jeu lors des entraînements" },
+            { src: 'assets/projects/lvf-camp/aout-2026/LVF ADULTES - AOUT 2026-0347.jpg', caption: "Situation de jeu lors des entraînements" },
+            { src: 'assets/projects/lvf-camp/aout-2026/LVF ADULTES - AOUT 2026-0346.jpg', caption: "Situation de jeu lors des entraînements" },
+            { src: 'assets/projects/lvf-camp/aout-2026/LVF ADULTES - AOUT 2026-0859.jpg', caption: "Situation de jeu lors des entraînements" },
+            { src: 'assets/projects/lvf-camp/aout-2026/LVF ADULTES - AOUT 2026-0825.jpg', caption: "Situation de jeu lors des entraînements" },
+            { src: 'assets/projects/lvf-camp/aout-2026/LVF ADULTES - AOUT 2026-0001.jpg', caption: "Situation de jeu lors des entraînements" },
+            { src: 'assets/projects/lvf-camp/aout-2026/LVF ADULTES - AOUT 2026-0805.jpg', caption: "Moment de pause entre les entraînements" },
+            { src: 'assets/projects/lvf-camp/aout-2026/LVF ADULTES - AOUT 2026-0813.jpg', caption: "Situation de jeu lors des entraînements" }
+        ]
     },
     'alsh-2026-detail': {
-        title: 'ALSH Nouzilly - Juillet 2026 <span class="badge badge--orange" style="font-size: 0.6em; vertical-align: middle; margin-left: 10px;">À VENIR</span>',
+        title: 'ALSH Nouzilly - Juillet 2026',
         period: '07/2026',
-        summary: 'Animateur BAFA au sein de l\'accueil de loisirs de Nouzilly pour le mois complet de juillet. Je m\'y engagerai au sein d\'une équipe dynamique pour assurer l\'épanouissement et la sécurité des enfants.',
-        context: 'Sous la direction d\'Emeline, j\'intègre une équipe de 8 animateurs pour encadrer un effectif maximal de 56 enfants. Cette expérience marque la poursuite de mon investissement auprès de la structure de Nouzilly.',
+        summary: 'Un mois complet d\'animation qui s\'est remarquablement bien déroulé auprès d\'un effectif de 56 enfants de 3 à 12 ans. Pour cette 3ᵉ année d\'animation, l\'expérience accumulée a fait toute la différence : les situations complexes sont devenues habituelles et simples à gérer au quotidien.',
+        context: 'Sous la direction d\'Emeline Merron Besnard, j\'ai retrouvé l\'accueil de loisirs de Nouzilly au sein d\'une équipe soudée de 8 animateurs, dont une large majorité se retrouvait de l\'année précédente pour encadrer jusqu\'à 56 enfants.',
         brandLogo: [
             'assets/projects/com-com/icone com com orange.png'
         ],
-        missionsTitle: 'Missions & Responsabilités prévues',
+        missionsTitle: 'Missions & Responsabilités',
         missions: [
-            '<strong>Animation & Vie Quotidienne :</strong> Conception et mise en œuvre d\'activités pédagogiques adaptées aux tranches d\'âge.',
-            '<strong>Gestion de Groupe :</strong> Encadrement d\'un effectif de 56 enfants au sein d\'une équipe de 8 animateurs.',
-            '<strong>Sécurité & Bien-être :</strong> Garant de la sécurité physique et affective des mineurs sous la direction d\'Emeline.',
-            '<strong>Cohésion d\'Équipe :</strong> Collaboration active avec le staff pour l\'organisation des grands jeux et des sorties.'
+            '<strong>Gestion de groupe & Maturité :</strong> Encadrement d\'un effectif de 56 enfants (3-12 ans) avec un recul et une aisance renforcés par 3 années d\'expérience.',
+            '<strong>Résolution de situations complexes :</strong> Prise en charge sereine et efficace des imprévus et gestion des dynamiques de groupe devenues habituelles et naturelles.',
+            '<strong>Cohésion & Continuité d\'équipe :</strong> Synergie au sein d\'une équipe de 8 animateurs, en grande majorité reconduite de l\'été précédent sous la direction d\'Emeline Merron Besnard.',
+            '<strong>Conception pédagogique & Animation :</strong> Mise en place d\'activités manuelles, sportives et de grands jeux adaptés aux différentes tranches d\'âge.'
         ],
-        tags: ['Animation', 'BAFA', 'Juillet 2026', 'Nouzilly', 'Équipe'],
+        tags: ['Animation', 'BAFA', 'Juillet 2026', 'Nouzilly', 'Expérience'],
         gallery: []
     }
 });

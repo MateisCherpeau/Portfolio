@@ -63,9 +63,41 @@ Object.assign(window.siteData.modalData.fr, {
             { src: 'assets/projects/iut/20240703_121143.jpg', caption: 'L\'IUT de Blois - Site de la Chocolaterie' }
         ],
         relatedModals: [
+            { id: 'dut-mp', label: 'DUT Mesures Physiques' },
             { id: 'projets-universitaires', label: 'Projets Universitaires' },
             { id: 'stage-mp2', label: 'Stage MP2' },
             { id: 'alternance-mp3', label: 'Alternance MP3' }
+        ]
+    },
+    'dut-mp': {
+        title: 'DUT Mesures Physiques',
+        period: '06/2026',
+        summary: 'Diplôme Universitaire de Technologie (DUT) en Mesures Physiques délivré par l\'IUT de Blois (Université de Tours). Ce diplôme d\'État sanctionne la validation réussie des deux premières années du cursus BUT, certifiant un socle scientifique et technologique d\'excellence en métrologie, instrumentation, physique appliquée, science des matériaux et traitement de données.',
+        context: 'Obtenu à l\'issue des 4 premiers semestres universitaires et suite à la soutenance du stage technique chez Radiall, le DUT Mesures Physiques atteste d\'un niveau Bac+2 de technicien supérieur hautement qualifié. Il valide la maîtrise des protocoles d\'essais, de la caractérisation des matériaux et des chaînes de mesure industrielles, servant de tremplin vers la 3ᵉ année en alternance et les admissions en écoles d\'ingénieurs.',
+        brandLogo: [
+            'assets/projects/iut/Icone IUT orange.png',
+            'assets/projects/iut/Icone MP orange.png',
+            'assets/projects/iut/Icone univ orange.png'
+        ],
+        hardSkills: [
+            'Métrologie et instrumentation scientifique de précision',
+            'Caractérisation physico-chimique des matériaux (RDM, DRX, spectroscopie)',
+            'Acquisition, modélisation et traitement de données (Python, Regressi, Excel)',
+            'Essais mécaniques, thermiques et validation métrologique en laboratoire',
+            'Respect rigoureux des normes qualité, sécurité et protocoles d\'essais'
+        ],
+        softSkills: [
+            'Rigueur scientifique et analyse critique des incertitudes de mesure',
+            'Travail en équipe et autonomie expérimentale en laboratoire',
+            'Capacité de synthèse et restitution technique (comptes rendus, soutenances)'
+        ],
+        tags: ['DUT', 'Diplôme Obtenu', 'Bac+2', 'Mesures Physiques', 'IUT de Blois', 'Métrologie', 'Sciences'],
+        relatedModals: [
+            { id: 'but-mp', label: 'BUT Mesures Physiques (en cours)' },
+            { id: 'stage-mp2', label: 'Stage MP2 (Radiall)' }
+        ],
+        gallery: [
+            { src: 'assets/projects/iut/20240703_121143.jpg', caption: "L'IUT de Blois - Site Chocolaterie" }
         ]
     },
     'bac-detail': { 
@@ -393,28 +425,28 @@ Object.assign(window.siteData.modalData.fr, {
             { src: 'assets/projects/radiall/gallery/compte_rendu_test.png', caption: 'Exemple de rapport de test automatisé (Crash-Test USB)' },
             { src: 'assets/projects/radiall/gallery/resume_tests.png', caption: 'Tableau de suivi et de validation des tests unitaires' },
             { src: 'assets/projects/radiall/gallery/gestion_projet.png', caption: 'Pilotage de projet via la liste de tâches dynamique' }
-        ]
+        ],
+        parentModalId: 'but-mp'
     },
     'alternance-mp3': { 
-        title: 'Alternance BUT MP3', 
-        period: '09/2026',
-        summary: 'Je suis en quête d\'une alternance pour ma troisième année de BUT Mesures Physiques au sein d\'une entreprise offrant des perspectives d\'évolution en tant qu\'apprenti ingénieur par la suite.', 
-        context: 'Cette immersion d\'un an (Septembre 2026 - Septembre 2027) constitue une étape clé de mon projet professionnel, visant à consolider mon expertise technique avant une poursuite d\'études en école d\'ingénieurs.', 
+        title: 'Alternance : Ingénieur Qualité Validation (Moldtecs)', 
+        period: '09/2026 - 08/2027',
+        summary: 'Alternant Ingénieur Qualité Validation au sein de l\'entreprise Moldtecs à Laval dans le cadre de ma troisième année de BUT Mesures Physiques. Ma mission principale est de structurer et préparer le laboratoire de l\'entreprise pour lui permettre de passer et d\'obtenir la certification ISO 17025.', 
+        context: 'Cette immersion d\'un an (Septembre 2026 - Août 2027) chez Moldtecs à Laval constitue une étape clé de mon parcours. Au sein du laboratoire d\'essais et de métrologie, mes missions consistent à mettre en conformité les processus, qualifier les méthodes de mesure et déployer le système de management de la qualité requis pour permettre au laboratoire de passer la certification ISO 17025 avec succès.', 
         brandLogo: [
             'assets/projects/iut/Icone IUT orange.png',
             'assets/projects/iut/Icone MP orange.png',
-            'assets/projects/recherche-alternance/icone recherche alternance blanc.png'
+            'assets/projects/moldtecs/moldtecs orange.png'
         ],
-        missionsTitle: 'Missions cibles & Projets',
+        missionsTitle: 'Missions & Démarche Certification ISO 17025',
         missions: [
-            '<strong>Instrumentation & Pilotage de Systèmes :</strong> Traitement de signaux (amplification, filtrage), programmation d\'instruments et d\'interfaces homme-machine (IHM) pour l\'acquisition de données.',
-            '<strong>Caractérisation & Analyses Physico-Chimiques :</strong> Utilisation de techniques spectroscopiques (UV-Visible, IR, Raman), chromatographiques (HPLC, CPG) et électrochimiques pour le contrôle qualité ou la R&D.',
-            '<strong>Essais, Métrologie & Qualité :</strong> Mise en œuvre de protocoles de mesure, exploitation de bancs de tests, analyse statistique des résultats et établissement de la traçabilité selon les normes.',
-            '<strong>Matériaux, Vibrations & Acoustique :</strong> Étude des propriétés mécaniques (RDM), analyses vibratoires et mesures acoustiques en environnement industriel.',
-            '<strong>Énergie, Fluides & Vide :</strong> Optimisation de systèmes de production d\'énergie, étude de mécanique des fluides et dimensionnement d\'installations de techniques du vide (primaire et secondaire).',
-            '<strong>Gestion & Pilotage de Projet :</strong> Planification, coordination et suivi d\'objectifs techniques complexes dans une démarche de futur apprenti ingénieur.'
+            '<strong>Préparation & Certification ISO 17025 :</strong> Pilotage des exigences normatives et déploiement des standards pour permettre au laboratoire de passer la certification ISO 17025 (compétence des laboratoires d\'étalonnages et d\'essais).',
+            '<strong>Validation des Méthodes d\'Essais :</strong> Caractérisation, qualification et validation des protocoles et méthodes d\'essais sur les pièces et sous-ensembles industriels.',
+            '<strong>Métrologie & Incertitudes de Mesure :</strong> Évaluation et calcul des incertitudes de mesure, suivi de l\'étalonnage des équipements et garantie de la traçabilité métrologique.',
+            '<strong>Système Qualité & Documentation :</strong> Rédaction des modes opératoires, procédures d\'essais, instructions techniques et dossiers d\'accréditation selon les exigences ISO 17025.',
+            '<strong>Audits & Amélioration Continue :</strong> Préparation des revues qualité, réalisation d\'audits à blanc du laboratoire, traitement des écarts et mise en œuvre d\'actions correctives pérennes.'
         ], 
-        tags: ['Alternance BUT MP3', 'Caractérisation', 'Essais', 'R&D', 'Futur Ingénieur'], 
+        tags: ['Moldtecs', 'ISO 17025', 'Qualité', 'Validation', 'Métrologie', 'Laboratoire d\'essais', 'BUT MP3', 'Laval'], 
         gallery: [], 
         parentModalId: 'but-mp' 
     }

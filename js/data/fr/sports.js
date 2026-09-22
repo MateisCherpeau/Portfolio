@@ -4,9 +4,16 @@
 Object.assign(window.siteData.modalData.fr, {
     'carriere-joueur': {
         title: 'Parcours joueur',
-        summary: 'Un parcours compétitif marqué par une progression constante, du niveau départemental UFOLEP à l\'élite régionale. Cette page retrace mon évolution technique et tactique à travers mes différents clubs (ESO, RSSC, AAJB) et mes sélections scolaires (UNSS), avec un focus sur ma spécialisation au poste de Libéro.',
+        summary: 'Un parcours compétitif jalonné d\'une constante montée en puissance, depuis mes débuts départementaux en UFOLEP jusqu\'au niveau national en Nationale 3 à l\'ASPTT Laval au poste de libéro, avec pour objectif affirmé d\'intégrer la Nationale 2 la saison prochaine. Cette page retrace mon évolution technique et tactique à travers mes différents clubs (ESO, RSSC, AAJB, ASPTT Laval) et mes sélections scolaires (UNSS), mettant en lumière ma rigueur défensive et mon engagement dans le jeu de haut niveau.',
         useTimeline: true,
         timelineSeasons: [
+            {
+                season: 'Saison 2026-2027',
+                subtitle: 'Nationale 3 & Objectif N2',
+                items: [
+                    { title: 'Sénior Nationale 3 (Libéro)', club: 'ASPTT Laval', targetModal: 'laval-n3m-joueur' }
+                ]
+            },
             {
                 season: 'Saison 2025-2026',
                 subtitle: 'Confirmation en Pré-Nationale',
@@ -49,7 +56,7 @@ Object.assign(window.siteData.modalData.fr, {
             }
         ],
         softSkills: [],
-        tags: ['Volley-ball', 'Compétition', 'Sport collectif', 'AAJB', 'RSSC', 'ESO'],
+        tags: ['Volley-ball', 'Compétition', 'Nationale 3', 'Libéro', 'ASPTT Laval', 'AAJB', 'RSSC', 'ESO'],
         gallery: [],
         videoHighlights: [
             { title: 'Highlights', url: 'https://youtu.be/2kiCH_AMjEc' }
@@ -57,10 +64,10 @@ Object.assign(window.siteData.modalData.fr, {
     },
     'encadrement-volley': {
         title: 'Encadrement Volley-ball',
-        summary: 'Un parcours d\'encadrement en pleine ascension, marqué par une spécialisation technique et l\'obtention du Diplôme Régional d\'Entraîneur (DRE 1). Cette page retrace mes expériences récentes au sein de structures fédérales (AAJB, RSSC, UVBT), détaillant mes responsabilités de coaching de l\'élite régionale aux sections jeunes. Retrouvez en bas de page l\'analyse de mes "Points Forts" ainsi que mes "Principes et philosophie de jeu" qui définissent mon identité technique.',
+        summary: 'Un parcours d\'entraîneur résolument tourné vers l\'exigence, la tactique et la performance, structuré par l\'obtention du Diplôme Régional d\'Entraîneur (DRE 1 & DRE 2). Pour la saison 2026-2027 à l\'ASPTT Laval, mes responsabilités s\'étendent au co-coaching de la Nationale 3 Féminine aux côtés de Benjamin Morillon, à l\'encadrement de la Pré-Nationale Féminine avec Emery Outin, et au coaching autonome des M18F en Coupe de France avec pour objectif les phases finales. Cette page retrace mes expériences en clubs et sélections régionales (ASPTT Laval, AAJB, CRE Ligue du Centre, RSSC, UVBT), ainsi que mes principes tactiques et ma philosophie d\'entraînement.',
         missionsTitle: "",
         hardSkills: [
-            'Gestion & Performance : Pilotage de groupes Senior (Pré-National) et Jeunes (Régional) vers des résultats d\'ampleur.',
+            'Gestion & Performance : Pilotage de collectifs Senior (Nationale 3, Pré-Nationale) et Jeunes (Coupe de France) vers l\'exigence et la haute performance.',
             'Ingénierie de l\'Entraînement : Conception de programmes adaptés à tous niveaux, de l\'initiation à la Nationale 3.',
             'Expertise Tactique & Vidéo : Analyse d\'adversaires, prise de statistiques en temps réel et veille sur les évolutions techniques.',
             'Gestion de Projet Club : Coordination technique entre les collectifs et construction d\'un projet sportif cohérent.',
@@ -106,6 +113,15 @@ Object.assign(window.siteData.modalData.fr, {
         ],
         useTimeline: true,
         timelineSeasons: [
+            {
+                season: 'Saison 2026-2027',
+                subtitle: 'Séniors N3F & PNF / M18F Coupe de France',
+                items: [
+                    { title: 'Co-Entraîneur Nationale 3 Féminine', club: 'ASPTT Laval', targetModal: 'laval-n3f-coach' },
+                    { title: 'Entraîneur Pré-Nationale Féminine', club: 'ASPTT Laval', targetModal: 'laval-pnf-coach' },
+                    { title: 'Entraîneur M18 Féminine Coupe de France', club: 'ASPTT Laval', targetModal: 'laval-m18f-cdf' }
+                ]
+            },
             {
                 season: 'Saison 2025-2026',
                 subtitle: 'Responsabilités principales',
@@ -179,6 +195,8 @@ Object.assign(window.siteData.modalData.fr, {
                 season: 'Stages',
                 subtitle: 'Immersion Haut Niveau',
                 items: [
+                    { title: 'LVF Camp - Août 2026', club: 'Montpellier', targetModal: 'lvf-august-detail' },
+                    { title: 'LVF Camp - Juin 2026', club: 'Méjannes-le-Clap', targetModal: 'lvf-june-detail' },
                     { title: 'LVF Camp - Août 2024', club: 'Montpellier', targetModal: 'stage-beach-lvf' }
                 ]
             },
@@ -296,7 +314,7 @@ Object.assign(window.siteData.modalData.fr, {
     },
     'saison-pnm-25-26': { 
         title: 'Saison Pré-Nationale Masculine Senior - AAJB', 
-        period: '09/2026 - 08/2027', 
+        period: '09/2025 - 06/2026', 
         summary: 'Saison de la confirmation en tant que Libéro titulaire. Leadership vocal et tactique central pour stabiliser un collectif renouvelé et physique. Une amélioration notable de la relance tout terrain est en cours.', 
         context: 'Installé en tant que libéro sous la direction de Nicolas Fouquet (3h d\'entraînement hebdomadaires). Cette saison est marquée par une profonde refonte du collectif où j\'assume un leadership vocal et tactique central. La défense est le pilier de notre système, nous permettant de rivaliser avec les meilleures équipes du championnat grâce à une organisation arrière rigoureuse.', 
         positions: ['Libéro'],
@@ -753,7 +771,7 @@ Object.assign(window.siteData.modalData.fr, {
     },
     'entraineur-m18f': { 
         title: 'Entraîneur Principal Moins de 18 ans Féminine PNF', 
-        period: '09/2026 - 08/2027', 
+        period: '09/2025 - 06/2026', 
         summary: 'Pilotage global d\'un collectif en phase de reconstruction technique et tactique. Le fil conducteur de cette saison vise à instaurer un nouveau cycle de formation axé sur l\'excellence régionale, l\'intégration de systèmes de jeu, l\'apprentissage de mouvements techniques et le développement du potentiel individuel vers le niveau senior régional et national', 
         context: 'Coach principal du collectif Moins de 18 ans Féminine Pré-Nationale (Régionale). dirige les 3h d\'entraînements hebdomadaires et le parcours en Coupe de France, tout en coordonnant le championnat avec un adjoint. L\'enjeu de cette saison est de lancer un nouveau cycle de formation en alliant progression individuelle vers le haut niveau et cohésion collective.', 
         positions: ['Entraîneur Principal (Head Coach)'],
@@ -782,10 +800,7 @@ Object.assign(window.siteData.modalData.fr, {
             { src: 'assets/projects/m18f-pn/Equipe 2.jpeg', caption: "Le collectif M18F Pré-Nationale de l'AAJB Volley - Saison 2025-2026." },
             { src: 'assets/projects/m18f-pn/Tour 1 challenge france_equipe.jpg', caption: "L'équipe lors du 1er tour du Challenge France." },
             { src: 'assets/projects/m18f-pn/Temps mort 1.JPG', caption: "Coaching en match : Briefing tactique lors d'un temps mort." },
-            { src: 'assets/projects/m18f-pn/Fiche Equipe M18F.png', caption: "Outil de suivi : Fiche de présentation et objectifs du collectif." },
-            { src: 'assets/projects/m18f-pn/Fiche M18F Axelle Romero.png', caption: "Suivi individuel : Exemple de fiche technique et statistique personnalisée (Axelle)." },
-            { src: 'assets/projects/m18f-pn/Fiche M18F Chloé Roudier.png', caption: "Suivi individuel : Exemple de fiche technique et statistique personnalisée (Chloé)." },
-            { src: 'assets/projects/m18f-pn/Fiche M18F Solenne Quessard Bourget.png', caption: "Suivi individuel : Exemple de fiche technique et statistique personnalisée (Solenne)." }
+            { src: 'assets/projects/m18f-pn/Fiche Equipe M18F.png', caption: "Outil de suivi : Fiche de présentation et objectifs du collectif." }
         ], 
         relatedModals: [
             { id: 'encadrement-volley', label: 'Volleyball Coaching' },
@@ -825,7 +840,7 @@ Object.assign(window.siteData.modalData.fr, {
     },
     'entraineur-adjoint-pnf': { 
         title: 'Entraîneur Adjoint Pré-Nationale Féminine - AAJB', 
-        period: '09/2026 - 08/2027', 
+        period: '09/2025 - 06/2026', 
         summary: 'Expertise tactique et spécialisation défensive au sein de l\'élite régionale. En binôme avec l\'entraîneur principal, j\'assure l\'analyse statistique en temps réel et le soutien à la décision stratégique pour optimiser la stabilisation du secteur arrière senior, tout en assurant le suivi et l\'accompagnement des jeunes joueuses à haut potentiel issues du collectif M18F.', 
         context: 'Nommé entraîneur adjoint de l\'équipe première féminine suite à la montée en PNF. Ma mission est facilitée par la présence de 4 joueuses issues de mon groupe Moins de 18 ans. Ayant été assistant Moins de 18 ans et Régionale Féminine la saison passée, je bénéficie d\'une connaissance poussée du collectif et d\'une forte légitimité. Présent à l\'intégralité des séances d\'entraînement, je travaille en binôme avec Florian Busteau pour optimiser la performance. Je dispose de toute l\'attention des joueuses qui me sollicitent régulièrement sur des points techniques et tactiques précis.', 
         positions: ['Entraîneur Adjoint'],
@@ -850,11 +865,7 @@ Object.assign(window.siteData.modalData.fr, {
         gallery: [
             { src: 'assets/projects/pnf/Equipe.jpg', caption: "Le collectif Pré-Nationale Féminine (PNF) de l'AAJB Volley-ball." },
             { src: 'assets/projects/pnf/Equipe 2.jpg', caption: "Photo d'équipe à l'entraînement thème orange" },
-            { src: 'assets/projects/pnf/Fiche equipe PNF.png', caption: "Outil de suivi : Fiche de présentation et objectifs de l'équipe Pré-Nationale Féminine." },
-            { src: 'assets/projects/pnf/Fiche PNF Jeanne Longuet.png', caption: "Suivi individuel : Exemple de fiche technique et statistique personnalisée (Jeanne)." },
-            { src: 'assets/projects/pnf/Fiche PNF Axelle Romero.png', caption: "Suivi individuel : Exemple de fiche technique et statistique personnalisée (Axelle)." },
-            { src: 'assets/projects/pnf/Fiche PNF Mia Ranaivo.png', caption: "Suivi individuel : Exemple de fiche technique et statistique personnalisée (Mia)." },
-            { src: 'assets/projects/pnf/Fiche PNF Solenne Quessard Bourget.png', caption: "Suivi individuel : Exemple de fiche technique et statistique personnalisée (Solenne)." }
+            { src: 'assets/projects/pnf/Fiche equipe PNF.png', caption: "Outil de suivi : Fiche de présentation et objectifs de l'équipe Pré-Nationale Féminine." }
         ], 
         relatedModals: [
             { id: 'encadrement-volley', label: 'Volleyball Coaching' },
@@ -864,7 +875,7 @@ Object.assign(window.siteData.modalData.fr, {
     },
     'entraineur-ufolep-blois': { 
         title: 'UFOLEP-CDF Compet\'lib - AAJB', 
-        period: '09/2026 - 08/2027', 
+        period: '09/2025 - 06/2026', 
         summary: 'Direction technique et transformation d\'un groupe mixte hétérogène. Mon action se concentre sur l\'accélération de l\'apprentissage des bases compétitives et la détection stratégique de potentiels pour alimenter les effectifs fédéraux du club.', 
         context: 'Responsable de la section UFOLEP de l\'AAJB Blois (1h30 d\'entraînement hebdomadaire). Ma mission est de transformer un groupe de débutants motivés en collectifs capables de performer en championnat départemental (UFOLEP 41). J\'ai impulsé une dynamique collaborative en intégrant le capitaine Justin Fotso Tetchou comme adjoint, favorisant l\'investissement des membres dans la vie du club. L\'Équipe 1 UFOLEP a notamment participé à la Coupe de France Compet\'lib cette saison.', 
         positions: ['Entraîneur Principal'],
@@ -899,20 +910,187 @@ Object.assign(window.siteData.modalData.fr, {
     'laval-detail': {
         title: 'ASPTT Laval - Saison 2026/2027',
         period: 'Saison 2026-2027',
-        summary: 'Engagement au sein de l\'ASPTT Laval Volley-ball pour la saison 2026-2027. Ce nouveau chapitre s\'inscrit dans une dynamique de performance et de développement continu au sein d\'une structure ambitieuse de la Mayenne.',
-        context: '<strong>[Contenu à venir]</strong> - Ma mission et mon rôle précis au sein de l\'ASPTT Laval (joueur/encadrement) seront détaillés prochainement avec le lancement de la saison.',
+        summary: 'Engagement d\'envergure au sein de l\'ASPTT Laval Volley-ball pour la saison 2026-2027 : joueur en Nationale 3 Masculine (Libéro) avec pour objectif d\'intégrer la Nationale 2 la saison prochaine, co-entraîneur de la Nationale 3 Féminine en binôme avec Benjamin Morillon, entraîneur de la Pré-Nationale Féminine en collaboration avec Emery Outin, et coach principal des Moins de 18 ans Féminines en Coupe de France avec pour ambition d\'atteindre les phases finales.',
+        context: 'Installé à Laval dans le cadre de mon alternance chez Moldtecs, j\'ai rejoint l\'ASPTT Laval Volley-ball avec un investissement complet. Sur le terrain, j\'évolue en Nationale 3 Masculine (N3M) au poste de libéro avec l\'ambition affirmée d\'accéder à la Nationale 2 dès la saison suivante. Côté banc, mes responsabilités techniques s\'étendent sur trois collectifs féminins majeurs : la Nationale 3 Féminine (N3F) en binôme avec Benjamin Morillon, la Pré-Nationale Féminine (PNF) en collaboration avec Emery Outin, et les M18 Féminines en Coupe de France que je coache en totale autonomie.',
         brandLogo: [
             'assets/icons/laval-orange.png'
         ],
-        missionsTitle: 'Perspectives de la Saison',
-        missions: [
-            'Intégration du projet sportif de l\'ASPTT Laval.',
-            'Contribution à la performance collective du club.',
-            'Développement des compétences techniques et tactiques en milieu fédéral.',
-            'Collaboration avec le staff technique et les membres du club.'
+        useCards: true,
+        missionsTitle: 'Missions & Rôles au Club',
+        missionCards: [
+            { isMajorHeader: true, title: 'Parcours Joueur', icon: 'fa-volleyball-ball' },
+            { title: 'Sénior Nationale 3 Masculine', subtitle: 'Poste de Libéro - Objectif N2', icon: 'fa-tshirt', targetModal: 'laval-n3m-joueur' },
+            { isMajorHeader: true, title: 'Encadrement & Coaching', iconImg: 'assets/projects/volleyball/logo-encadrement-orange.png' },
+            { title: 'Nationale 3 Féminine', subtitle: 'Co-entraîneur avec Benjamin Morillon', icon: 'fa-users', targetModal: 'laval-n3f-coach' },
+            { title: 'Pré-Nationale Féminine', subtitle: 'Collaboration Emery Outin (Promues)', icon: 'fa-users', targetModal: 'laval-pnf-coach' },
+            { title: 'M18 Féminine Coupe de France', subtitle: 'Coach Principal - Objectif Phases Finales', icon: 'fa-trophy', targetModal: 'laval-m18f-cdf' }
         ],
-        tags: ['ASPTT Laval', 'Laval', 'Nouveau Club', 'Saison 2026-2027', 'Performance'],
+        hardSkills: [
+            'Excellence défensive et relance au niveau Nationale 3 Masculine',
+            'Leadership et stabilisation de la ligne arrière au poste de libéro',
+            'Co-direction et ingénierie d\'entraînement au niveau Nationale 3 Féminine',
+            'Pilotage tactique et gestion humaine d\'un effectif N3F alliant jeunesse et expérience',
+            'Accompagnement et structuration d\'un collectif promu en Pré-Nationale Féminine',
+            'Coaching sous haute exigence compétitive en Coupe de France M18F'
+        ],
+        relatedModals: [
+            { id: 'carriere-joueur', label: 'Parcours joueur' },
+            { id: 'encadrement-volley', label: 'Encadrement' }
+        ],
+        tags: ['ASPTT Laval', 'Nationale 3', 'Libéro', 'Coach N3F', 'Coach PNF', 'M18F CdF', 'Laval', 'Objectif N2', 'Saison 2026-2027'],
         gallery: []
+    },
+    'laval-n3m-joueur': {
+        title: 'Saison Nationale 3 Masculine - ASPTT Laval',
+        period: 'Saison 2026-2027',
+        summary: 'Joueur titulaire au poste de libéro au sein de l\'équipe fanion masculine de l\'ASPTT Laval évoluant en Nationale 3. Un palier compétitif majeur avec comme objectif clair et ambitieux d\'intégrer la Nationale 2 la saison prochaine.',
+        context: 'Arrivé à l\'ASPTT Laval à l\'intersaison 2026, j\'intègre le groupe Nationale 3 Masculine (N3M) au poste de libéro. Ce passage au niveau national représente une étape déterminante dans mon évolution de joueur, où la vitesse de jeu, la puissance des services adverses et la rigueur tactique exigent une précision constante. Pleinement investi dans le projet du club, je vise la montée et l\'intégration du groupe Nationale 2 dès la saison 2027-2028.',
+        positions: ['Libéro'],
+        teamsRep: ['Équipe 1 Senior (Nationale 3 Masculine)'],
+        results: [
+            'Objectif affiché : Intégration de la Nationale 2 la saison prochaine'
+        ],
+        hardSkills: [
+            'Lecture de jeu et vitesse de réaction face à des attaques de niveau national',
+            'Régularité et précision en réception face à des services smashés et flottants puissants',
+            'Organisation et stabilisation défensive de la ligne arrière',
+            'Relance haute et transition offensive rapide',
+            'Soutien et couverture de bloc proactive'
+        ],
+        softSkills: [
+            'Leadership défensif et communication continue sur le terrain',
+            'Résilience et sang-froid dans les moments charnières de match',
+            'Exigence d\'entraînement et esprit de conquête vers le haut niveau'
+        ],
+        tags: ['Nationale 3', 'Libéro', 'ASPTT Laval', 'Objectif N2', 'Compétition Nationale'],
+        brandLogo: [
+            'assets/icons/laval-orange.png',
+            'assets/projects/ligue/icone ffvb orange.png'
+        ],
+        relatedModals: [
+            { id: 'laval-detail', label: 'ASPTT Laval' },
+            { id: 'carriere-joueur', label: 'Parcours joueur' }
+        ],
+        gallery: [],
+        parentModalId: 'carriere-joueur'
+    },
+    'laval-n3f-coach': {
+        title: 'Co-Entraîneur Nationale 3 Féminine - ASPTT Laval',
+        period: 'Saison 2026-2027',
+        summary: 'Entraîneur de l\'équipe de Nationale 3 Féminine de l\'ASPTT Laval en binôme avec Benjamin Morillon (joueur N2). Un collectif compétitif alliant jeunes joueuses prometteuses et cadres d\'expérience, où la gestion humaine, la tactique avancée et la recherche de performance sont au cœur du projet.',
+        context: 'Pour cette saison 2026-2027, je co-dirige l\'équipe première féminine de l\'ASPTT Laval en Nationale 3. Cette mission s\'effectue en étroite complicité avec Benjamin Morillon (joueur de Nationale 2) : nous planifions et animons les séances d\'entraînement hebdomadaires à deux, et nous nous partageons le coaching sur le banc lors des matchs de championnat selon nos disponibilités respectives. À ce niveau de jeu, le travail s\'oriente fortement vers la dimension tactique, la gestion humaine du groupe et l\'efficacité collective, ce qui constitue une démarche particulièrement stimulante avec une technicité déjà acquise par les joueuses.',
+        positions: ['Co-Entraîneur Principal (Binôme avec Benjamin Morillon)'],
+        teamsRep: ['Nationale 3 Féminine (ASPTT Laval)'],
+        people: '<span class="roster-bullet">•</span> Effectif N3F associant une belle proportion de jeunes volleyeuses et un noyau de joueuses d\'expérience.<br><span class="roster-bullet">•</span> Individualités clés coachées :<ul class="modal-inner-list"><li>Lola Morillon (Réceptionneuse-Attaquante - R4)</li><li>Clémence Chereau (Réceptionneuse-Attaquante - R4)</li></ul>',
+        missionsTitle: 'Missions & Gestion d\'Équipe',
+        missions: [
+            '<strong>Conception & Animation conjointe :</strong> Élaboration et direction des séances d\'entraînement à deux avec Benjamin Morillon pour un encadrement renforcé.',
+            '<strong>Partage du coaching en match :</strong> Prise en main du banc lors des rencontres de Nationale 3 en alternance et coordination continue selon les calendriers de chacun.',
+            '<strong>Gestion humaine & Cohésion :</strong> Fédérer un collectif intergénérationnel et responsabiliser les jeunes joueuses aux côtés des cadres expérimentées.',
+            '<strong>Stratégie & Analyse tactique :</strong> Élaboration de plans de jeu sur-mesure face aux adversaires de N3, ajustements en cours de match et recherche constante d\'efficacité collective.'
+        ],
+        hardSkills: [
+            'Management d\'équipe senior en division nationale féminine (N3F)',
+            'Ingénierie de séances adaptées à l\'intensité et aux exigences de la Nationale 3',
+            'Collaboration et complémentarité au sein d\'un staff technique à deux',
+            'Analyse tactique avancée et gestion stratégique des temps forts/faibles'
+        ],
+        softSkills: [
+            'Leadership relationnel et gestion humaine d\'un groupe de haut niveau',
+            'Communication fluide et confiance mutuelle avec le co-entraîneur',
+            'Capacité d\'écoute, exigence et pédagogie positive'
+        ],
+        tags: ['Nationale 3 Féminine', 'Co-Entraîneur', 'ASPTT Laval', 'Benjamin Morillon', 'Haut Niveau', 'Tactique'],
+        brandLogo: [
+            'assets/icons/laval-orange.png',
+            'assets/projects/ligue/icone ffvb orange.png'
+        ],
+        relatedModals: [
+            { id: 'laval-detail', label: 'ASPTT Laval' },
+            { id: 'encadrement-volley', label: 'Encadrement Volley-ball' }
+        ],
+        gallery: [],
+        parentModalId: 'encadrement-volley'
+    },
+    'laval-pnf-coach': {
+        title: 'Entraîneur Pré-Nationale Féminine - ASPTT Laval',
+        period: 'Saison 2026-2027',
+        summary: 'Entraîneur de la Pré-Nationale Féminine de l\'ASPTT Laval en collaboration avec Emery Outin (joueur N2, intervenant sur une séance par semaine). Accompagnement d\'un effectif hétérogène fraîchement promu du championnat régional, combinant jeunes talents et joueuses d\'expérience pour stabiliser et performer à l\'échelon pré-national.',
+        context: 'En parallèle de la N3F, je prends en charge l\'équipe réserve féminine engagée en Pré-Nationale (PNF), qui vient de valider sa montée depuis le niveau régional. Ce groupe se distingue par son hétérogénéité, rassemblant de très jeunes volleyeuses à fort potentiel et des filles plus âgées aguerries. Pour structurer les entraînements, je collabore avec Emery Outin, joueur de Nationale 2, qui prend en charge une séance par semaine à nos côtés. Le défi réside dans l\'adaptation rapide aux exigences du niveau Pré-National, l\'homogénéisation du jeu et la montée en puissance collective.',
+        positions: ['Entraîneur Principal', 'Collaboration avec Emery Outin (1 séance/semaine)'],
+        teamsRep: ['Pré-Nationale Féminine (ASPTT Laval)'],
+        results: [
+            'Équipe fraîchement promue du championnat régional en Pré-Nationale'
+        ],
+        missionsTitle: 'Missions & Enjeux',
+        missions: [
+            '<strong>Direction technique & Planification :</strong> Prise en charge des entraînements avec l\'intervention hebdomadaire d\'Emery Outin pour varier les approches pédagogiques.',
+            '<strong>Gestion d\'un groupe hétérogène :</strong> Harmonisation des dynamiques entre de très jeunes joueuses et des profils seniors expérimentés.',
+            '<strong>Consolidation au niveau Pré-National :</strong> Ajustement des schémas de jeu et assimilation des exigences d\'intensité propres à la Pré-Nationale.',
+            '<strong>Passerelle sportive :</strong> Suivi des joueuses à fort potentiel pour alimenter le collectif fanion de Nationale 3 Féminine.'
+        ],
+        hardSkills: [
+            'Entraînement et management d\'un collectif senior féminin de Pré-Nationale',
+            'Gestion de l\'hétérogénéité des âges et des niveaux de jeu',
+            'Coordination technique avec un intervenant extérieur (Emery Outin, joueur N2)',
+            'Conception de programmes de progression collective post-montée'
+        ],
+        softSkills: [
+            'Pédagogie différenciée et capacité à fédérer des profils très variés',
+            'Écoute active et gestion des équilibres humains',
+            'Rigueur organisationnelle et motivation communicative'
+        ],
+        tags: ['Pré-Nationale Féminine', 'Entraîneur', 'ASPTT Laval', 'Emery Outin', 'Promotion', 'Formation'],
+        brandLogo: [
+            'assets/icons/laval-orange.png',
+            'assets/projects/ligue/icone ffvb orange.png'
+        ],
+        relatedModals: [
+            { id: 'laval-detail', label: 'ASPTT Laval' },
+            { id: 'encadrement-volley', label: 'Encadrement Volley-ball' }
+        ],
+        gallery: [],
+        parentModalId: 'encadrement-volley'
+    },
+    'laval-m18f-cdf': {
+        title: 'Entraîneur Moins de 18 ans Féminine Coupe de France - ASPTT Laval',
+        period: 'Saison 2026-2027',
+        summary: 'Entraîneur principal en totale autonomie de l\'équipe Moins de 18 ans Féminine de l\'ASPTT Laval engagée en Coupe de France. Un projet compétitif d\'élite avec comme objectif affirmé d\'atteindre les phases finales nationales.',
+        context: 'J\'assure seul la direction technique et le coaching sur le banc du collectif M18 Féminine de l\'ASPTT Laval engagé en Coupe de France. Cette compétition d\'envergure nationale réunit les meilleurs clubs formateurs de France dans des tours couperets particulièrement intenses. Fort de mes expériences passées en formation et en coaching de jeunes, je pilote ce groupe avec un degré d\'exigence élevé et une ambition résolue : franchir les différents tours qualificatifs pour mener l\'équipe jusqu\'aux prestigieuses phases finales de la Coupe de France.',
+        positions: ['Entraîneur Principal (Seul en charge)'],
+        teamsRep: ['M18 Féminines - Coupe de France (ASPTT Laval)'],
+        results: [
+            'Objectif affiché : Atteindre les Phases Finales nationales de la Coupe de France M18F'
+        ],
+        missionsTitle: 'Missions & Encadrement Compétitif',
+        missions: [
+            '<strong>Direction technique exclusive :</strong> Prise en charge intégrale des entraînements et du coaching sur le banc en match de Coupe de France.',
+            '<strong>Préparation aux matchs couperets :</strong> Travail mental, gestion du stress et scénarios de fin de set sous haute tension compétitive.',
+            '<strong>Optimisation tactique :</strong> Mise en place de systèmes de jeu rigoureux adaptés aux collectifs adverses nationaux.',
+            '<strong>Développement des jeunes potentiels :</strong> Accompagnement individualisé des joueuses vers les exigences du niveau senior national.'
+        ],
+        hardSkills: [
+            'Coaching tactique et stratégique en Coupe de France nationale jeunes',
+            'Ingénierie de la performance pour des compétitions à élimination directe',
+            'Détection et perfectionnement des talents régionaux en M18F',
+            'Maîtrise des règlements fédéraux et de la gestion de banc en tournoi'
+        ],
+        softSkills: [
+            'Leadership inspirant et responsabilisation des jeunes athlètes',
+            'Gestion émotionnelle et résistance à la pression des tours qualificatifs',
+            'Autonomie décisionnelle complète et réactivité tactique'
+        ],
+        tags: ['Coupe de France', 'M18 Féminines', 'Entraîneur Seul', 'ASPTT Laval', 'Objectif Phases Finales', 'Haut Niveau'],
+        brandLogo: [
+            'assets/icons/laval-orange.png',
+            'assets/projects/ligue/icone ffvb orange.png'
+        ],
+        relatedModals: [
+            { id: 'laval-detail', label: 'ASPTT Laval' },
+            { id: 'encadrement-volley', label: 'Encadrement Volley-ball' }
+        ],
+        gallery: [],
+        parentModalId: 'encadrement-volley'
     },
     'dre2-detail': {
         title: 'Certificat d\'Animateur de Beach-Volley (DRE 2)',

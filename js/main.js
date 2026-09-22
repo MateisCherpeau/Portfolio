@@ -281,6 +281,8 @@ document.addEventListener('DOMContentLoaded', () => {
                         if (logoLower.includes('photoshop')) classes.push('modal-logo--photoshop');
                         if (logoLower.includes('capcut')) classes.push('modal-logo--capcut');
                         if (logoLower.includes('radiall')) classes.push('modal-logo--radiall');
+                        if (logoLower.includes('moldtecs')) classes.push('modal-logo--moldtecs');
+                        if (logoLower.includes('laval')) classes.push('modal-logo--laval');
                         return `<img src="${logo}" alt="Logo" class="${classes.join(' ')}">`;
                     }).join('');
                 } else {
@@ -310,6 +312,8 @@ document.addEventListener('DOMContentLoaded', () => {
                         if (logoLower.includes('canva')) classes.push('modal-logo--canva');
                         if (logoLower.includes('photoshop')) classes.push('modal-logo--photoshop');
                         if (logoLower.includes('radiall')) classes.push('modal-logo--radiall');
+                        if (logoLower.includes('moldtecs')) classes.push('modal-logo--moldtecs');
+                        if (logoLower.includes('laval')) classes.push('modal-logo--laval');
                         modalBrandLogo.innerHTML = `<img src="${data.brandLogo}" alt="Logo" class="${classes.join(' ')}">`;                    }
                 }
                 modalBrandLogo.style.display = 'flex';
@@ -377,9 +381,14 @@ document.addEventListener('DOMContentLoaded', () => {
             id === 'rssc-detail' ||
             id === 'dre-detail' ||
             id.includes('saison-m18') || 
-            id.includes('saison-pnm');
+            id.includes('saison-pnm') ||
+            id === 'laval-detail' ||
+            id.startsWith('laval-') ||
+            id === 'ajb-detail' ||
+            id === 'aajb-detail';
 
         const isEngineering = id === 'but-mp' || 
+            id === 'dut-mp' ||
             id === 'projet-batio3' || 
             id === 'electro-reparo' || 
             id === 'projet-pendule' || 

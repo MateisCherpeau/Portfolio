@@ -199,6 +199,11 @@
     max-height: 85%;
 }
 
+.project-icon-img--moldtecs {
+    max-width: 85%;
+    max-height: 85%;
+}
+
 .project-info h4 {
     font-size: 1.35rem;
     margin-bottom: 0.75rem;

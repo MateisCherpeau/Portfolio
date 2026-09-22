@@ -238,7 +238,7 @@ Object.assign(window.siteData.modalData.en, {
     },
     'sc-reseaux-sociaux': { 
         title: 'Social Media Management', 
-        period: '09/2026 - 08/2027', 
+        period: '10/2025 - 05/2026', 
         summary: 'Strategic oversight and daily management of the AAJB Volley digital ecosystem. This project includes defining a professional editorial line on Instagram and Facebook, implementing a rigorous publishing calendar (agendas, scores, highlights), and developing targeted marketing campaigns to increase community engagement and visibility of the club\'s flagship teams.', 
         context: 'As part of my Civic Service, I took charge of the club\'s digital communication. I structured the editorial line to ensure a regular and professional presence while showcasing team identities.', 
         missions: [
@@ -281,7 +281,7 @@ Object.assign(window.siteData.modalData.en, {
     },
     'sc-creation-visuelle': { 
         title: 'Club Visual Identity', 
-        period: '09/2026 - 08/2027', 
+        period: '10/2025 - 05/2026', 
         summary: 'Full brand image overhaul and professionalization of AAJB Volley communication materials. From creating consistent brand guidelines to organizing professional photo shoots, this project aims to establish a strong and instantly recognizable visual identity across all platforms (social media templates, match posters, merchandising, and club shop).', 
         context: 'Upon my arrival, the club\'s image lacked visual consistency. I undertook fundamental work to harmonize all materials, starting with a "cleanup" of old social media accounts to restart on professional grounds.', 
         missions: [
@@ -349,7 +349,7 @@ Object.assign(window.siteData.modalData.en, {
     },
     'sc-developpement-comite41': { 
         title: 'Committee 41 Camp', 
-        period: '09/2026 - 08/2027', 
+        period: '10/2025 - 05/2026', 
         summary: 'Designing a territorial project aimed at relaunching the youth volleyball development track in Loir-et-Cher. This mission focuses on the global design of camp cycles (U11 to U18), institutional negotiation with Committee 41 members for budget approval, and the operational implementation of training sessions to boost departmental youth play.', 
         context: 'Working closely with Paul Martin-Douyat (Ligue du Centre) and Marius Martineau (US Vendôme), I am leading the reconstruction of a departmental training track. The project is to relaunch committee camps in Loir-et-Cher, design them, sustain them, and enrich them to achieve a full departmental offering.', 
         missions: [
@@ -408,7 +408,7 @@ Object.assign(window.siteData.modalData.en, {
     },
     'sc-vie-club': { 
         title: 'Club Life & Organization', 
-        period: '09/2026 - 08/2027', 
+        period: '10/2025 - 05/2026', 
         summary: 'Versatile support and daily coordination of AAJB Volley activities to ensure the smooth running of the association (9 teams in competition, training 4 nights out of 5). My interventions cover coach substitution, training new volunteers, logistical management of equipment and infrastructure (gyms), as well as coordinating schedule changes to fluidify club life.', 
         context: 'AAJB is an association structured around a board and a team of about ten volunteers. With 9 teams engaged in leagues (UFOLEP, departmental, pre-national) and the French Cup, the club lives at the rhythm of matches every weekend from October to April. Training sessions take up 4 nights out of 5 for 3.5 hours, complemented by special events. My Civic Service role is to relieve volunteers and ensure the smooth daily operation of the association.', 
         missions: [
@@ -430,7 +430,7 @@ Object.assign(window.siteData.modalData.en, {
     },
     'etudiant-relai': { 
         title: 'Student Sports Relay - SUAPS', 
-        period: '09/2026 - 08/2027', 
+        period: '09/2025 - 06/2026', 
         summary: 'Responsible for the Blois campus within a team of 10 student relays, I ensure the development of local university sports life. This page details my digital communication missions (Instagram), multimedia content capture during events, and my strategic role as a link between Blois students and the University of Tours sports service.', 
         context: 'Attached to the University Service for Physical and Sports Activities (SUAPS) of the University of Tours, I am responsible for organizing the sports service for the Blois campus. As part of a student contract from September 2025 to June 2026, I work within a team of 10 Student Sports Relays (ERS) spread across all university hubs. My role is to be the direct link between Blois students and the sports service, adapting the offering to campus specificities.', 
         missionsTitle: 'Missions & Achievements',
@@ -475,7 +475,7 @@ Object.assign(window.siteData.modalData.en, {
     },
     'etudiant-relai-com': { 
         title: 'SUAPS - Communication & Events', 
-        period: '09/2026 - 08/2027', 
+        period: '09/2025 - 06/2026', 
         summary: 'Focus on digital communication missions and event engineering for the Blois campus. This page details the creation of informative visual materials, multimedia production, and operational management of large-scale sports events.', 
         context: 'In my role as a Student Sports Relay (ERS) at SUAPS, I took charge of the visibility and event branch for the Blois campus. My mission is to professionalize the department\'s communication to effectively reach the student body and to co-organize unifying sports highlights.', 
         brandLogo: [

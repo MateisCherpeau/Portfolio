@@ -238,7 +238,7 @@ Object.assign(window.siteData.modalData.fr, {
     },
     'sc-reseaux-sociaux': {
         title: 'Gestion des Réseaux Sociaux',
-        period: '09/2026 - 08/2027',
+        period: '10/2025 - 05/2026',
         summary: 'Pilotage stratégique et animation quotidienne de l\'écosystème numérique de l\'AAJB Volley. Ce projet comprend la définition d\'une ligne éditoriale professionnelle sur Instagram et Facebook, la mise en place d\'un calendrier de publications rigoureux (agendas, scores, highlights) et le développement de campagnes marketing ciblées pour accroître l\'engagement de la communauté et la visibilité des équipes phares du club.',
         context: 'Dans le cadre de mon Service Civique, j\'ai pris en charge la communication digitale du club. J\'ai structuré la ligne éditoriale pour assurer une présence régulière et professionnelle, tout en mettant en valeur l\'identité des équipes.',
         missions: [
@@ -281,7 +281,7 @@ Object.assign(window.siteData.modalData.fr, {
     },
     'sc-creation-visuelle': {
         title: 'Identité Visuelle du Club',
-        period: '09/2026 - 08/2027',
+        period: '10/2025 - 05/2026',
         summary: 'Refonte intégrale de l\'image de marque et professionnalisation des supports de communication de l\'AAJB Volley. De la création d\'une charte graphique cohérente à la réalisation de shootings photos professionnels, ce projet vise à instaurer une identité visuelle forte et immédiatement reconnaissable sur tous les supports (templates réseaux sociaux, affiches de match, merchandising et boutique du club).',
         context: 'À mon arrivée, l\'image du club manquait de cohérence visuelle. J\'ai entrepris un travail de fond pour harmoniser tous les supports, en commençant par un "nettoyage" des anciens réseaux pour repartir sur des bases saines et professionnelles.',
         missions: [
@@ -349,7 +349,7 @@ Object.assign(window.siteData.modalData.fr, {
     },
     'sc-developpement-comite41': {
         title: 'Stage Comité 41',
-        period: '09/2026 - 08/2027',
+        period: '10/2025 - 05/2026',
         summary: "Conception d'un projet territorial visant à relancer la filière de formation des jeunes volleyeurs en Loir-et-Cher. Cette mission s'articule autour de la conception globale de cycles de stages (M11 à M18), de la négociation institutionnelle avec les membres du Comité 41 pour obtenir la validation budgétaire, et de la mise en œuvre opérationnelle des séances de perfectionnement pour dynamiser la pratique jeune départementale.",
         context: 'En collaboration étroite avec Paul Martin-Douyat (Ligue du Centre) et Marius Martineau (US Vendôme), je porte la reconstruction d\'une filière de formation départementale. Le projet est relancer les stages comités dans le Loire et Cher, de les concevoirs, les pérénisés et les enrichir pour arriver à une offre départemental complète.',
         missions: [
@@ -408,7 +408,7 @@ Object.assign(window.siteData.modalData.fr, {
     },
     'sc-vie-club': {
         title: 'Vie du club & organisation',
-        period: '09/2026 - 08/2027',
+        period: '10/2025 - 05/2026',
         summary: 'Soutien polyvalent et coordination quotidienne des activités de l\'AAJB Volley pour assurer le bon fonctionnement de l\'association (9 équipes en compétition, entraînements 4 soirs sur 5). Mes interventions couvrent le remplacement d\'entraîneurs, la formation de nouveaux bénévoles, la gestion logistique du matériel et des infrastructures (gymnases), ainsi que la coordination des changements de planning pour fluidifier la vie du club.',
         context: 'L\'AAJB est une association structurée autour d\'un bureau et d\'une équipe d\'une dizaine de bénévoles. Avec 9 équipes engagées en championnats (UFOLEP, départemental, pré-national) et en Coupe de France, le club vit au rythme des matchs tous les week-ends d\'octobre à avril. Les entraînements occupent 4 soirs sur 5 pendant 3h30, complétés par des événements exceptionnels. Mon rôle de Service Civique est de soulager les bénévoles et d\'assurer le bon déroulement quotidien de la vie de l\'association.',
         missions: [
@@ -430,7 +430,7 @@ Object.assign(window.siteData.modalData.fr, {
     },
     'etudiant-relai': {
         title: 'Étudiant Relais Sport - SUAPS',
-        period: '09/2026 - 08/2027',
+        period: '09/2025 - 06/2026',
         summary: 'Responsable de l\'antenne de Blois au sein d\'une équipe de 10 étudiants relais, j\'assure le développement de la vie sportive universitaire locale. Cette page détaille mes missions de communication digitale (Instagram), la captation de contenu multimédia lors des événements, ainsi que mon rôle stratégique de lien entre les étudiants blésois et le service des sports de l\'Université de Tours.',
         context: 'Rattaché au Service Universitaire des Activités Physiques et Sportives (SUAPS) de l\'Université de Tours, j\'ai la responsabilité de l\'organisation du service des sports de l\'antenne de Blois. Dans le cadre d\'un contrat étudiant de septembre 2025 à juin 2026, j\'évolue au sein d\'une équipe de 10 Étudiants Relais Sport (ERS) répartis sur l\'ensemble des pôles de l\'université. Mon rôle est d\'être le lien direct entre les étudiants blésois et le service des sports, en adaptant l\'offre aux spécificités du campus.',
         missionsTitle: 'Missions & Réalisations',
@@ -475,7 +475,7 @@ Object.assign(window.siteData.modalData.fr, {
     },
     'etudiant-relai-com': {
         title: 'SUAPS - Communication & Événementiel',
-        period: '09/2026 - 08/2027',
+        period: '09/2025 - 06/2026',
         summary: 'Focus sur les missions de communication digitale et l\'ingénierie événementielle pour l\'antenne de Blois. Cette page détaille la création de supports visuels informatifs, la production multimédia et la gestion opérationnelle d\'événements sportifs de grande ampleur.',
         context: 'Dans le cadre de mon rôle d\'Étudiant Relais Sport (ERS) au SUAPS, j\'ai pris en charge le volet visibilité et événementiel du campus de Blois. Ma mission consiste à professionnaliser la communication du service pour toucher efficacement le public étudiant et à co-organiser des temps forts sportifs fédérateurs.',
         brandLogo: [

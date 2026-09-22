@@ -77,7 +77,7 @@ Object.assign(window.siteData.modalData.en, {
         title: 'Summer Camp Activity Leader - Nouzilly', 
         period: '07/2025', 
         summary: 'Full month of youth work as the lead activity leader for the "Grands" group (ages 6-12). Consolidation of field experience and increased responsibilities within the team.', 
-        context: 'Under the direction of Virginie Chauvel Breard and Emeline, I joined a dynamic team of about ten leaders. Building on my past experience in this structure, I took a central role within the collective, serving as a guide for less experienced staff while ensuring the daily management of a particularly active group of older children.', 
+        context: 'Under the direction of Virginie Chauvel Breard and Emeline Merron Besnard, I joined a dynamic team of about ten leaders. Building on my past experience in this structure, I took a central role within the collective, serving as a guide for less experienced staff while ensuring the daily management of a particularly active group of older children.', 
         brandLogo: ['assets/projects/com-com/icone com com orange.png'], 
         missionsTitle: 'Missions & Responsibilities', 
         missions: [
@@ -88,13 +88,13 @@ Object.assign(window.siteData.modalData.en, {
         ], 
         tags: ['Animation', 'Leadership', 'Team Management', 'Pedagogy', 'Summer Camp'], 
         gallery: [
-            { src: 'assets/projects/alsh-2025/equipe-2025.png', caption: "Nouzilly summer camp team - July 2025 - under the direction of Virginie and Emeline." },
-            { src: 'assets/projects/alsh-2025/activite-foret.jpg', caption: "Leading a forest discovery activity with the older children." },
-            { src: 'assets/projects/alsh-2025/activite-peche.jpg', caption: "Fishing initiation workshop: patience and technique." },
-            { src: 'assets/projects/alsh-2025/atelier-creatif.jpg', caption: "Manual and artistic creation workshop: expression and imagination." },
-            { src: 'assets/projects/alsh-2025/atelier-cuisine.jpg', caption: "Cooking workshop and taste education." },
-            { src: 'assets/projects/alsh-2025/chasse-tresor-1.jpg', caption: "Organizing a large-scale thematic treasure hunt." },
-            { src: 'assets/projects/alsh-2025/chasse-tresor-2.jpg', caption: "Riddles and challenges during the treasure hunt." }
+            { src: 'assets/projects/alsh-2025/Equipe animation juillet 2025.png', caption: "Nouzilly summer camp team - July 2025 - under the direction of Virginie and Emeline Merron Besnard." },
+            { src: 'assets/projects/alsh-2025/Activité en foret.jpeg', caption: "Leading a forest discovery activity with the older children." },
+            { src: 'assets/projects/alsh-2025/Activité peche.jpeg', caption: "Fishing initiation workshop: patience and technique." },
+            { src: 'assets/projects/alsh-2025/Atelier créatif.jpeg', caption: "Manual and artistic creation workshop: expression and imagination." },
+            { src: 'assets/projects/alsh-2025/Atelier cuisine.jpeg', caption: "Cooking workshop and taste education." },
+            { src: 'assets/projects/alsh-2025/Chasse au tresor.jpeg', caption: "Organizing a large-scale thematic treasure hunt." },
+            { src: 'assets/projects/alsh-2025/Chasse au trésor.jpeg', caption: "Riddles and challenges during the treasure hunt." }
         ] 
     },
     'stage-bafa-nouzilly': { 
@@ -119,10 +119,10 @@ Object.assign(window.siteData.modalData.en, {
         ] 
     },
     'lvf-june-detail': {
-        title: 'LVF Camp - June 2026 <span class="badge badge--orange" style="font-size: 0.6em; vertical-align: middle; margin-left: 10px;">UPCOMING</span>',
+        title: 'LVF Camp - June 2026',
         period: '06/2026',
-        summary: 'Intensive 3-day immersion within a collective of 50 volleyball players. An opportunity to perfect my fundamentals and increase technical standards by leveraging the expertise of a professional staff in an exceptional setting.',
-        context: 'Three-day indoor volleyball camp, which will take place at the Méjannes-le-Clap sports center.',
+        summary: 'A wonderful experience in an exceptional setting that allowed me to make great progress and meet many new people. Having access to such high-performing coaches brought me a tremendous amount.',
+        context: 'Three-day indoor volleyball camp held at the Méjannes-le-Clap sports center.',
         brandLogo: [
             'assets/projects/lvf-camp/icone LVF camp blanc.png'
         ],
@@ -136,13 +136,22 @@ Object.assign(window.siteData.modalData.en, {
             '<strong>Jérôme Brysse:</strong> Volleyball journalist and influencer ("Le Volleyeur Français").'
         ],
         tags: ['High Level', 'Coaching', 'Volleyball', 'Events', 'Méjannes'],
-        gallery: []
+        gallery: [
+            { src: 'assets/projects/lvf-camp/juin-2026/LVF CAMP x CHINENYEZE-345.jpg', caption: "Photo with Barthélémy Chinenyeze" },
+            { src: 'assets/projects/lvf-camp/juin-2026/LVF CAMP x CHINENYEZE-0554.jpg', caption: "Technical advice from Malo Foncarnier" },
+            { src: 'assets/projects/lvf-camp/juin-2026/LVF CAMP x CHINENYEZE-0596.jpg', caption: "Game situation during training" },
+            { src: 'assets/projects/lvf-camp/juin-2026/LVF CAMP x CHINENYEZE-0610.jpg', caption: "Game situation during training" },
+            { src: 'assets/projects/lvf-camp/juin-2026/LVF CAMP x CHINENYEZE-0846.jpg', caption: "Game situation during training" },
+            { src: 'assets/projects/lvf-camp/juin-2026/LVF CAMP x CHINENYEZE-0848.jpg', caption: "Game situation during training" },
+            { src: 'assets/projects/lvf-camp/juin-2026/LVF CAMP x CHINENYEZE-0856.jpg', caption: "Game situation during training" },
+            { src: 'assets/projects/lvf-camp/juin-2026/LVF CAMP x CHINENYEZE-0857.jpg', caption: "Collective celebration" }
+        ]
     },
     'lvf-august-detail': {
-        title: 'LVF Camp - August 2026 <span class="badge badge--orange" style="font-size: 0.6em; vertical-align: middle; margin-left: 10px;">UPCOMING</span>',
+        title: 'LVF Camp - August 2026',
         period: '08/2026',
-        summary: 'Sand training camp with 50 enthusiasts, alongside an elite staff of Olympians and pro coaches. A prime moment to push my technical boundaries and soak in the unique LVF Camps experience in Montpellier.',
-        context: 'Three-day Beach Volleyball camp held at the Montpellier Beach Club with former participants of the LVF Camps.',
+        summary: 'Simply 3 incredible days! To celebrate the 2nd anniversary of the LVF Camps, we reunited with many former participants to party and play volleyball. A top-notch setting and organization, overqualified and passionate coaches, and first-class facilities: memories that will last a lifetime.',
+        context: 'Three-day Beach Volleyball camp organized at the Montpellier Beach Club to celebrate the 2nd anniversary of the LVF Camps with the community of former participants.',
         brandLogo: [
             'assets/projects/lvf-camp/icone LVF camp blanc.png'
         ],
@@ -159,24 +168,38 @@ Object.assign(window.siteData.modalData.en, {
             '<strong>Jérôme Brysse:</strong> Volleyball journalist and influencer ("Le Volleyeur Français").'
         ],
         tags: ['High Level', 'Beach Volley', 'Olympians', 'Montpellier', 'Coaching'],
-        gallery: []
+        gallery: [
+            { src: 'assets/projects/lvf-camp/aout-2026/LVF ADULTES - AOUT 2026-1108.jpg', caption: "Collective photo of the entire camp" },
+            { src: 'assets/projects/lvf-camp/aout-2026/LVF ADULTES - AOUT 2026-0801.jpg', caption: "Tournament podium" },
+            { src: 'assets/projects/lvf-camp/aout-2026/LVF ADULTES - AOUT 2026-0854.jpg', caption: "Photo of the LVF Camp alumni" },
+            { src: 'assets/projects/lvf-camp/aout-2026/LVF ADULTES - AOUT 2026-0542.jpg', caption: "Game situation during training" },
+            { src: 'assets/projects/lvf-camp/aout-2026/LVF ADULTES - AOUT 2026-1014.jpg', caption: "Game situation during training" },
+            { src: 'assets/projects/lvf-camp/aout-2026/LVF ADULTES - AOUT 2026-1015.jpg', caption: "Game situation during training" },
+            { src: 'assets/projects/lvf-camp/aout-2026/LVF ADULTES - AOUT 2026-0347.jpg', caption: "Game situation during training" },
+            { src: 'assets/projects/lvf-camp/aout-2026/LVF ADULTES - AOUT 2026-0346.jpg', caption: "Game situation during training" },
+            { src: 'assets/projects/lvf-camp/aout-2026/LVF ADULTES - AOUT 2026-0859.jpg', caption: "Game situation during training" },
+            { src: 'assets/projects/lvf-camp/aout-2026/LVF ADULTES - AOUT 2026-0825.jpg', caption: "Game situation during training" },
+            { src: 'assets/projects/lvf-camp/aout-2026/LVF ADULTES - AOUT 2026-0001.jpg', caption: "Game situation during training" },
+            { src: 'assets/projects/lvf-camp/aout-2026/LVF ADULTES - AOUT 2026-0805.jpg', caption: "Break between training sessions" },
+            { src: 'assets/projects/lvf-camp/aout-2026/LVF ADULTES - AOUT 2026-0813.jpg', caption: "Game situation during training" }
+        ]
     },
     'alsh-2026-detail': {
-        title: 'Nouzilly Summer Camp - July 2026 <span class="badge badge--orange" style="font-size: 0.6em; vertical-align: middle; margin-left: 10px;">UPCOMING</span>',
+        title: 'Nouzilly Summer Camp - July 2026',
         period: '07/2026',
-        summary: 'Activity Leader at the Nouzilly summer camp for the full month of July. Committed to a dynamic team to ensure the development and safety of the children.',
-        context: 'Under the direction of Emeline, I join a team of 8 staff members to supervise a maximum of 56 children. This experience marks the continuation of my involvement with the Nouzilly structure.',
+        summary: 'A full month of youth leading that went remarkably well with a group of 56 children aged 3 to 12. For this 3rd year in animation, cumulative experience made a true difference: complex situations have become routine and simple to manage on a daily basis.',
+        context: 'Under the direction of Emeline Merron Besnard, I returned to the Nouzilly recreation center within a tight-knit team of 8 leaders—the vast majority reuniting from the previous year—to supervise up to 56 children.',
         brandLogo: [
             'assets/projects/com-com/icone com com orange.png'
         ],
-        missionsTitle: 'Planned Missions & Responsibilities',
+        missionsTitle: 'Missions & Responsibilities',
         missions: [
-            '<strong>Animation & Daily Life:</strong> Designing and implementing age-appropriate pedagogical activities.',
-            '<strong>Group Management:</strong> Supervising up to 56 children within a team of 8 leaders.',
-            '<strong>Safety & Well-being:</strong> Ensuring the physical and emotional safety of minors under Emeline\'s direction.',
-            '<strong>Team Cohesion:</strong> Active collaboration with the staff for organizing large-scale games and outings.'
+            '<strong>Group Management & Maturity:</strong> Supervising 56 children (ages 3-12) with enhanced confidence and composure gained from 3 years of experience.',
+            '<strong>Handling Complex Situations:</strong> Calm and effective resolution of unexpected events and group dynamics that have become routine and natural.',
+            '<strong>Team Cohesion & Continuity:</strong> Strong synergy within a team of 8 leaders, largely reuniting from the previous summer under the direction of Emeline Merron Besnard.',
+            '<strong>Pedagogical Design & Activities:</strong> Organizing creative workshops, sports sessions, and large-scale games tailored to various age groups.'
         ],
-        tags: ['Animation', 'Summer Camp', 'July 2026', 'Nouzilly', 'Team'],
+        tags: ['Animation', 'Summer Camp', 'July 2026', 'Nouzilly', 'Experience'],
         gallery: []
     }
 });
